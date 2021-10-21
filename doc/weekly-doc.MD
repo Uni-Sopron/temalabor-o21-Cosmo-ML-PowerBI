@@ -33,3 +33,5 @@
     - Editing as well as collaboration on service
   - Creating reports, dashboards, app
 - Machine learning basics
+  - forecasting - continous variables
+  - categorization - discreet variables
