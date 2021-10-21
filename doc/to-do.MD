@@ -3,4 +3,9 @@
 - Checking the types of capacities
 - Dataflow import testing
 - Checking the available apps
-- Python integration into Power BI
+- Distributing tech. solutions: 
+-   AutoML
+-   python libs
+-   R libs
+-   integrations into powerBI
+-   other pilot projects
