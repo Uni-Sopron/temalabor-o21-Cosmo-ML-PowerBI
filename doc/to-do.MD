@@ -10,3 +10,4 @@
   -  integrations into powerBI
   -  other pilot projects
   -  data preparation
+- Start documentation
