@@ -4,8 +4,9 @@
 - Dataflow import testing
 - Checking the available apps
 - Distributing tech. solutions: 
--   AutoML
--   python libs
--   R libs
--   integrations into powerBI
--   other pilot projects
+  -  AutoML
+  -  python libs
+  -  R libs
+  -  integrations into powerBI
+  -  other pilot projects
+  -  data preparation
