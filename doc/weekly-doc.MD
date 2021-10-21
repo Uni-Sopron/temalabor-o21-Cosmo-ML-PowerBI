@@ -35,3 +35,4 @@
 - Machine learning basics
   - forecasting - continous variables
   - categorization - discreet variables
+  - importance of data preparation
