@@ -36,3 +36,20 @@
   - forecasting - continous variables
   - categorization - discreet variables
   - importance of data preparation
+
+# 2021.10.29
+
+## Setting directions and a goal for the whole project
+
+- Selection of a dataset
+- Investigation of the wide variety of solutions for Power BI
+  - Python
+  - R
+  - AutoML
+  - (Any other AI solutions we might find during the research)
+- Comparing the solutions as wholes
+- Comparing the solutions in different environments
+  - Power BI desktop
+  - Power BI service
+- Demo Project as a proof of concept
+- Case study and project end
