@@ -53,3 +53,7 @@
   - Power BI service
 - Demo Project as a proof of concept
 - Case study and project end
+
+# 2021.11.04
+
+## Exploring the AI solutions
