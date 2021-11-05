@@ -31,3 +31,5 @@
           - split column by '/' delimiter
           - merge columns with '.' separator
           - using locale (en-uk)
+
+## add a machine learning model
