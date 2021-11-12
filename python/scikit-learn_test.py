@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 
-dataset = pd.read_csv("./supermarket_sales.csv")
+dataset = pd.read_csv("data/Supermarket_sales/supermarket_sales - Sheet1.csv")
 
 le = LabelEncoder()
 dataset["Invoice ID"] = le.fit_transform(dataset["Invoice ID"])

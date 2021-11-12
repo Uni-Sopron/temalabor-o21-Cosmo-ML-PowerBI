@@ -54,6 +54,15 @@
 - Demo Project as a proof of concept
 - Case study and project end
 
-# 2021.11.04
+# 2021.11.05
 
 ## Exploring the AI solutions
+
+- Milestone set
+  - Process a specific dataset with AutoML, R and Python
+  - Compare results based on different aspects
+- Long-run goal
+  - Look for other datasets in order for further comparsions
+  - Minimalize the complexity of the problem
+  - Focus on the application of the solution in a shared system like Power BI Service
+  - Compare results
