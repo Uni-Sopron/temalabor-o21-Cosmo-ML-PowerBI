@@ -8,7 +8,6 @@ le = LabelEncoder()
 s = StandardScaler()
 log = LogisticRegression()
 
-#%%
 
 # Split dataset into train and test data
 columns = dataset.columns
