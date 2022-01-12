@@ -88,6 +88,25 @@ Is a free Python library made to be used for Machine Learning. Scikit-learn is d
 
 ---
 
+#### Statsmodels
+
+Comprehensive collection of advanced / special-use statistical and regression functions compressed in one Python library.
+It is supposed to complement to SciPy's stats module.
+
+##### Features
+
+- wide variety of statistical functions
+- easy and intuitive to use
+
+##### Applications
+
+- forecasting
+- statistical tests
+- model estimations
+- data exploration
+
+---
+
 #### Matplotlib
 
 ---
