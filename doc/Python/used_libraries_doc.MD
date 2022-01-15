@@ -4,106 +4,105 @@
 
 #### NumPy
 
-NumPy short for Numerical Python is a library for Python supporting large,
-multi-dimensional arrays and matrices. In addition it also has a large, high-level
-mathematical function collection designed to work on these specific arrays.
+A NumPy (Numerical Python) egy Python könyvtár, amely támogatja a nagy,
+többdimenziós tömböket és mátrixokat. Ezen kívül tartalmaz egy nagy, magas szintű
+matematikai függvénygyűjteményt, amelyet ezekre a speciális tömbökre terveztek.
 
-##### Features
+##### Jellemzők
 
-- fast, precompiled functions for numerical routines
-- array oriented computing (better accuracy)
-- supports object-oriented approach
-- compact and fast computations with vectorization
+- gyors, előre lefordított függvények numerikus rutinokhoz
+- tömborientált számítás (jobb pontosság)
+- támogatja az objektumorientált megközelítést
+- kompakt és gyors számítások vektorizációval
 
-##### Applications of NumPy
+##### Alkalmazás
 
-- data analysis
-- N-dimensional array creation
-- serves as a base for other libraries like SciPy and scikit-learn
-- can replace MATLAB if it's used with matplotlib and SciPy
+- adatelemzés
+- N-dimenziós tömb létrehozása
+- alapként szolgál más könyvtárakhoz, mint a SciPy és a scikit-learn
+- helyettesítheti a MATLAB-ot, ha a matplotlib és a SciPy segítségével használjuk
 
 ---
 
 #### Pandas
 
-Pandas or Python data analysis library is a cornerstone of data science when we talk about python.
-Heavily used in the daily data science life for analysis and cleaning, also provides fast and flexible
-data structures.
+A Pandas vagy a Python adatelemző könyvtár az adattudomány egyik sarokköve, amikor a pythonban történő adatelemzésről beszélünk.
+A mindennapi adattudományos életben erősen használt elemzésekre és tisztításra, valamint gyors és rugalmas adatstruktúrákat bocsát rendelkezésre.
 
-##### Features
+##### Jellemzők
 
-- rich functionalities (to deal also with missing data)
-- self-describing syntax
-- high-level abstraction
-- high-level manipulation tools and data structures
+- gazdag funkciók (hiányzó adatok kezelésére is)
+- önleíró szintaxis
+- magas szintű absztrakció
+- magas szintű manipulációs eszközök és adatstruktúrák
 
-##### Applications
+##### Alkalmazás
 
-- handling and cleaning data
-- ETL (extract-transform-load) jobs that include data transformation and load
-- time-series specific needs (date range generation, date shifting, linear regression, moving window)
-- academic and commercial usage as well
+- az adatok kezelése és tisztítása
+- ETL (extract-transform-load) feladatok, amelyek magukban foglalják az adatok átalakítását és betöltését
+- idősor-specifikus igények (dátumtartományok létrehozása, dátumeltolódás, lineáris regresszió, mozgó ablak)
+- akadémiai és kereskedelmi felhasználás is
 
 ---
 
 #### SciPy
 
-Is a free and open-source Python library for scientifical and technical purposes as its name shows (Scientific Python).
-It extends the functionality of the NumPy library while providing a user-friendly and efficient way to handle
-scientific computations.
+Egy ingyenes és nyílt forráskódú Python könyvtár tudományos és műszaki célokra, ahogy a neve is mutatja (Scientific Python).
+Kiterjeszti a NumPy könyvtár funkcionalitását, miközben felhasználóbarát és hatékony módot biztosít a tudományos számításokat kezelésére.
 
-##### Features
+##### Jellemzők
 
-- algorithm and function collection extending NumPy functionality
-- provides high-level commands for manipulating and visualizing data
-- offers multi-dimensional image processing
-- has built in modules to solve differential equations
+- algoritmus- és függvénygyűjtemény a NumPy funkcionalitás kiterjesztésére
+- magas szintű parancsokat biztosít az adatok manipulálásához és vizualizálásához
+- többdimenziós képfeldolgozást kínál
+- beépített modulok differenciálegyenletek megoldására
 
-##### Applications
+##### Alkalmazás
 
-- multi-dimensional image operations
-- for differential equations and Furier transform
-- optimization algorithms
-- linear algebra
+- többdimenziós képműveletek
+- differenciálegyenletek és Furier-transzformáció
+- optimalizációs algoritmusok
+- lineáris algebra
 
 ---
 
 #### Scikit-Learn
 
-Is a free Python library made to be used for Machine Learning. Scikit-learn is designed to be interpolated into NumPy and SciPy.
+Egy ingyenes és algoritmusokban gazdag Python könyvtár, amely gépi tanuláshoz készült. Támogatja a numerikus és tudományos könyvtárakat, mint például
+a SciPy vagy a NumPy.
 
-##### Features
+##### Jellemzők
 
-- wide variety of algorithms (SVM, random forests, gradient boosting, k-means, DBSCAN)
-- integrates well with other libraries (specifically Matplotlib, Plotly, NumPy, Pandas, SciPy)
-- offers great number of performance metrics (accuracy, r^2 score, receiver operating curve, precision-recall curve)
+- algoritmusok széles választéka (SVM, random forests, gradient boosting, k-means, DBSCAN)
+- jól integrálható más könyvtárakkal (különösen Matplotlib, Plotly, NumPy, Pandas, SciPy)
+- nagyszámú teljesítménymérőt kínál (pontosság, r^2 pontszám, receiver operating curve, precision-recall görbe).
 
-##### Applications
+##### Alkalmazás
 
-- clustering
-- regression
-- classification
-- model selection
-- dimensionality reduction
+- klaszterezés
+- regresszió
+- osztályozás
+- modellválasztás
+- dimenziócsökkentés
 
 ---
 
 #### Statsmodels
 
-Comprehensive collection of advanced / special-use statistical and regression functions compressed in one Python library.
-It is supposed to complement to SciPy's stats module.
+Fejlett / speciális felhasználású statisztikai és regressziós függvények átfogó gyűjteménye egyetlen Python könyvtárba tömörítve.
+A SciPy stats moduljának kiegészítésére szolgál.
 
-##### Features
+##### Jellemzők
 
-- wide variety of statistical functions
-- easy and intuitive to use
+- statisztikai funkciók széles választéka
+- könnyű és intuitív használat
 
-##### Applications
+##### Alkalmazás
 
-- forecasting
-- statistical tests
-- model estimations
-- data exploration
+- előrejelzés
+- statisztikai tesztek
+- modellbecslések
+- adatfeltárás
 
 ---
 
