@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="ERROR">
+    <Properties>
+        <Property name="filename">./logs</Property>
+    </Properties>
+    <Appenders>
+        <RollingFile name="FileAppender"
+                     fileName="${filename}/application-${date:yyyy-MM-dd-HH-mm-ss-SSS}.log"
+                     filePattern="${filename}/application-${date:yyyy-MM-dd-HH-mm-ss-SSS}.log">
+            <PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <SizeBasedTriggeringPolicy size="100 MB" />
+        </RollingFile>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="all">
+            <AppenderRef ref="ConsoleAppender" level="all"/>
+            <AppenderRef ref="FileAppender" level="warn"/>
+        </Root>
+    </Loggers>
+</Configuration>
