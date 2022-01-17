@@ -1,401 +1,201 @@
 id,Order method code,Product line,Product type,Product,Product brand,Product color,Retailer type,Retailer country,Unit cost,Unit price
-1,E-mail,Personal Accessories,Safety,Flicker Lantern,Star,Silver,Sports Store,Finland,400,740
-
-2,Special,Camping Equipment,Eyewear,Course Pro Golf and Tee Set,Hailstorm,Red,Type,Japan,480,660
-
-3,Mail,Camping Equipment,Rope,Husky Rope 100,Course Pro,Brass,Equipment Rental Store,Mexico,600,780
-
-4,Web,Outdoor Protection,Knives,Lady Hailstorm Titanium Irons,Sun,Green,Equipment Rental Store,Brazil,0,0
-
-5,Special,Mountaineering Equipment,Watches,Granite Extreme,Firefly,Mahogany,Sports Store,Germany,110,190
-
-6,Sales visit,Camping Equipment,Cooking Gear,Canyon Mule Weekender Backpack,Epoch,Product color,Sports Store,Canada,430,470
-
-7,Special,Personal Accessories,Rope,Seeker 50,Trakker,Brass,Sports Store,Italy,270,480
-
-8,Sales visit,Personal Accessories,Lanterns,Deluxe Family Relief Kit,Xray,Camouflage,Department Store,Denmark,610,860
-
-9,E-mail,Camping Equipment,Woods,TrailChef Utensils,Sun,Clear,Outdoors Shop,Finland,260,420
-
-10,Sales visit,Camping Equipment,Packs,Canyon Mule Weekender Backpack,Mountain Man,Multicolored,Warehouse Store,Korea,210,220
-
-11,Special,Outdoor Protection,Insect Repellents,Hailstorm Steel Woods Set,Mountain Man,Purple,Golf Shop,Austria,410,760
-
-12,Special,Golf Equipment,Eyewear,Sun Shield,Mountain Man,Mahogany,Equipment Rental Store,China,200,320
-
-13,Sales visit,Camping Equipment,Packs,Opera Vision,Polar,Pink,Warehouse Store,Netherlands,130,210
-
-14,Special,Mountaineering Equipment,Woods,Granite Axe,Sun,Product color,Direct Marketing,Austria,240,400
-
-15,Web,Personal Accessories,Tools,Pocket Gizmo,Polar,Brown,Type,Mexico,390,460
-
-16,Sales visit,Personal Accessories,Putters,Legend,Granite,Product color,Type,China,210,230
-
-17,Sales visit,Camping Equipment,Insect Repellents,Single Edge,Sun,Clear,Golf Shop,Finland,420,620
-
-18,Fax,Camping Equipment,Sunscreen,Legend,Granite,Grey,Outdoors Shop,Germany,180,270
-
-19,Fax,Golf Equipment,Knives,Dante,Trakker,Pink,Golf Shop,Denmark,660,980
-
-20,Special,Golf Equipment,Tools,Firefly Mapreader,Alpha,Beige,Golf Shop,United Kingdom,320,570
-
-21,Mail,Mountaineering Equipment,Rope,Star Gazer 6,Alpha,Clear,Direct Marketing,Australia,530,870
-
-22,Special,Golf Equipment,Rope,Trail Star,Course Pro,Multicolored,Golf Shop,Belgium,500,980
-
-23,Web,Golf Equipment,Eyewear,Lady Hailstorm Steel Woods Set,Xray,Red,Sports Store,China,630,1050
-
-24,Telephone,Outdoor Protection,Safety,Seeker 50,Sun,Green,Golf Shop,Finland,700,800
-
-25,Mail,Mountaineering Equipment,First Aid,Trendi,Course Pro,Purple,Eyewear Store,Japan,620,940
-
-26,Mail,Camping Equipment,Sleeping Bags,Husky Rope 50,Antoni,Brass,Direct Marketing,Japan,490,720
-
-27,Fax,Camping Equipment,Golf Accessories,Polar Extreme,Epoch,Grey,Golf Shop,Denmark,510,800
-
-28,Telephone,Camping Equipment,Safety,Husky Rope 200,Antoni,Red,Equipment Rental Store,Germany,730,1010
-
-29,Fax,Mountaineering Equipment,Irons,Husky Rope 200,Blue Steel,Mahogany,Sports Store,Singapore,710,1300
-
-30,Special,Outdoor Protection,Safety,Ranger Vision,Firefly,Product color,Direct Marketing,Spain,180,280
-
-31,Web,Personal Accessories,Product type,BugShield Extreme,Star,Clear,Outdoors Shop,Singapore,390,460
-
-32,E-mail,Camping Equipment,Safety,Granite Belay,Polar,Purple,Type,China,340,530
-
-33,E-mail,Mountaineering Equipment,First Aid,Product,Hibernator,Ash,Eyewear Store,Italy,330,660
-
-34,Web,Mountaineering Equipment,Navigation,Husky Harness Extreme,Alpha,Clear,Sports Store,Switzerland,350,510
-
-35,Telephone,Personal Accessories,Lanterns,Sun Shield,Relax,Multicolored,Equipment Rental Store,Switzerland,430,730
-
-36,Sales visit,Personal Accessories,Insect Repellents,Canyon Mule Journey Backpack,EverGlow,Mahogany,Department Store,Netherlands,110,110
-
-37,Web,Outdoor Protection,Watches,Single Edge,BugShield,Bronze,Outdoors Shop,Japan,60,80
-
-38,E-mail,Outdoor Protection,Tents,Hibernator Extreme,Relax,Grey,Direct Marketing,Brazil,350,680
-
-39,Special,Camping Equipment,Tools,Trail Star,Firefly,Grey,Department Store,China,730,1160
-
-40,E-mail,Golf Equipment,Safety,Sun Shelter Stick,Trakker,Product color,Eyewear Store,Finland,460,850
-
-41,Web,Mountaineering Equipment,Putters,Trail Master,Course Pro,Ash,Outdoors Shop,Italy,680,1350
-
-42,Telephone,Outdoor Protection,Binoculars,Granite Pulley,Granite,White,Sports Store,China,230,450
-
-43,Sales visit,Golf Equipment,Sunscreen,Firefly 2,Hibernator,Red,Department Store,Sweden,270,440
-
-44,Fax,Golf Equipment,First Aid,EverGlow Double,Glacier,Green,Warehouse Store,Germany,360,720
-
-45,E-mail,Golf Equipment,Lanterns,BugShield Extreme,Sun,Red,Warehouse Store,Spain,350,570
-
-46,Telephone,Mountaineering Equipment,Tools,Bear Survival Edge,Sun,Multicolored,Department Store,China,460,530
-
-47,Mail,Outdoor Protection,Watches,Husky Rope 200,Edge,White,Type,Netherlands,100,110
-
-48,Fax,Mountaineering Equipment,Tents,Sun Shelter 15,Blue Steel,Camouflage,Sports Store,Korea,310,490
-
-49,Web,Golf Equipment,Climbing Accessories,Course Pro Putter,BugShield,Brown,Sports Store,Finland,240,430
-
-50,Fax,Outdoor Protection,Watches,Hibernator Camp Cot,Edge,Camouflage,Warehouse Store,France,570,930
-
-51,Special,Mountaineering Equipment,Watches,Course Pro Golf and Tee Set,Granite,Clear,Direct Marketing,Mexico,310,420
-
-52,E-mail,Mountaineering Equipment,Safety,Firefly Extreme,Canyon Mule,Light Blue,Equipment Rental Store,Country,20,40
-
-53,Special,Camping Equipment,Lanterns,Astro Pilot,Seeker,Ash,Department Store,United States,360,500
-
-54,Sales visit,Camping Equipment,Eyewear,EverGlow Single,Product brand,Multicolored,Equipment Rental Store,Spain,710,1170
-
-55,E-mail,Camping Equipment,Binoculars,Granite Extreme,Hailstorm,Ash,Golf Shop,Canada,620,760
-
-56,Sales visit,Personal Accessories,Packs,Polar Sun,Alpha,Product color,Eyewear Store,Switzerland,450,860
-
-57,Sales visit,Mountaineering Equipment,Binoculars,Course Pro Golf Bag,Trakker,Orange,Golf Shop,Brazil,180,180
-
-58,Sales visit,Mountaineering Equipment,Cooking Gear,BugShield Spray,Granite,Silver,Eyewear Store,Italy,440,790
-
-59,E-mail,Golf Equipment,Woods,Granite Belay,Star,Blue,Outdoors Shop,Sweden,740,1340
-
-60,Sales visit,Outdoor Protection,Golf Accessories,Seeker 50,BugShield,Camouflage,Golf Shop,Italy,570,820
-
-61,Fax,Outdoor Protection,Lanterns,Kodiak,EverGlow,Pink,Eyewear Store,France,160,160
-
-62,Special,Camping Equipment,Tents,Granite Signal Mirror,Seeker,Brass,Warehouse Store,Italy,720,1160
-
-63,Special,Personal Accessories,Watches,Firefly Climbing Lamp,Antoni,Camouflage,Warehouse Store,Austria,460,700
-
-64,Sales visit,Outdoor Protection,Cooking Gear,BugShield Lotion Lite,Mountain Man,Silver,Direct Marketing,Spain,340,610
-
-65,Fax,Mountaineering Equipment,Packs,Hibernator Camp Cot,Canyon Mule,Red,Warehouse Store,Japan,250,260
-
-66,Web,Mountaineering Equipment,Cooking Gear,TrailChef Kitchen Kit,Relax,Beige,Warehouse Store,Korea,430,470
-
-67,Telephone,Golf Equipment,Irons,Husky Rope 200,Canyon Mule,Clear,Equipment Rental Store,Italy,490,750
-
-68,E-mail,Golf Equipment,Sunscreen,Seeker 35,EverGlow,Camouflage,Direct Marketing,Brazil,20,20
-
-69,Special,Golf Equipment,Insect Repellents,Trail Master,Glacier,Orange,Department Store,Switzerland,50,100
-
-70,E-mail,Camping Equipment,Climbing Accessories,Granite Axe,Firefly,Yellow,Equipment Rental Store,Spain,60,60
-
-71,Sales visit,Golf Equipment,Watches,Zone,Granite,Pink,Warehouse Store,Germany,350,700
-
-72,E-mail,Golf Equipment,Tools,Single Edge,Granite,Brass,Equipment Rental Store,Belgium,90,100
-
-73,Fax,Personal Accessories,Eyewear,TrailChef Water Bag,Husky,Green,Sports Store,Japan,230,240
-
-74,Web,Mountaineering Equipment,Insect Repellents,Blue Steel Putter,Seeker,Dark Blue,Warehouse Store,Denmark,230,370
-
-75,Telephone,Golf Equipment,Sleeping Bags,Firefly Multi-light,Hailstorm,Black,Eyewear Store,Australia,60,70
-
-76,Fax,Personal Accessories,Safety,Sky Pilot,Blue Steel,Blue,Type,Country,650,1090
-
-77,Fax,Golf Equipment,Safety,Star Dome,BugShield,Clear,Eyewear Store,Sweden,100,180
-
-78,Mail,Golf Equipment,Cooking Gear,Firefly 2,Product brand,Beige,Eyewear Store,Korea,590,1040
-
-79,Telephone,Golf Equipment,Woods,Hailstorm Steel Woods Set,Epoch,Brown,Sports Store,Canada,340,660
-
-80,Special,Golf Equipment,Cooking Gear,Star Gazer 2,Sun,Dark Blue,Golf Shop,France,440,810
-
-81,Mail,Golf Equipment,Putters,Hailstorm Titanium Woods Set,Course Pro,Ash,Type,Korea,470,480
-
-82,Mail,Golf Equipment,Sunscreen,Sun Shield,Polar,Dark Blue,Department Store,Netherlands,280,360
-
-83,Web,Personal Accessories,Woods,Glacier Basic,Canyon Mule,Purple,Direct Marketing,Netherlands,390,500
-
-84,E-mail,Camping Equipment,Sunscreen,Polar Sun,Glacier,Orange,Warehouse Store,Country,90,150
-
-85,Special,Personal Accessories,Watches,TrailChef Kitchen Kit,Product brand,Ash,Sports Store,Italy,480,490
-
-86,Mail,Personal Accessories,Rope,Hibernator Extreme,EverGlow,Green,Golf Shop,Sweden,560,920
-
-87,Sales visit,Camping Equipment,Packs,Star Peg,Hailstorm,Mahogany,Outdoors Shop,China,380,610
-
-88,Web,Mountaineering Equipment,Binoculars,Granite Chalk Bag,Extreme,Green,Outdoors Shop,United States,580,1070
-
-89,Telephone,Outdoor Protection,Irons,EverGlow Double,Trakker,Brass,Type,Korea,110,140
-
-90,Web,Personal Accessories,Watches,Lady Hailstorm Titanium Irons,Relax,Mahogany,Department Store,Belgium,350,620
-
-91,Sales visit,Camping Equipment,Product type,Legend,Sun,Clear,Warehouse Store,United Kingdom,630,1060
-
-92,Mail,Camping Equipment,Product type,Hailstorm Steel Woods Set,Hailstorm,Grey,Golf Shop,Canada,340,370
-
-93,Web,Mountaineering Equipment,Sleeping Bags,Granite Axe,Trakker,Bronze,Outdoors Shop,France,190,380
-
-94,Mail,Outdoor Protection,Navigation,Hibernator Camp Cot,Hailstorm,Yellow,Equipment Rental Store,Denmark,360,650
-
-95,Special,Personal Accessories,Irons,Star Peg,Course Pro,Camouflage,Type,Spain,80,110
-
-96,Sales visit,Outdoor Protection,Sleeping Bags,BugShield Natural,Epoch,Brown,Eyewear Store,Finland,440,680
-
-97,E-mail,Mountaineering Equipment,Product type,Hibernator Pillow,Product brand,Red,Department Store,Country,610,1180
-
-98,Web,Personal Accessories,Eyewear,Canyon Mule Weekender Backpack,Course Pro,Black,Department Store,Spain,120,200
-
-99,Fax,Mountaineering Equipment,Sleeping Bags,Canyon Mule Extreme Backpack,Trakker,Light Blue,Eyewear Store,Australia,500,900
-
-100,Web,Outdoor Protection,Woods,Course Pro Umbrella,Blue Steel,Pink,Eyewear Store,Mexico,280,500
-
-101,Telephone,Golf Equipment,Climbing Accessories,Course Pro Gloves,Polar,Multicolored,Warehouse Store,Country,380,580
-
-102,Web,Golf Equipment,Tents,Compact Relief Kit,Antoni,White,Direct Marketing,Spain,150,170
-
-103,Telephone,Camping Equipment,Watches,Edge Extreme,TrailChef,Beige,Sports Store,Austria,390,550
-
-104,Mail,Golf Equipment,Product type,Retro,BugShield,Purple,Type,Australia,490,590
-
-105,Mail,Personal Accessories,Binoculars,Dante,Antoni,Red,Outdoors Shop,Austria,300,360
-
-106,Sales visit,Mountaineering Equipment,Knives,Trail Scout,Xray,Black,Outdoors Shop,Canada,500,760
-
-107,E-mail,Golf Equipment,Golf Accessories,Hibernator Pad,TrailChef,Orange,Warehouse Store,Spain,590,1110
-
-108,Mail,Outdoor Protection,Climbing Accessories,Pocket Gizmo,Polar,Brass,Department Store,Switzerland,340,430
-
-109,Web,Outdoor Protection,Sunscreen,Firefly Lite,TrailChef,Silver,Golf Shop,United Kingdom,530,950
-
-110,Web,Mountaineering Equipment,Golf Accessories,Star Gazer 2,Firefly,Light Blue,Eyewear Store,Australia,730,1270
-
-111,Fax,Golf Equipment,Cooking Gear,Husky Harness,Husky,Black,Sports Store,Finland,380,650
-
-112,Telephone,Outdoor Protection,Tools,Seeker 35,EverGlow,Purple,Warehouse Store,Singapore,660,1100
-
-113,Web,Mountaineering Equipment,Safety,BugShield Lotion Lite,Sun,Red,Sports Store,China,240,320
-
-114,Sales visit,Mountaineering Equipment,Woods,Polar Sun,Trakker,Light Blue,Outdoors Shop,France,160,270
-
-115,Web,Outdoor Protection,Woods,Calamine Relief,Sun,Light Blue,Golf Shop,Switzerland,50,90
-
-116,Mail,Outdoor Protection,Tools,BugShield Lotion,Hibernator,White,Equipment Rental Store,Sweden,720,1290
-
-117,Mail,Mountaineering Equipment,Product type,TrailChef Kettle,Product brand,Dark Blue,Direct Marketing,France,580,910
-
-118,Telephone,Outdoor Protection,Binoculars,Sun Shelter 30,Canyon Mule,Camouflage,Equipment Rental Store,Austria,230,240
-
-119,Web,Mountaineering Equipment,Binoculars,Polar Sun,Extreme,Red,Sports Store,Italy,560,570
-
-120,Telephone,Camping Equipment,Eyewear,Firefly Rechargeable Battery,Hibernator,Light Blue,Golf Shop,Austria,70,140
-
-121,Special,Outdoor Protection,Climbing Accessories,Sam,Polar,Pink,Equipment Rental Store,Belgium,320,500
-
-122,E-mail,Golf Equipment,Rope,Granite Ice,Sun,Red,Warehouse Store,Netherlands,80,140
-
-123,Special,Mountaineering Equipment,Product type,Infinity,Hailstorm,Silver,Sports Store,Germany,500,790
-
-124,Mail,Mountaineering Equipment,Tents,Granite Chalk Bag,Antoni,Light Blue,Warehouse Store,Switzerland,420,520
-
-125,Sales visit,Mountaineering Equipment,Rope,Legend,Edge,Beige,Outdoors Shop,Brazil,300,510
-
-126,E-mail,Personal Accessories,Lanterns,Husky Rope 50,Edge,Red,Sports Store,Sweden,160,300
-
-127,Mail,Outdoor Protection,Irons,Star Peg,Mountain Man,Grey,Type,Singapore,320,450
-
-128,Special,Camping Equipment,Putters,Lady Hailstorm Titanium Irons,Husky,Beige,Warehouse Store,Korea,380,650
-
-129,Mail,Outdoor Protection,First Aid,Hibernator Self - Inflating Mat,Relax,Grey,Warehouse Store,Singapore,140,200
-
-130,Fax,Mountaineering Equipment,Eyewear,EverGlow Lamp,Course Pro,Blue,Direct Marketing,Belgium,570,820
-
-131,E-mail,Golf Equipment,Product type,Husky Rope 200,Firefly,Mahogany,Direct Marketing,Belgium,360,400
-
-132,Fax,Camping Equipment,Packs,Trail Star,Relax,Bronze,Direct Marketing,Brazil,470,780
-
-133,Mail,Golf Equipment,Tools,Inferno,Trakker,Unspecified,Direct Marketing,Germany,370,490
-
-134,Telephone,Personal Accessories,Irons,Glacier GPS Extreme,BugShield,Brass,Sports Store,Country,80,150
-
-135,Mail,Mountaineering Equipment,Insect Repellents,Sun Shield,Polar,Blue,Golf Shop,Canada,180,360
-
-136,Web,Mountaineering Equipment,Binoculars,Star Peg,EverGlow,Dark Blue,Department Store,Italy,150,240
-
-137,Fax,Camping Equipment,Irons,Polar Ice,Trakker,Multicolored,Department Store,Japan,150,220
-
-138,E-mail,Camping Equipment,Navigation,Seeker Extreme,Blue Steel,Beige,Outdoors Shop,Belgium,610,900
-
-139,Mail,Outdoor Protection,Tents,Hibernator Pad,Extreme,Unspecified,Golf Shop,Germany,350,460
-
-140,Sales visit,Personal Accessories,Sleeping Bags,Hibernator Self - Inflating Mat,Course Pro,Brass,Type,Belgium,0,0
-
-141,Sales visit,Camping Equipment,Irons,Calamine Relief,Xray,Green,Golf Shop,Austria,540,660
-
-142,Web,Mountaineering Equipment,Lanterns,Lady Hailstorm Titanium Woods Set,Relief,Red,Department Store,Japan,440,720
-
-143,Fax,Golf Equipment,Packs,Mountain Man Extreme,Product brand,Silver,Outdoors Shop,France,10,10
-
-144,Mail,Mountaineering Equipment,Climbing Accessories,TrailChef Canteen,Relief,Camouflage,Warehouse Store,Korea,200,220
-
-145,Web,Camping Equipment,Cooking Gear,Husky Rope 50,Xray,Silver,Equipment Rental Store,Netherlands,210,410
-
-146,Sales visit,Mountaineering Equipment,Binoculars,BugShield Extreme,Edge,Mahogany,Department Store,Singapore,240,260
-
-147,Fax,Personal Accessories,Golf Accessories,Sun Shelter 15,TrailChef,Multicolored,Direct Marketing,Netherlands,460,910
-
-148,Sales visit,Outdoor Protection,Eyewear,Star Gazer 2,Polar,Red,Warehouse Store,Mexico,50,50
-
-149,Special,Golf Equipment,Rope,Hibernator Camp Cot,Trakker,Green,Type,Austria,50,70
-
-150,Web,Golf Equipment,Eyewear,EverGlow Double,Granite,Pink,Department Store,Austria,110,130
-
-151,Special,Golf Equipment,Safety,Sky Pilot,Sun,Unspecified,Department Store,Country,190,300
-
-152,Special,Outdoor Protection,Packs,Hibernator,Hailstorm,Blue,Warehouse Store,Austria,520,1000
-
-153,Fax,Mountaineering Equipment,First Aid,Firefly Mapreader,Xray,Unspecified,Outdoors Shop,Singapore,20,20
-
-154,Telephone,Camping Equipment,Sunscreen,Husky Harness,Alpha,Unspecified,Type,China,350,580
-
-155,Telephone,Outdoor Protection,Climbing Accessories,Star Lite,Antoni,White,Outdoors Shop,Spain,330,620
-
-156,Mail,Golf Equipment,Tools,Seeker Mini,Alpha,Mahogany,Department Store,Germany,170,320
-
-157,E-mail,Outdoor Protection,Eyewear,Granite Carabiner,Alpha,Mahogany,Sports Store,Mexico,690,1010
-
-158,Mail,Outdoor Protection,Putters,Star Peg,Seeker,Product color,Golf Shop,Switzerland,370,530
-
-159,Fax,Personal Accessories,Binoculars,TrailChef Double Flame,Trakker,White,Type,Netherlands,280,560
-
-160,Mail,Outdoor Protection,First Aid,Hawk Eye,Antoni,Red,Eyewear Store,Denmark,140,230
-
-161,E-mail,Golf Equipment,Navigation,Fairway,Polar,Brown,Direct Marketing,Sweden,20,20
-
-162,Sales visit,Mountaineering Equipment,Woods,Hibernator Pillow,Xray,Camouflage,Warehouse Store,Sweden,190,380
-
-163,Fax,Mountaineering Equipment,Woods,Venue,Hibernator,Brown,Department Store,Brazil,80,100
-
-164,Sales visit,Golf Equipment,Cooking Gear,Mountain Man Deluxe,Canyon Mule,Green,Warehouse Store,Singapore,210,290
-
-165,Mail,Outdoor Protection,Tools,Bear Edge,Hailstorm,Black,Direct Marketing,United States,420,780
-
-166,Special,Golf Equipment,First Aid,Husky Harness Extreme,Trakker,Yellow,Department Store,Mexico,270,400
-
-167,Fax,Camping Equipment,Cooking Gear,Glacier Basic,TrailChef,Blue,Golf Shop,United Kingdom,130,220
-
-168,Fax,Outdoor Protection,Golf Accessories,Insect Bite Relief,Sun,White,Golf Shop,Denmark,60,100
-
-169,Special,Mountaineering Equipment,Eyewear,Capri,Mountain Man,White,Direct Marketing,Country,180,240
-
-170,Mail,Golf Equipment,Cooking Gear,Granite Extreme,Extreme,Brass,Warehouse Store,Italy,620,1200
-
-171,E-mail,Camping Equipment,Putters,Polar Ice,EverGlow,Pink,Type,Belgium,560,870
-
-172,E-mail,Camping Equipment,Safety,Hibernator Self - Inflating Mat,Glacier,Product color,Warehouse Store,United States,340,520
-
-173,Special,Camping Equipment,Putters,Polar Sun,Polar,Product color,Department Store,Canada,490,750
-
-174,Web,Golf Equipment,Safety,Seeker Extreme,BugShield,Brown,Eyewear Store,Singapore,170,270
-
-175,Sales visit,Outdoor Protection,First Aid,Husky Rope 60,Relief,Dark Blue,Golf Shop,Singapore,110,130
-
-176,Sales visit,Outdoor Protection,Putters,Sun Shelter 30,Relief,Camouflage,Outdoors Shop,Sweden,460,590
-
-177,Telephone,Golf Equipment,Rope,Granite Ice,Hailstorm,Multicolored,Type,Denmark,230,300
-
-178,Sales visit,Golf Equipment,Packs,Product,Granite,Unspecified,Type,Sweden,320,600
-
-179,E-mail,Camping Equipment,Rope,Granite Climbing Helmet,Polar,Multicolored,Warehouse Store,Germany,470,500
-
-180,Fax,Outdoor Protection,Navigation,Polar Ice,Alpha,Yellow,Equipment Rental Store,China,630,1240
-
-181,Sales visit,Mountaineering Equipment,Tools,TrailChef Utensils,Hailstorm,Dark Blue,Sports Store,Brazil,560,700
-
-182,Sales visit,Personal Accessories,Binoculars,Hailstorm Titanium Irons,Polar,Grey,Type,United States,550,680
-
-183,Mail,Mountaineering Equipment,Binoculars,Hibernator Pad,Canyon Mule,Pink,Department Store,Japan,290,440
-
-184,Telephone,Outdoor Protection,Binoculars,Sam,Extreme,Dark Blue,Sports Store,Canada,250,270
-
-185,Mail,Golf Equipment,Eyewear,Flicker Lantern,Epoch,Camouflage,Eyewear Store,Country,620,1120
-
-186,Fax,Personal Accessories,Navigation,Firefly Charger,Polar,Brass,Warehouse Store,Mexico,470,590
-
-187,E-mail,Personal Accessories,Packs,Lady Hailstorm Steel Irons,Firefly,Grey,Outdoors Shop,Austria,400,750
-
-188,Mail,Outdoor Protection,Product type,Canyon Mule Climber Backpack,Relax,Silver,Warehouse Store,France,30,40
-
-189,Sales visit,Personal Accessories,Sunscreen,Granite Shovel,Mountain Man,Red,Eyewear Store,France,620,770
-
-190,Telephone,Golf Equipment,Sleeping Bags,Glacier GPS Extreme,Star,Ash,Outdoors Shop,Japan,70,120
-
-191,Telephone,Camping Equipment,Tents,Trail Star,Seeker,Pink,Outdoors Shop,United Kingdom,220,220
-
-192,Mail,Camping Equipment,Tools,Bella,Canyon Mule,Orange,Sports Store,Finland,700,1320
-
-193,Special,Mountaineering Equipment,Putters,TrailChef Water Bag,Xray,White,Direct Marketing,Korea,370,640
-
-194,Telephone,Personal Accessories,Packs,Glacier GPS,BugShield,White,Warehouse Store,Mexico,650,730
-
-195,Special,Mountaineering Equipment,Safety,BugShield Spray,Glacier,Dark Blue,Eyewear Store,Italy,660,870
-
-196,Mail,Golf Equipment,Watches,Kodiak,Xray,Brass,Eyewear Store,France,0,0
-
-197,Telephone,Camping Equipment,Knives,Granite Axe,Mountain Man,Unspecified,Warehouse Store,Mexico,560,1010
-
-198,E-mail,Golf Equipment,Irons,Firefly Mapreader,Firefly,Silver,Direct Marketing,Singapore,190,320
-
-199,Mail,Golf Equipment,Putters,Astro Pilot,Husky,Beige,Outdoors Shop,Denmark,640,1190
-
-200,E-mail,Outdoor Protection,Cooking Gear,Compact Relief Kit,EverGlow,Pink,Department Store,Mexico,730,800
-
+1,Telephone,Mountaineering Equipment,Lanterns,Insect Bite Relief,Seeker,Pink,Golf Shop,Brazil,160,280
+2,Special,Camping Equipment,Cooking Gear,Seeker 35,Granite,Light Blue,Equipment Rental Store,Singapore,680,990
+3,E-mail,Golf Equipment,Lanterns,Granite Axe,Relief,Beige,Type,Germany,70,140
+4,Fax,Outdoor Protection,Putters,Capri,Blue Steel,Light Blue,Outdoors Shop,Belgium,620,950
+5,E-mail,Mountaineering Equipment,Cooking Gear,Firefly Multi-light,EverGlow,Dark Blue,Equipment Rental Store,United States,700,1150
+6,Fax,Camping Equipment,Navigation,Granite Chalk Bag,Firefly,Brown,Outdoors Shop,China,200,280
+7,Telephone,Personal Accessories,Cooking Gear,Sun Shelter Stick,Relax,Light Blue,Type,Sweden,650,1230
+8,Sales visit,Golf Equipment,Product type,Hibernator Pad,Edge,Brass,Warehouse Store,Singapore,190,260
+9,E-mail,Personal Accessories,Packs,Hailstorm Steel Irons,Edge,Camouflage,Direct Marketing,Italy,680,1260
+10,Web,Camping Equipment,Insect Repellents,Canyon Mule Extreme Backpack,Sun,Black,Eyewear Store,Italy,740,1070
+11,Web,Outdoor Protection,Rope,Course Pro Golf Bag,Seeker,White,Direct Marketing,China,110,110
+12,Mail,Golf Equipment,First Aid,Canyon Mule Journey Backpack,Canyon Mule,Dark Blue,Warehouse Store,Austria,690,710
+13,Fax,Outdoor Protection,Insect Repellents,Bear Edge,Mountain Man,White,Equipment Rental Store,Italy,590,1130
+14,Sales visit,Personal Accessories,Sunscreen,Inferno,Blue Steel,Product color,Outdoors Shop,China,720,810
+15,Telephone,Camping Equipment,Packs,Trail Star,BugShield,Grey,Warehouse Store,Japan,440,700
+16,Fax,Outdoor Protection,Rope,Auto Pilot,Extreme,Silver,Type,Sweden,590,750
+17,Special,Camping Equipment,Rope,Ranger Vision,Mountain Man,Red,Eyewear Store,Denmark,370,400
+18,E-mail,Golf Equipment,Putters,Husky Harness,Firefly,Ash,Type,Australia,200,280
+19,Web,Mountaineering Equipment,Cooking Gear,Granite Belay,Firefly,Purple,Sports Store,Mexico,270,300
+20,E-mail,Mountaineering Equipment,Safety,Course Pro Golf Bag,Seeker,Product color,Golf Shop,Korea,610,1150
+21,Special,Outdoor Protection,Product type,Trail Star,Seeker,White,Equipment Rental Store,United States,460,910
+22,E-mail,Mountaineering Equipment,Irons,Zodiak,Firefly,Beige,Warehouse Store,Australia,580,590
+23,Fax,Outdoor Protection,Binoculars,TrailChef Water Bag,TrailChef,Bronze,Equipment Rental Store,Mexico,60,100
+24,Sales visit,Golf Equipment,Packs,Compact Relief Kit,Sun,Blue,Outdoors Shop,Mexico,520,650
+25,E-mail,Mountaineering Equipment,Golf Accessories,Product,Hailstorm,Product color,Equipment Rental Store,Canada,90,130
+26,Fax,Mountaineering Equipment,Tools,Granite Carabiner,Alpha,Purple,Equipment Rental Store,Italy,160,300
+27,Fax,Camping Equipment,Sleeping Bags,Hibernator,Xray,Brown,Direct Marketing,Brazil,190,290
+28,E-mail,Outdoor Protection,Safety,Hibernator Self - Inflating Mat,Relax,Blue,Warehouse Store,United Kingdom,720,1000
+29,E-mail,Mountaineering Equipment,Climbing Accessories,Star Peg,EverGlow,Light Blue,Sports Store,Switzerland,390,670
+30,Special,Mountaineering Equipment,Safety,Trail Master,TrailChef,Red,Warehouse Store,United Kingdom,210,390
+31,Mail,Mountaineering Equipment,Navigation,Sun Shelter 30,Seeker,Multicolored,Type,France,330,350
+32,Fax,Outdoor Protection,First Aid,Venue,Relax,Clear,Eyewear Store,Belgium,610,710
+33,Telephone,Camping Equipment,First Aid,Sam,Granite,Black,Warehouse Store,Canada,0,0
+34,Special,Camping Equipment,Irons,Sky Pilot,Extreme,Silver,Direct Marketing,Spain,660,1310
+35,Telephone,Outdoor Protection,Tools,Zone,Xray,Multicolored,Sports Store,Brazil,670,1060
+36,Special,Mountaineering Equipment,Tents,Firefly Mapreader,Sun,Dark Blue,Warehouse Store,Japan,20,40
+37,Mail,Mountaineering Equipment,Sleeping Bags,Star Lite,Alpha,Silver,Type,Switzerland,470,590
+38,Telephone,Personal Accessories,Insect Repellents,TrailChef Double Flame,EverGlow,Green,Type,Austria,720,1020
+39,Fax,Outdoor Protection,Navigation,Polar Extreme,Epoch,Dark Blue,Warehouse Store,United Kingdom,740,1140
+40,Special,Mountaineering Equipment,Tools,Pocket Gizmo,Star,Red,Type,Finland,120,180
+41,Web,Outdoor Protection,Climbing Accessories,BugShield Lotion Lite,Canyon Mule,Black,Outdoors Shop,Austria,380,550
+42,E-mail,Outdoor Protection,Navigation,Deluxe Family Relief Kit,Glacier,Black,Golf Shop,Austria,280,440
+43,Fax,Outdoor Protection,Tools,EverGlow Kerosene,Course Pro,Product color,Golf Shop,Canada,370,660
+44,Special,Golf Equipment,Product type,Single Edge,BugShield,Orange,Warehouse Store,Korea,40,70
+45,Mail,Mountaineering Equipment,Knives,Granite Belay,Epoch,Silver,Golf Shop,China,600,800
+46,Fax,Outdoor Protection,Binoculars,Zone,Hibernator,Dark Blue,Eyewear Store,Netherlands,130,150
+47,Sales visit,Outdoor Protection,Eyewear,EverGlow Kerosene,BugShield,Bronze,Equipment Rental Store,Switzerland,290,410
+48,Fax,Outdoor Protection,Eyewear,Sun Blocker,Edge,White,Outdoors Shop,Belgium,680,880
+49,Sales visit,Camping Equipment,Climbing Accessories,BugShield Spray,Extreme,Grey,Sports Store,Belgium,10,10
+50,Telephone,Mountaineering Equipment,Binoculars,Husky Rope 200,Granite,Camouflage,Outdoors Shop,Italy,490,940
+51,Fax,Outdoor Protection,Navigation,Granite Signal Mirror,Antoni,Unspecified,Direct Marketing,Country,210,350
+52,Mail,Golf Equipment,Product type,Granite Climbing Helmet,BugShield,Brown,Eyewear Store,Germany,480,960
+53,Mail,Outdoor Protection,Irons,Glacier GPS Extreme,Canyon Mule,Brown,Outdoors Shop,Belgium,310,410
+54,Web,Mountaineering Equipment,Insect Repellents,Course Pro Golf and Tee Set,Polar,Product color,Department Store,Austria,290,480
+55,Special,Camping Equipment,Sunscreen,Trail Scout,Hailstorm,Pink,Outdoors Shop,United States,350,670
+56,Fax,Outdoor Protection,Insect Repellents,Hailstorm Steel Irons,Seeker,Light Blue,Warehouse Store,Germany,150,210
+57,Web,Camping Equipment,Woods,Zodiak,Canyon Mule,Black,Eyewear Store,United States,350,450
+58,Sales visit,Camping Equipment,Navigation,TrailChef Water Bag,EverGlow,Red,Eyewear Store,Singapore,430,610
+59,E-mail,Outdoor Protection,Climbing Accessories,EverGlow Kerosene,Husky,Silver,Eyewear Store,Australia,640,660
+60,E-mail,Outdoor Protection,First Aid,Hibernator Lite,Star,Clear,Type,France,100,120
+61,Sales visit,Outdoor Protection,Sunscreen,Firefly Lite,Glacier,Dark Blue,Type,Japan,130,200
+62,Sales visit,Personal Accessories,Rope,Edge Extreme,Husky,White,Eyewear Store,Spain,330,330
+63,Sales visit,Camping Equipment,Navigation,Sun Shield,Epoch,Ash,Direct Marketing,Brazil,90,180
+64,E-mail,Camping Equipment,Sleeping Bags,Opera Vision,Relax,Yellow,Golf Shop,Japan,100,110
+65,Web,Outdoor Protection,Product type,Star Gazer 3,Hibernator,Brass,Eyewear Store,United Kingdom,500,510
+66,Mail,Personal Accessories,Tools,Star Gazer 6,Antoni,Silver,Outdoors Shop,Singapore,260,340
+67,E-mail,Outdoor Protection,Woods,Lux,Relief,Pink,Sports Store,Belgium,410,510
+68,E-mail,Personal Accessories,Climbing Accessories,Max Gizmo,TrailChef,Light Blue,Direct Marketing,Italy,730,960
+69,Special,Mountaineering Equipment,Woods,Polar Sun,Hailstorm,Ash,Eyewear Store,Australia,560,750
+70,Sales visit,Camping Equipment,First Aid,Firefly 4,Relax,Orange,Golf Shop,Finland,420,420
+71,E-mail,Golf Equipment,Knives,TrailChef Canteen,BugShield,Pink,Equipment Rental Store,Brazil,150,190
+72,Special,Mountaineering Equipment,Cooking Gear,Bella,BugShield,Light Blue,Department Store,Switzerland,340,370
+73,Web,Outdoor Protection,Cooking Gear,Course Pro Umbrella,TrailChef,Grey,Department Store,Italy,290,410
+74,Sales visit,Camping Equipment,Lanterns,Insect Bite Relief,Polar,Purple,Golf Shop,Brazil,140,230
+75,E-mail,Golf Equipment,Cooking Gear,Polar Extreme,Epoch,Blue,Golf Shop,Brazil,250,380
+76,Special,Outdoor Protection,Tents,Granite Axe,Seeker,Bronze,Department Store,Finland,30,30
+77,Special,Personal Accessories,Watches,BugShield Lotion,Hailstorm,Pink,Eyewear Store,United States,650,870
+78,Special,Golf Equipment,Knives,Legend,Husky,Silver,Warehouse Store,Netherlands,10,10
+79,Sales visit,Mountaineering Equipment,Woods,Sam,Hailstorm,Purple,Equipment Rental Store,Spain,400,730
+80,Mail,Camping Equipment,Navigation,EverGlow Butane,Product brand,Blue,Department Store,Germany,710,1200
+81,Mail,Golf Equipment,Product type,Husky Rope 200,Blue Steel,Red,Outdoors Shop,Italy,330,330
+82,Web,Mountaineering Equipment,Cooking Gear,Mountain Man Analog,Relax,Clear,Eyewear Store,Austria,50,60
+83,Telephone,Personal Accessories,Navigation,TrailChef Water Bag,Epoch,Pink,Department Store,France,600,1150
+84,Fax,Personal Accessories,Watches,Lady Hailstorm Steel Irons,Relax,Bronze,Type,France,130,150
+85,Web,Personal Accessories,Tents,Husky Rope 200,EverGlow,Clear,Golf Shop,Singapore,490,790
+86,E-mail,Mountaineering Equipment,Cooking Gear,Lady Hailstorm Steel Irons,Star,Pink,Equipment Rental Store,Mexico,350,420
+87,Sales visit,Camping Equipment,Safety,TrailChef Utensils,Course Pro,Black,Warehouse Store,Japan,560,1040
+88,Sales visit,Outdoor Protection,Insect Repellents,Hibernator Extreme,Product brand,Blue,Sports Store,Australia,230,390
+89,Web,Personal Accessories,Product type,Polar Wave,Edge,Brass,Direct Marketing,Italy,640,1060
+90,E-mail,Golf Equipment,Navigation,TrailChef Double Flame,Product brand,Brown,Outdoors Shop,Austria,170,170
+91,Mail,Mountaineering Equipment,Watches,Polar Sun,Glacier,Brown,Golf Shop,Sweden,650,790
+92,E-mail,Personal Accessories,Watches,Star Gazer 2,Alpha,Multicolored,Golf Shop,Germany,700,1260
+93,Mail,Camping Equipment,Tools,Canyon Mule Journey Backpack,Firefly,Grey,Direct Marketing,Switzerland,130,140
+94,Fax,Outdoor Protection,Knives,EverGlow Double,Husky,Black,Type,Mexico,320,350
+95,Telephone,Golf Equipment,Insect Repellents,Ranger Vision,Star,Pink,Eyewear Store,United Kingdom,370,580
+96,Mail,Personal Accessories,Sleeping Bags,Trendi,Trakker,Multicolored,Warehouse Store,Sweden,580,990
+97,E-mail,Mountaineering Equipment,Tools,Canyon Mule Weekender Backpack,Antoni,Silver,Eyewear Store,Australia,420,620
+98,Sales visit,Camping Equipment,First Aid,Star Gazer 2,Hibernator,Yellow,Department Store,Belgium,430,860
+99,Sales visit,Golf Equipment,Navigation,Granite Axe,Product brand,Brass,Eyewear Store,Austria,290,460
+100,Special,Outdoor Protection,Insect Repellents,Mountain Man Combination,Antoni,Beige,Outdoors Shop,Austria,630,1200
+101,Mail,Outdoor Protection,Lanterns,Opera Vision,Alpha,Black,Warehouse Store,Netherlands,240,330
+102,Mail,Outdoor Protection,Binoculars,Seeker 50,Alpha,Orange,Eyewear Store,Denmark,250,300
+103,Web,Outdoor Protection,First Aid,Sky Pilot,Blue Steel,Brown,Warehouse Store,Country,50,50
+104,Mail,Mountaineering Equipment,First Aid,BugShield Natural,Star,Clear,Department Store,Germany,130,200
+105,Special,Outdoor Protection,Woods,Polar Wave,Antoni,Beige,Outdoors Shop,Mexico,150,240
+106,Mail,Camping Equipment,Sunscreen,Granite Chalk Bag,Xray,Blue,Outdoors Shop,Austria,320,370
+107,Web,Camping Equipment,Tents,Edge Extreme,Xray,White,Department Store,Germany,140,220
+108,E-mail,Camping Equipment,Packs,Lady Hailstorm Steel Irons,Epoch,Yellow,Direct Marketing,Belgium,380,560
+109,Web,Outdoor Protection,First Aid,Hailstorm Titanium Irons,BugShield,Black,Sports Store,Country,130,230
+110,Special,Mountaineering Equipment,Rope,Hailstorm Steel Irons,Glacier,Beige,Eyewear Store,France,100,180
+111,Fax,Golf Equipment,Safety,BugShield Extreme,Sun,Pink,Direct Marketing,Korea,130,140
+112,Telephone,Camping Equipment,Irons,Granite Belay,Canyon Mule,Camouflage,Eyewear Store,United States,660,810
+113,Mail,Outdoor Protection,Cooking Gear,Mountain Man Digital,Blue Steel,Yellow,Warehouse Store,Denmark,80,120
+114,Special,Outdoor Protection,Sleeping Bags,Seeker Mini,Product brand,Black,Warehouse Store,Mexico,130,190
+115,Sales visit,Personal Accessories,Packs,Single Edge,Course Pro,Camouflage,Direct Marketing,United States,350,480
+116,Telephone,Personal Accessories,Packs,Hailstorm Titanium Irons,Trakker,Ash,Sports Store,Austria,260,280
+117,Mail,Camping Equipment,Woods,Sam,Glacier,Dark Blue,Equipment Rental Store,Spain,540,690
+118,Sales visit,Mountaineering Equipment,Rope,Kodiak,Edge,Black,Sports Store,United States,160,170
+119,Special,Personal Accessories,Tools,Glacier GPS,Star,Red,Type,Italy,200,210
+120,Web,Camping Equipment,Golf Accessories,Trendi,Seeker,Yellow,Direct Marketing,Sweden,180,190
+121,E-mail,Camping Equipment,Sleeping Bags,Hailstorm Steel Irons,Trakker,Yellow,Sports Store,Canada,250,250
+122,Mail,Mountaineering Equipment,Tents,Sun Shelter 15,Seeker,Dark Blue,Golf Shop,Mexico,10,20
+123,Mail,Outdoor Protection,Safety,Opera Vision,Relax,Bronze,Department Store,Finland,420,640
+124,E-mail,Golf Equipment,Tools,Course Pro Golf Bag,Blue Steel,Ash,Outdoors Shop,China,400,760
+125,E-mail,Personal Accessories,Cooking Gear,Polar Sun,Mountain Man,Brown,Golf Shop,Spain,730,980
+126,Mail,Personal Accessories,Woods,Firefly 2,Xray,Bronze,Direct Marketing,Canada,700,1010
+127,Telephone,Mountaineering Equipment,Rope,Husky Harness Extreme,Epoch,Blue,Warehouse Store,Denmark,370,660
+128,E-mail,Camping Equipment,Climbing Accessories,Granite Chalk Bag,BugShield,Unspecified,Type,Switzerland,310,580
+129,Sales visit,Golf Equipment,Binoculars,Infinity,Sun,Red,Warehouse Store,Australia,490,660
+130,Mail,Personal Accessories,Sunscreen,Blue Steel Putter,Seeker,Light Blue,Eyewear Store,Spain,270,270
+131,Sales visit,Camping Equipment,Safety,Insect Bite Relief,Husky,Pink,Eyewear Store,France,540,910
+132,Sales visit,Personal Accessories,Knives,Zone,EverGlow,Black,Type,Country,190,310
+133,E-mail,Camping Equipment,Tents,Star Lite,EverGlow,Brass,Eyewear Store,Spain,300,440
+134,Telephone,Mountaineering Equipment,Sleeping Bags,Star Dome,Alpha,Red,Golf Shop,Canada,350,680
+135,Web,Personal Accessories,Knives,Lux,Blue Steel,Yellow,Outdoors Shop,Korea,360,550
+136,Fax,Outdoor Protection,Binoculars,Star Gazer 3,Relax,Light Blue,Outdoors Shop,Mexico,220,310
+137,E-mail,Mountaineering Equipment,Tents,Polar Sports,Husky,Mahogany,Type,Italy,670,1320
+138,Telephone,Camping Equipment,Putters,Venue,Hailstorm,Grey,Equipment Rental Store,China,320,570
+139,Web,Camping Equipment,Sleeping Bags,Lady Hailstorm Titanium Irons,Extreme,Camouflage,Equipment Rental Store,China,120,150
+140,Fax,Golf Equipment,Safety,Lux,Mountain Man,Blue,Direct Marketing,Country,450,460
+141,Sales visit,Camping Equipment,Navigation,Fairway,Canyon Mule,Bronze,Golf Shop,Japan,10,10
+142,Fax,Outdoor Protection,Climbing Accessories,Granite Extreme,Hibernator,White,Direct Marketing,Austria,170,210
+143,Mail,Outdoor Protection,Putters,Sun Shelter Stick,Alpha,Camouflage,Type,Singapore,420,720
+144,Fax,Camping Equipment,Product type,Trendi,Epoch,Bronze,Equipment Rental Store,Singapore,230,380
+145,Fax,Golf Equipment,Irons,Inferno,Xray,Yellow,Equipment Rental Store,Country,660,1300
+146,Sales visit,Personal Accessories,Tents,Star Lite,Relax,Ash,Eyewear Store,France,420,830
+147,Sales visit,Golf Equipment,Lanterns,Bear Edge,TrailChef,Red,Golf Shop,Austria,400,530
+148,Telephone,Golf Equipment,Watches,Mountain Man Deluxe,Hailstorm,Yellow,Type,Canada,230,390
+149,Special,Outdoor Protection,Packs,Sun Shelter Stick,Hibernator,Blue,Eyewear Store,Country,310,600
+150,Fax,Personal Accessories,Safety,Course Pro Umbrella,Hailstorm,Orange,Sports Store,United Kingdom,100,180
+151,Sales visit,Personal Accessories,Eyewear,Cat Eye,Edge,Brass,Eyewear Store,Italy,700,940
+152,Mail,Outdoor Protection,First Aid,Trail Scout,Firefly,Product color,Department Store,Australia,30,40
+153,Fax,Outdoor Protection,Sleeping Bags,Compact Relief Kit,EverGlow,Camouflage,Equipment Rental Store,Germany,210,280
+154,Web,Golf Equipment,Woods,Husky Harness Extreme,TrailChef,Brown,Direct Marketing,Switzerland,0,0
+155,E-mail,Personal Accessories,Cooking Gear,Fairway,Edge,Brown,Equipment Rental Store,Australia,520,1030
+156,E-mail,Personal Accessories,Tools,Product,TrailChef,Orange,Equipment Rental Store,Korea,390,740
+157,Special,Personal Accessories,Insect Repellents,Course Pro Golf Bag,Glacier,Clear,Direct Marketing,Japan,450,650
+158,Telephone,Outdoor Protection,Product type,BugShield Lotion,Granite,Light Blue,Department Store,Finland,510,850
+159,Fax,Outdoor Protection,Watches,TrailChef Water Bag,Relax,Dark Blue,Eyewear Store,Denmark,640,1070
+160,Special,Mountaineering Equipment,First Aid,Auto Pilot,Glacier,Brown,Warehouse Store,Australia,700,1260
+161,Mail,Outdoor Protection,Safety,Seeker 35,Xray,Brass,Outdoors Shop,Denmark,510,670
+162,Fax,Mountaineering Equipment,Sleeping Bags,Lady Hailstorm Titanium Woods Set,Trakker,Red,Eyewear Store,United Kingdom,570,750
+163,Special,Golf Equipment,Knives,Husky Rope 100,Blue Steel,Silver,Outdoors Shop,China,110,180
+164,E-mail,Camping Equipment,Insect Repellents,Ranger Vision,Epoch,Multicolored,Type,Australia,280,350
+165,Telephone,Outdoor Protection,Sleeping Bags,Sun Blocker,Polar,Brass,Department Store,Germany,170,280
+166,E-mail,Personal Accessories,Tents,Husky Rope 200,Firefly,Clear,Direct Marketing,Canada,250,400
+167,Fax,Personal Accessories,Navigation,BugShield Extreme,Blue Steel,Mahogany,Direct Marketing,Austria,200,400
+168,Mail,Outdoor Protection,Safety,Astro Pilot,Hailstorm,Dark Blue,Equipment Rental Store,Singapore,50,80
+169,E-mail,Personal Accessories,Tools,Seeker 50,Hibernator,Mahogany,Outdoors Shop,Brazil,410,700
+170,Special,Personal Accessories,Packs,Dante,Relief,White,Type,Singapore,630,730
+171,Mail,Outdoor Protection,Tents,Hibernator Pad,Epoch,Pink,Eyewear Store,Switzerland,160,190
+172,Telephone,Personal Accessories,Sleeping Bags,Hailstorm Steel Woods Set,Granite,Pink,Outdoors Shop,Denmark,400,410
+173,Telephone,Personal Accessories,Knives,Husky Rope 50,Xray,Multicolored,Warehouse Store,France,500,890
+174,Sales visit,Personal Accessories,Product type,Sun Shelter Stick,Extreme,Grey,Outdoors Shop,Spain,70,120
+175,E-mail,Camping Equipment,Product type,Sun Shelter 30,EverGlow,Bronze,Outdoors Shop,Brazil,300,420
+176,Sales visit,Golf Equipment,Lanterns,Mountain Man Digital,Relax,Brass,Direct Marketing,Japan,290,360
+177,Sales visit,Mountaineering Equipment,Lanterns,Granite Signal Mirror,Product brand,Dark Blue,Direct Marketing,Mexico,380,620
+178,Web,Golf Equipment,Binoculars,Zone,Star,White,Equipment Rental Store,Brazil,460,570
+179,Telephone,Golf Equipment,Woods,Compact Relief Kit,Mountain Man,Camouflage,Warehouse Store,Belgium,350,640
+180,Sales visit,Outdoor Protection,Eyewear,Compact Relief Kit,Product brand,Purple,Eyewear Store,China,510,970
+181,E-mail,Outdoor Protection,Safety,Sun Shelter 30,Relief,Pink,Department Store,Germany,220,420
+182,Fax,Golf Equipment,Golf Accessories,Hibernator Camp Cot,Extreme,Silver,Direct Marketing,Australia,640,750
+183,Mail,Outdoor Protection,Insect Repellents,Firefly Climbing Lamp,Edge,Beige,Golf Shop,Belgium,640,740
+184,Telephone,Personal Accessories,Golf Accessories,Hibernator Lite,Granite,Mahogany,Department Store,Country,170,180
+185,Fax,Outdoor Protection,Irons,Flicker Lantern,Mountain Man,Brass,Eyewear Store,Finland,550,550
+186,Telephone,Mountaineering Equipment,Woods,Max Gizmo,Mountain Man,Mahogany,Golf Shop,Canada,500,570
+187,Sales visit,Outdoor Protection,Insect Repellents,Granite Chalk Bag,Granite,Ash,Outdoors Shop,France,240,240
+188,Fax,Outdoor Protection,Woods,Bella,Glacier,Red,Warehouse Store,Denmark,520,630
+189,Special,Camping Equipment,Irons,Max Gizmo,Granite,Brown,Eyewear Store,Canada,20,20
+190,Web,Outdoor Protection,Knives,Blue Steel Putter,Xray,Beige,Sports Store,Denmark,740,1370
+191,Sales visit,Outdoor Protection,Tools,TrailChef Cup,Hailstorm,Brass,Department Store,Country,90,170
+192,Special,Golf Equipment,Golf Accessories,Canyon Mule Extreme Backpack,Edge,Green,Outdoors Shop,Belgium,500,800
+193,Telephone,Mountaineering Equipment,Cooking Gear,Course Pro Umbrella,Star,Blue,Outdoors Shop,Germany,390,500
+194,Mail,Golf Equipment,Watches,Hailstorm Titanium Woods Set,TrailChef,Blue,Equipment Rental Store,China,100,170
+195,Mail,Mountaineering Equipment,Putters,Firefly Multi-light,Mountain Man,Black,Sports Store,Japan,610,1100
+196,E-mail,Camping Equipment,Insect Repellents,Kodiak,Relax,Camouflage,Equipment Rental Store,France,470,640
+197,Web,Camping Equipment,Tools,Sun Shelter 30,Extreme,Blue,Department Store,Finland,340,400
+198,Telephone,Golf Equipment,Cooking Gear,Granite Extreme,Blue Steel,Camouflage,Equipment Rental Store,France,720,1090
+199,Fax,Camping Equipment,Cooking Gear,Seeker 35,Extreme,Green,Type,Switzerland,140,220
+200,Web,Outdoor Protection,Lanterns,Capri,Epoch,White,Direct Marketing,France,480,750
