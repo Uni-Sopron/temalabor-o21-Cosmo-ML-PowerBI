@@ -111,7 +111,7 @@ Jövőbe mutató predikció készítése során historikus adatok felhasználás
 Fontos szempont, hogy minél nagyobb időtávot figyelünk annál nagyobb a tévesztés és pontatlanság esélye, így túl nagy időtávokat nem érdemes figyelni. Továbbá adataink periodikusságának függvényében érdemes az időtávot kijelölni.
 
 Az előrejelzési feladathoz felhasznált forrásunk [repülési adatok](https://www.kaggle.com/rakannimer/air-passengers)at használt fel.
-A forrásfájlból manuálisan létrehoztam egy Train és egy Test adatsort. A Train adatsornál pár hónapot kivettem, ugyanis az ellenőrzéshez az utolsó pár hónapból szükségvalós, illetve előrejelzett adatokra is. Így jól szemléltethető, mennyire is tér el a modell által kiértékelt Prediction a valós elvárásoktól. A Test adatok esetében pedig további hónapokatadtam hozzá, null értékekkel.
+A forrásfájlból manuálisan létrehoztunk egy Train és egy Test adatsort. A Train adatsornál pár hónapot kivettünk, ugyanis az ellenőrzéshez az utolsó pár hónapból szükség volt valós, illetve előrejelzett adatokra is. Így jól szemléltethető, mennyire is tér el a modell által kiértékelt Prediction a valós elvárásoktól.
 
 ## Integrációs lehetőségek
 
