@@ -183,7 +183,7 @@ const Automl = () => {
                 <img src={require("../../images/automl_doc/dataflow.png")} width="80%" alt="" />
             </div>
 
-            <h3>Vizualizáció</h3>
+            <h4>Vizualizáció</h4>
             <ul>
                 <li>Adatok elérése</li>
                 <li>Modell kimenete</li>
