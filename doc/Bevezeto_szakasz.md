@@ -1,3 +1,28 @@
+# Követelmények
+
+Kutatásunk elvégzéséhez első körben szükségünk volt egy felületre, ahol képesek voltunk kollaborálni és megosztani
+
+-
+- Power BI Desktop szoftverre (verziószám: 2.100.1401.0)
+- Service elérésre és ahhoz tartozó fiókokra, licenszekre
+-
+
+## Andor
+
+## Balázs
+
+## Ádám
+
+# Technológiák, Tech Stack
+
+Általános
+
+## Andor
+
+## Balázs
+
+## Ádám
+
 # Munkamenet és -felosztás
 
 A munkamenet általánosan heti meetingeken került egyeztetésre külső konzulensünk, Edelényi Márton jelenlétében. Ezen felül a csoporttagok között tartottunk még meetingeket, általában legalább heti egyet, hogy egyeztessük ki hogyan áll és ki milyen problémákba futott bele, észrevételek egyeztetésére, továbbá hogy képesek legyünk olyan dolgokat is észrevenni, amelyeket egyedül nem tudnánk. Kutatásunk hétről hétre bővült, folyamatos egyeztetések és ellenőrzések útján.
@@ -72,10 +97,41 @@ A munka utolsó szakaszán a demo elkészítése során kiválasztottunk egy oly
 
 ## Mini projektek
 
-Mini projektjeink során egyénileg vizsgáltuk meg
+Mini projektjeink során egyénileg oldottuk meg a Machine Learning-gel kapcsolatos feladatokat a különböző tehchnológiák segítségével. A kutatómunka során csoportunk célja első körben a Power Bi-ban való alkalmazhazóság vizsgálata volt. A megvalósításhoz szükségünk volt olyan adathalmazokra, amelyek nagy volumenűek rekordok tekintetében, mivel az algoritmus tanításához erre mindenképp szükség van. Mivel az adathalmazok gondos kiválasztáson estek át, így már előre tisztában voltunk azok pontos felépítésével és tulajdonságaival.
 
-### Osztályozási probléma
+### Osztályozási feladat
 
-### Előrejelzési probléma
+Bináris osztályozás estében egy adott tulajdonságot (függő változó) prediktáltunk a modell segítségével, más, előre kiválasztott tulajdonsághalmaz (független változók) alapján. Az algoritmus betanítása után képes egy, a modellhez használt tulajdonsághalmazzal rendelkező adatsorról predikciót készíteni, aminek eredménye egy pozitív és negatív osztályra bontott sorozat. A kimenetel annak függvényében változik, hogy a függő és független változók kapcsolata mennyire erős. Fontos szempont a független változók száma, mivel itt általában komplexebb összefüggéseket keresünk, ugyanakkor a túl sok szempont kiválasztása során a modell már nem fog összefüggéseket találni.
+
+Szintén figyelni kell arra, hogy a kiválasztott tulajdonság besorolása négy féleképpen végződhet:
+
+- True positive (az a kimenetel, ahol a modell jól becsüli meg a pozitív osztályt)
+- False positive (az a kimenetel, ahol a modell rosszul becsüli meg a pozitív osztályt)
+- True negative (az a kimenetel, ahol a modell jól becsüli meg a negatív osztályt)
+- False negative (az a kimenetel, ahol a modell rosszul becsüli meg a negatív osztályt)
+
+### Előrejelzési feladat
+
+Jövőbe mutató predikció készítése során historikus adatok felhasználásával egy adott tulajdonság jövőbeli alakulását becsültettük meg algoritmusunk segítségével, aminek eredménye egy sorozat. A folyamat úgy zajlik, hogy a kiválasztott tulajdonság alapján becslést készít a modell, amihez megvizsgálja az adatok szezonalitását, trendjét, és a fennmaradó (nem a másik kettő komponenshez tartozó) részt majd ezt követően adott időtávra készít becslést.
+
+Fontos szempont, hogy minél nagyobb időtávot figyelünk annál nagyobb a tévesztés és pontatlanság esélye, így túl nagy időtávokat nem érdemes figyelni. Továbbá adataink periodikusságának függvényében érdemes az időtávot kijelölni.
 
 ## Integrációs lehetőségek
+
+Szintén egy nagyon fontos rész az integrációs lehetőségek és a modellek vizsgálata, mivel megoldásaink nem feltétlenül garantálják annak a Power BI teljes rendszerével (Desktop és Service) való teljes integrálhatóságát és hozzáférhetőségét, így ezeket ki kellett vizsgálnunk.
+
+Az alábbi szempontok szerint értékeltük a megoldásokat:
+
+### Elérhetőség
+
+Power BI Desktopon a Machine Learning modellek kezelése az alternatív script megoldásokkal hozzáférhető, a beépített AutoML megoldás algoritmusa kizárólag a Servicben van, így azt a Desktopban nem tudjuk elérni. Ez fordított esetben is igaz: Serviceben nem hozzáférhetőek scriptjeink, mivel azokat a Power Query Editorban ágyazzuk be, a Service Query Editorjában pedig az egyáltalán nem elérhető ez a script beágyazási lehetőség.
+
+### Menthetőség
+
+Scriptekkel létrehozott modelljeink mentésére nincs lehetőségünk, Applied Steps formájában kerül elmentésre az összes többi módosítással egyetemben, amit az adatokon végeztünk azok importálásakor (ETL folyamat). Az AutoML esetében a modell a felhőben kerül létrehozásra és ott is tárolódik, elérhető és alkalmazható más adathalmazokra is.
+
+### Frissíthetőség
+
+Az ütemezett frissítés lehetősége korlátozottan érhető el scriptek esetében: kizárólag personal data gateway segítségével tudunk ütemezetten frissíteni az adatainkon, amelyek Python vagy R scriptet használnak, mindezt úgy, hogy mind adatainknak, mind a Pythonnak / R-nek "nyilvános" beállításon kell lenniük, továbbá állandónak kell lennie a kapcsolatnak az ütemezett frissítésekhez. Ehhez értelem szerűen a personal gateway-jel rendelkező számítógépnek folyamatosan üzemelnie kell és állandó internetkapcsolat is szükséges. Természetesen a manuális megoldás, miszerint letöltjük a reportot és lokálisan módosítunk, elérhető továbbra is.
+
+Az AutoML esetében a frissítés nem teljesen egyértelmű, mivel a feltrainelt modell nem frissül, ha annak input táblája frissül, ugyanakkor, ha a modell adatfolyamát Power Query Editorral nyitjuk meg és módosítunk, akkor pedig igen. Szintén fontos megemlíteni, hogy a predikcióink a beépített lehetőség esetén automatikusan nem frissülnek, ha azok adatai igen.
