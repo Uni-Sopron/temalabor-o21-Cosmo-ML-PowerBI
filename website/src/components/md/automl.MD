@@ -63,10 +63,10 @@ A Workspace létrehozásakor meg kell adni, hogy Premium Per User licensz módot
 
 Adatok előkészítése
 
-Adatfolyam létrehozása
-Megfelelő adatok kiválasztása
-Adatok importálása az Adatfolyamba
-Adatok transzformálása
+- Adatfolyam létrehozása
+- Megfelelő adatok kiválasztása
+- Adatok importálása az Adatfolyamba
+- Adatok transzformálása
 
 Az általunk készített Workspace-ben létre kell hozni egy új Dataflow-t, ugyanis az AutoML-hez szükséges adatoknak mind a tárolása, mind az előkészítése ott történik. Dataflow létrehozása csak Serviceben lehetséges, tehát semmilyen adatelőkészítést nem tudunk végrehajtani a Desktop-on, hogy az AutoML dolgozni tudjon vele. Amennyiben Desktopon töltjük be a fájlokat, akkor csak Dataset jön létre, viszont a modellezéshez Dataflow-ra van szükségünk. A Dataset azért sem lenne megoldás, mivel a Service nem támogat adat transzformációt, ezzel szemben a Dataflow-ok esetében igen.
 Miután létrehozásra került a Dataflow, egy számunkra megfelelő adatsort kellett keresni, amelyen dolgozni lehet. A későbbiekben a használt adatsorra Dataset-ként fogok hivatkozni. Többféle Dataset-et tekintettem meg, végül kiejtettem azokat, amik különböző okokból nem voltak alkalmasak a megfelelő predikciók elkészítéséhez. A Dataseteket olyan szempontok szerint válogattuk ki, mint például, hogy, mennyi adat állt rendelkezésre, észlelhető valamilyen mintázat, periodikusság az adatsorban, megfelelő számú attribútum áll-e rendelkezésre és az attribútumok között észlelhetőek-e kapcsolatok. Így esett a választásom kerékpár eladásokat tároló adatforrás mellett.
@@ -95,14 +95,14 @@ Probléma adódott annál az esetnél, amikor több Data Source-ból kerültek b
 
 Modellezés
 
-Követelmények
-Predikciós oszlop kiválasztása
-Modell kiválasztása és konfigurálása
-Tanuláshoz szükséges attribútumok kiválasztása
-Modell tanulási idejének meghatározása
-Tanult modell teljesítménye
-Tanult modell alkalmazása
-Végleges adatfolyam
+- Követelmények
+- Predikciós oszlop kiválasztása
+- Modell kiválasztása és konfigurálása
+- Tanuláshoz szükséges attribútumok kiválasztása
+- Modell tanulási idejének meghatározása
+- Tanult modell teljesítménye
+- Tanult modell alkalmazása
+- Végleges adatfolyam
 
 Az AutoML modell létrehozása (ahogy feljebb említésre került) csak Service-ben, Prémium licesszel, Prémium Workspace-szel, azon belül pedig Dataflow-ban lehetséges. A Machine Learning során szükség van olyan Training Dataset-re, amelyen a modellt betanítatjuk. Egy már általunk készített táblán van erre lehetőségünk. Dataflow-ban vagy a Machine Learning fülre kattintva lehet elkezdeni az AutoML folyamatát, vagy pedig egy táblát kijelölve alakítjuk ki a modellt.
 Elsősorban a Classification (osztályozás) modellt szeretném bemutatni, annak elkészítését, alkalmazását, valamint eredményének kiértékelését, megjelenítését.
@@ -157,9 +157,9 @@ Végezetül az alábbi képen látható módon néz ki a Dataflow. Modell traine
 
 Vizualizáció
 
-Adatok elérése
-Modell kimenete
-Vizualizáció készítése
+- Adatok elérése
+- Modell kimenete
+- Vizualizáció készítése
 
 Az elkészült Prediction táblából nem tudunk egyből Report-ot készíteni Service-ben. Először mindenképpen Desktop-ba kell importálni, majd utána Publish-olhatjuk azt Service-be.
 A Get Data gombra kattintva láthatjuk miféle Data Source-okat használhatunk, ahonnan a fájlt el akarjuk érni. Mivel nekem a szükséges adatok Dataflow-ban van, ezért a Power BI Data Flow-ra kattintva látható, hogy milyen Dataflow-k szerepelnek a Service-ben. Majd kiválasztható, hogy mely táblákra is lesz szükség, amiket betöltés helyett akár transzformálhatunk is.
@@ -186,16 +186,16 @@ Láthatóság szempontjából a Visualizations-öknél egy kördiagramot válasz
 
 REGRESSION, FORECASTING
 
-AutoML regresszió
-Beépített előrejelzés
+- AutoML regresszió
+- Beépített előrejelzés
 
 Mivel kutatásom célja az AutoML lehetőségeinek feltárása volt, így minden modellt meg kellett vizsgálnom, amelyet a Power BI nyújtani tud. Előzőleg a Classification, mint modell elkészítése, kiértékelése, eredményének megjelenítése történt meg. Emellett egy másik modell, a Regression (regresszió) használatára is lehetőség van. Mivel hasonlóan mennek itt is végbe a folyamatok, mint a Classification-nél, ezért csak az eltérésekre szeretnék kitérni. A Regression modellel az idősoros előrejelzés lehetőségét vizsgáltam.
 A Forecasting alkalmazásához az AutoML mellett, lehetőség van a Power BI Desktop funkcióját is használni. Mindenképpen vonaldiagram vizualizációt kell használni és olyan táblákat, amik valamilyen idősoros adatokat tartalmaznak. Ha a feltételek teljesülnek, akkor a vizualizációra, a Forecasting menüpontnál Prediction-t tudunk kimutatni. Ennél a Desktop-os lehetőségnél beállíthatjuk, hogy mekkora időszakot hagyjon figyelmen kívül, valamint hány időszakonként keressen benne valamilyen mintát.
 
 Adat előkészítése
 
-Adatsor kiválasztása
-Tanuláshoz és teszteléshez adatsor összeállítása
+- Adatsor kiválasztása
+- Tanuláshoz és teszteléshez adatsor összeállítása
 
 Ehhez mindenképpen szükség volt egy olyan Dataset-re, amely tárol valamilyen oszlopot, dátumokkal, illetve ahhoz tartozó értékekkel. Ezekhez az igényekhez egy olyan adatforrásra volt szükségem, amely tartalmaz valamilyen dátummal rendelkező oszlopot és ahhoz tartozó értékoszlopot, amikre előrejelzést készíthetek.
 A forrásfájlból manuálisan kellett létrehoznom Train és egy Test adatsort. A Train adatsornál pár hónapot ki kellett vennem, ugyanis az ellenőrzéshez az utóbbi pár hónapból jó, ha van valós, illetve előrejelzett adat is. Így jól látható mennyire is tér el a modell által kiértékelt Prediction. A Test adatok esetében pedig további hónapokat kellett hozzáadnom, null értékekkel.
@@ -218,10 +218,10 @@ A modell létrehozásakor a Classification-nel (osztályok elnevezése) ellenté
 
 Vizualizáció
 
-Táblák kombinálása
-Adatok megjelenítése különböző régió alapján
-Táblák kapcsolatának kialakítása
-Predikció frissíthetősége
+- Táblák kombinálása
+- Adatok megjelenítése különböző régió alapján
+- Táblák kapcsolatának kialakítása
+- Predikció frissíthetősége
 
 A korábban említett Test és Source (eredeti, amiből törölve lett a Train adatsorhoz) adatforrásokat Append-elni (kombinálni) kell, hiszen így lehetséges a valós és az előrejelzett adatokat egyszerre megjeleníteni egy vizualizáción.
 
@@ -256,23 +256,25 @@ Miután sikeresen létrehoztam a Prediction-t tartalmazó Report-ot, jó lenne e
 Kutatásom során vegyes vélemény alakult meg bennem, hiszen a Power BI integrációja az AutoML-lel előnyöket, valamint hátrányokat is tartalmaz. Egy felsorolással szeretném szemléltetni ezeket.
 
 Power BI + AutoML előnyök:
-Elegendő az alapvető Machine Learning és statisztikai tudás
-Nem igényel kódolást
-Modellezés cross-platform módon történhet
-A Training-ről készült Report statisztikái jól szemlélteti a modell teljesítményét
-A Machine Learning model menthető, ezáltal alkalmazható más Dataset-eken is
+
+- Elegendő az alapvető Machine Learning és statisztikai tudás
+- Nem igényel kódolást
+- Modellezés cross-platform módon történhet
+- A Training-ről készült Report statisztikái jól szemlélteti a modell teljesítményét
+- A Machine Learning model menthető, ezáltal alkalmazható más Dataset-eken is
 
 Power BI + AutoML hátrányok:
-Csak Service-ben alkalmazható
-Service-ben kevesebb adatforrási lehetőség áll rendelkezésre, mint Desktop-ban
-Service: 53 darab (megszámlálva)
-Desktop: 160 darab (megszámlálva)
-A Service-ben (modellezéshez szükséges) adattranszformáció lassabb, mint Desktop-on
-Premium licensz nélkülözhetetlen a használathoz
-Adatkonverziós problémák léphetnek fel
-Modellezés testreszabhatósága korlátozott
-Nem frissül magától a modell az adatforrás frissítése után
-Report készítése Desktop-on történik (nem cross-platform, hiszen kell Windows)
+
+- Csak Service-ben alkalmazható
+- Service-ben kevesebb adatforrási lehetőség áll rendelkezésre, mint Desktop-ban
+- Service: 53 darab (megszámlálva)
+- Desktop: 160 darab (megszámlálva)
+- A Service-ben (modellezéshez szükséges) adattranszformáció lassabb, mint Desktop-on
+- Premium licensz nélkülözhetetlen a használathoz
+- Adatkonverziós problémák léphetnek fel
+- Modellezés testreszabhatósága korlátozott
+- Nem frissül magától a modell az adatforrás frissítése után
+- Report készítése Desktop-on történik (nem cross-platform, hiszen kell Windows)
 
 TODO:
 

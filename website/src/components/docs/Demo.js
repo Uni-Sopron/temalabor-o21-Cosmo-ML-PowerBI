@@ -2,6 +2,7 @@ const Demo = () => {
     return (
         <div>
             <h1 id="demo">Demo</h1>
+            <h3>Bemutatás</h3>
             <p>Csapatunk különböző kutatásainak “összeillesztése” érdekében, egy Demo projektet hoztunk létre, amely különböző módszereket, technológiákat vegyít, és mutatja meg a Power BI integrációját a Machine Learning-gel. A COSMO CONSULT által nyújtott tenanthoz kaptunk különböző e-mail címeket, így mindenki tudott külön-külön dolgozni, nem befolyásolva egymás munkáját.</p>
             <p>Milyen témákat kerülnek majd elő:</p>
             <ul>
@@ -23,8 +24,9 @@ const Demo = () => {
                         <li>Az osztályozási modell alkalmazása</li>
                         <li>Az idősoros előrejelzési modell alkalmazása</li>
                     </ul></li>
+                <li>Megosztás</li>
             </ul>
-            <p>Felhasznált technológiák</p>
+            <h4>Felhasznált technológiák</h4>
             <p>Az bemutatott Demoban Forecast, illetve Classification problémákat oldunk meg az általunk kiválasztott adatsoron, amely a későbbiekben Dataset-ként lesz említve. Ebben a projektben az alábbi három technológiát használtuk fel a modellezéshez:</p>
             <ul>
                 <li>AutoML</li>
@@ -38,7 +40,7 @@ const Demo = () => {
                 <img src={require("../../images/demo/onedrive_dataset.png")} width="80%" alt="" />
             </div>
 
-            <p>Adatsorral kapcsolatos teendők</p>
+            <h4>Adatsorral kapcsolatos teendők</h4>
             <ul>
                 <li>Adatsor kiválasztása</li>
                 <li>Betanulási adatsor előkészítése</li>
@@ -61,7 +63,7 @@ const Demo = () => {
             <p>BALÁZS KÓD CLASSIFICATION TEST LEGYÁRTÁSÁHOZ</p>
             <p>A Forecasting modell alkalmazása során viszont semmilyen plusz Dataset-re nem volt szükség, hiszen a dátumokat tartozó táblához csak további értékeket pakol hozzá, amely az előrejelzést szolgálja.</p>
             <p>KÉP TÁBLÁKRÓL</p>
-            <p>Munkamenet</p>
+            <h4>Munkamenet</h4>
             <ul>
                 <li>Modellezési technológiák felosztása</li>
                 <li>Az osztályozási modell alkalmazása</li>
@@ -82,7 +84,7 @@ const Demo = () => {
                 <img src={require("../../images/demo/training_datasource.png")} width="80%" alt="" />
             </div>
 
-            <p>Megosztás</p>
+            <h4>Megosztás</h4>
             <p>Miután sikeresen elkészültünk külön-külön a feladatokkal, a megosztással kapcsolatos kérdésekre kerestük a válaszokat. A létrejött Reportok-nál, akár külön is, lehetőség van exportálni az egész jelentést úgy, hogy megtartsák az interaktív képességüket. Ez tűnt számunkra a legvalószínűbbnek, hiszen az IFRAME segítségével be lehet ágyazni html kódokba, emellett bárki megtekintheti azt. Míg más lehetőségeket vizsgálva, azok azért nem lettek volna megfelelőnek, hiszen mindenképpen rendelkeznie kell fióknak, annak aki meg szeretné a jelentést tekinteni. Hogy a megosztás maga megvalósuljon, elsősorban a tenant admin felhasználóval kellett engedélyezni a beágyazott kód létrehozását, továbbá a jelentésben létrehozott térkép vizuális megjelenítését</p>
 
             <div align="center">
@@ -91,9 +93,23 @@ const Demo = () => {
 
             <p>miről csináltunk classificationt, forecastet hogyan használtuk fel a technológiákat szükséges képek?</p>
 
-            <p align="center">
+            <h3>Elkészült jelentések különböző Machine Learning technológiákkal</h3>
+
+            <div align="center">
                 <iframe title="demo_BA - Page 1" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiZGYxYzZkNjgtZjc3Zi00Yjc2LWFiOWQtNmYwYWIxZWZiYWY5IiwidCI6ImFlOTMwODk5LTAyMTEtNDQ2Yi04NmZkLTI5MDI3ZDE1NGViMCIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
-            </p>
+                <p>
+                    Classification AutoML technológiával
+                </p>
+                <iframe title="demo_BJ - Sales forecast" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiZmFjNjZhMTAtYTFkZS00ZDA3LTllODEtNjM1ZWZmM2JlNzUwIiwidCI6ImFlOTMwODk5LTAyMTEtNDQ2Yi04NmZkLTI5MDI3ZDE1NGViMCIsImMiOjl9&pageName=ReportSection4ebc0b65c628568af438" frameborder="0" allowFullScreen="true"></iframe>
+                <p>
+                    Forecasting R technológiával
+                </p>
+                <iframe title="demo_KA - Sales report" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiMTcwNTQ4ODgtNDQxZC00NDI2LWJmMGItOTliMmU2YjgzM2EzIiwidCI6ImFlOTMwODk5LTAyMTEtNDQ2Yi04NmZkLTI5MDI3ZDE1NGViMCIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+                <p>
+                    Forecasting Python Technológiával
+                </p>
+            </div>
+
             <p>Adatforrás: <a href="https://relational.fit.cvut.cz/dataset/GOSales">Dataset</a></p>
             <p>Tudásanyag források:</p>
 
