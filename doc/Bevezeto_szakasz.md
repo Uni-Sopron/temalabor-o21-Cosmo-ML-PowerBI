@@ -25,20 +25,8 @@ Kutatásunk elvégzéséhez első körben szükségünk volt egy felületre, aho
 
 # Munkamenet és -felosztás
 
-A munkamenet általánosan heti meetingeken került egyeztetésre külső konzulensünk, Edelényi Márton jelenlétében. Ezen felül a csoporttagok között tartottunk még meetingeket, általában legalább heti egyet, hogy egyeztessük ki hogyan áll és ki milyen problémákba futott bele, észrevételek egyeztetésére, továbbá hogy képesek legyünk olyan dolgokat is észrevenni, amelyeket egyedül nem tudnánk. Kutatásunk hétről hétre bővült, folyamatos egyeztetések és ellenőrzések útján.
-Az első feladatunk az információgyűjtés volt, ami eleinte a Power BI-ra fókuszált. Azért, hogy kiismerjük magunkat a Power BI nyújtotta lehetőségek között, szükségünk volt az alábbiak ismeretére:
-
-- Power BI Desktop működése
-- Power BI Service működése
-- Licensz típusok és azok ismérvei
-- Munkafolyamatok
-
-Azért, hogy minden a vártaknak megfelelően működjön, így a fentiek közül mindent ki is próbáltunk, volt, amit többször is, hogy teljesen biztosak lehessünk ismereteinkben.
-Ezt követően elkezdtünk a Machine Learning, azaz gépi tanulás területével foglalkozni, ehhez az alábbi koncepciókat tanulmányoztuk:
-
-- Adatelőkészítési ismeretek
-- Forecast (előrejelzés) fogalma és ismerete
-- Classification (osztályozás) fogalma és ismerete
+A kutatást a Power BI platform megismerésével kezdtük. Az első feladataink közé tartozott, hogy utánanézzünk, pontosan milyen szolgáltatásokra is képes a szoftver, milyen licenszekkel lehet dolgozni. Ehhez megfelelő dokumentációt a Power BI-t fejlesztő cég, a Microsoft oldalán találtunk. Mivel dolgozatunk témája a Power BI integrációs lehetőségei a Machine Learning-gel, ezért természetesen a Machine Learning fogalmának, illetve az ahhoz kapcsolódó tudásanyagnak is utána kellett néznünk, amelyet az IBM weboldaláról elérhető dokumentumok segítségével tettünk meg, hiszen ott nagyszerű összegzést kapunk a témáról.
+A kezdeti, információgyűjtő fázis után közösen meghoztuk a döntést arról, hogy a kutatás milyen irányokba mozduljon el, milyen lehetőségeket vizsgáljunk meg és milyen mélységben.
 
 ## Irány kijelölése, munka felosztása
 
@@ -69,7 +57,9 @@ Figyelembe véve, hogy a munka egy egyetemi félév hosszára korzlátozódik, a
 ### Az időbeosztás
 
 Kutatás teljes időtartama: 15 hét
+
 Kezdés dátuma: 2021. október 14.
+
 Befejezés dátuma: 2022. január 26.
 
 Heti rendszerességű meetingjeink során mindig egy héttel előre határoztuk meg a feladatokat és hogy ki-mit csináljon, ugyanakkor nagy vonalakban rendelkeztünk egy vázlatos ütemtervvel, hogy körülbelül mikor-mit kell elvégezni és mire mennyi idő áll rendelkezésre.
@@ -97,7 +87,9 @@ A munka utolsó szakaszán a demo elkészítése során kiválasztottunk egy oly
 
 ## Mini projektek
 
-Mini projektjeink során egyénileg oldottuk meg a Machine Learning-gel kapcsolatos feladatokat a különböző tehchnológiák segítségével. A kutatómunka során csoportunk célja első körben a Power Bi-ban való alkalmazhazóság vizsgálata volt. A megvalósításhoz szükségünk volt olyan adathalmazokra, amelyek nagy volumenűek rekordok tekintetében, mivel az algoritmus tanításához erre mindenképp szükség van. Mivel az adathalmazok gondos kiválasztáson estek át, így már előre tisztában voltunk azok pontos felépítésével és tulajdonságaival.
+Mini projektjeink során egyénileg oldottuk meg a Machine Learning-gel kapcsolatos feladatokat a különböző tehchnológiák segítségével. Miután létrehozásra került a Dataflow, egy számunkra megfelelő adatsort kellett keresni, amelyen dolgozni lehet. A későbbiekben a használt adatsorra Dataset-ként hivatkozunk. Többféle Dataset-et tekintettünk meg, végül kiejtettük azokat, amik különböző okokból nem voltak alkalmasak a megfelelő predikciók elkészítéséhez.
+
+Tábla betöltése a forrásból történhet egyből, vagy valamilyen átalakítás után. Ezt nevezzük a Extract, Transfer, Load (ETL) folyamatnak. A transzformálás a Power Query nevű Tool-ban hajtható végre. Ez tűnt az egyik legnehezebb feladatnak, hiszen a tábla “kinyerése” után voltak oszlopok, amelyek teljesen más adattípusként voltak tárolva, mint amire szükségünk lett volna.
 
 ### Osztályozási feladat
 
@@ -110,11 +102,16 @@ Szintén figyelni kell arra, hogy a kiválasztott tulajdonság besorolása négy
 - True negative (az a kimenetel, ahol a modell jól becsüli meg a negatív osztályt)
 - False negative (az a kimenetel, ahol a modell rosszul becsüli meg a negatív osztályt)
 
+A Dataseteket olyan szempontok szerint válogattuk ki, mint például, hogy, mennyi adat állt rendelkezésre, észlelhető valamilyen mintázat, periodikusság az adatsorban, megfelelő számú attribútum áll-e rendelkezésre és az attribútumok között észlelhetőek-e kapcsolatok. Így esett a választásunk a [kerékpár eladások](https://github.com/BlueGranite/AI-in-a-Day/tree/master/AutoML)at tároló adatforrás mellett.
+
 ### Előrejelzési feladat
 
 Jövőbe mutató predikció készítése során historikus adatok felhasználásával egy adott tulajdonság jövőbeli alakulását becsültettük meg algoritmusunk segítségével, aminek eredménye egy sorozat. A folyamat úgy zajlik, hogy a kiválasztott tulajdonság alapján becslést készít a modell, amihez megvizsgálja az adatok szezonalitását, trendjét, és a fennmaradó (nem a másik kettő komponenshez tartozó) részt majd ezt követően adott időtávra készít becslést.
 
 Fontos szempont, hogy minél nagyobb időtávot figyelünk annál nagyobb a tévesztés és pontatlanság esélye, így túl nagy időtávokat nem érdemes figyelni. Továbbá adataink periodikusságának függvényében érdemes az időtávot kijelölni.
+
+Az előrejelzési feladathoz felhasznált forrásunk [repülési adatok](https://www.kaggle.com/rakannimer/air-passengers)at használt fel.
+A forrásfájlból manuálisan létrehoztam egy Train és egy Test adatsort. A Train adatsornál pár hónapot kivettem, ugyanis az ellenőrzéshez az utolsó pár hónapból szükségvalós, illetve előrejelzett adatokra is. Így jól szemléltethető, mennyire is tér el a modell által kiértékelt Prediction a valós elvárásoktól. A Test adatok esetében pedig további hónapokatadtam hozzá, null értékekkel.
 
 ## Integrációs lehetőségek
 
@@ -124,7 +121,7 @@ Az alábbi szempontok szerint értékeltük a megoldásokat:
 
 ### Elérhetőség
 
-Power BI Desktopon a Machine Learning modellek kezelése az alternatív script megoldásokkal hozzáférhető, a beépített AutoML megoldás algoritmusa kizárólag a Servicben van, így azt a Desktopban nem tudjuk elérni. Ez fordított esetben is igaz: Serviceben nem hozzáférhetőek scriptjeink, mivel azokat a Power Query Editorban ágyazzuk be, a Service Query Editorjában pedig az egyáltalán nem elérhető ez a script beágyazási lehetőség.
+Power BI Desktopon a Machine Learning modellek kezelése az alternatív script megoldásokkal hozzáférhető, a beépített AutoML megoldás algoritmusa kizárólag a Serviceben van, így azt a Desktopban nem tudjuk elérni. Ez fordított esetben is igaz: Serviceben nem hozzáférhetőek scriptjeink, mivel azokat a Power Query Editorban ágyazzuk be, a Service Query Editorjában pedig egyáltalán nem elérhető ez a script beágyazási lehetőség.
 
 ### Menthetőség
 
