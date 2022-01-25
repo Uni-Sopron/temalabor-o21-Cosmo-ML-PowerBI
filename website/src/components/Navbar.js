@@ -58,8 +58,8 @@ const Navbar = () => {
             {NavBarButton("Python", props.pythonRef)}
             {NavBarButton("R", props.rRef)}
             {NavBarButton("Demo", props.demoRef)}
-            {NavBarButton("Összesítő táblázat", props.osszesitoTablazatRef)}
             {NavBarButton("Befejezés", props.befejezesRef)}
+            {NavBarButton("Összesítő táblázat", props.osszesitoTablazatRef)}
         </NavStyle>
 
     )

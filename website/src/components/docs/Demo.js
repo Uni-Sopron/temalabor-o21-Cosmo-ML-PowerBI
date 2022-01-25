@@ -90,13 +90,14 @@ const Demo = () => {
                 <p>
                     Classification AutoML technológiával
                 </p>
-                <iframe title="demo_BJ - Sales forecast" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiZmFjNjZhMTAtYTFkZS00ZDA3LTllODEtNjM1ZWZmM2JlNzUwIiwidCI6ImFlOTMwODk5LTAyMTEtNDQ2Yi04NmZkLTI5MDI3ZDE1NGViMCIsImMiOjl9&pageName=ReportSection4ebc0b65c628568af438" frameborder="0" allowFullScreen="true"></iframe>
+                <iframe title="demo_BJ" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiZmFjNjZhMTAtYTFkZS00ZDA3LTllODEtNjM1ZWZmM2JlNzUwIiwidCI6ImFlOTMwODk5LTAyMTEtNDQ2Yi04NmZkLTI5MDI3ZDE1NGViMCIsImMiOjl9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
                 <p>
-                    Forecasting R technológiával
+                    Forecasting Desktop modullal (1. oldal)
+                    és R technológiával (2. oldal)
                 </p>
                 <iframe title="demo_KA - Sales report" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiMTcwNTQ4ODgtNDQxZC00NDI2LWJmMGItOTliMmU2YjgzM2EzIiwidCI6ImFlOTMwODk5LTAyMTEtNDQ2Yi04NmZkLTI5MDI3ZDE1NGViMCIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
                 <p>
-                    Forecasting Python Technológiával
+                    Forecasting Python technológiával
                 </p>
             </div>
 
