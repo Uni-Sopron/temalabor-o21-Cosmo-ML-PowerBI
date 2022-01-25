@@ -44,6 +44,8 @@ Ugyanakkor léteznek még más alternatívák is, például az [Anaconda Navigat
 
 ### Python könyvtárak
 
+A Scikit-Learn and a Statsmodels könyvtárak azért kerültek kiválasztásra, mivel a Power BI-ban használható könyvtárak száma [korlátos](https://docs.microsoft.com/en-us/power-bi/connect-data/service-python-packages-support), ML könytárak tekintetében nincs más ezen a két könyvtáron kívül. Éppen ezért a két feladathoz mindkét könyvtárból válaszottunk egy-egy, az adott feladathoz illeszkedő modellt.
+
 #### Pandas
 
 Verziószám: 1.3.4
@@ -55,17 +57,13 @@ Gyors és rugalmas adatstruktúrákat bocsát rendelkezésre, adatelemzésekhez 
 
 Verziószám: 0.24.2
 
-Egy ingyenes és algoritmusokban gazdag Python könyvtár, amely gépi tanuláshoz készült. Kutatásunk során ezt a könyvtárat a bináris osztályozáshoz használtuk fel, függvények és osztályok név szerint:
-
-- LabelEncoder (átalakítja nem szám típusú értékeinket számmá)
-- StandardScaler (standardizálás folyamatához szükséges)
-- LogisticRegression
+Egy ingyenes és algoritmusokban gazdag Python könyvtár, amely gépi tanuláshoz készült. Kutatásunk során a könyvtárból a logisztikus regressziós algoritmussal dolgoztunk, mivel ez a megoldás alkalmas leginkább egy adott létező osztály valószínűségének modellezésére. A modell a linear_model modul része.
 
 #### Statsmodels
 
 Verziószám: 0.12.2
 
-Fejlett / speciális felhasználású statisztikai és regressziós függvények átfogó gyűjteménye egyetlen Python könyvtárba tömörítve.
+Speciális felhasználású statisztikai és regressziós függvények gyűjteménye egyetlen Python könyvtárban. Az előrejelzési feladat során használtuk a könyvtár exponenciális simítás modelljét, mivel idősoros adataink voltak szezonálisan és csak egy változóval dolgoztunk. A modell a Holtwinters modul része.
 
 ### Editor
 
@@ -210,8 +208,6 @@ A scriptelés oldaláról az alábbi megkötések érvényesek ránk:
 - [R](https://docs.microsoft.com/en-us/power-bi/connect-data/service-r-packages-support)
 
 Ugyanakkor fontos megjegyezni, hogy az adatok beolvasása történhet egy előzetesen módosított script feldolgozással is, tehát több munkával, de kiterjeszthető az integráció más script könyvtárakra is.
-
-Megjegyzés: a scriptekhez tartozó linkek vizualizációval kapcsolatosak, egyértelmű kijelentést nem találtunk többszörös keresés után sem arról, hogy a Power BI Query Editorjában található Python és R scriptelési lehetőség, amit mi is első helyen használtunk munkánk során, rendelkezik-e hasonló limitációkkal.
 
 ## Demo
 
