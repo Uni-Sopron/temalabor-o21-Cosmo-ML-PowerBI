@@ -1,21 +1,42 @@
 # Követelmények, Technológiák, Tech stack
 
-Kutatásunk elvégzéséhez első körben szükségünk volt egy felületre, ahol képesek voltunk kollaborálni és megosztani
+Kutatásunk elvégzéséhez első körben szükségünk volt egy felületre, ahol képesek voltunk kollaborálni és megosztani munkáinkat, továbbá tárolni minden fontos dokumentumot a kutatással kapcsolatban. Ugyanakkor kellett egy vagy több csatorna is, ahol tartani tudtuk a kapcsolatot egymással és konzulensünkkel.
 
--
-- Power BI Desktop szoftverre (verziószám: 2.100.1401.0)
-- Service elérésre és ahhoz tartozó fiókokra, licenszekre
--
+### [Power BI Service](https://powerbi.microsoft.com/hu-hu/)
 
-## Andor
+Ez a platform volt az egyik jelentős adattárolási szerepet betöltő eszközünk, mivel nem csak interaktív report szerkesztési és bővítési lehetőségek álltak rendelkezésünkre, hanem ide kerültek közzé tételre az egyes reportok, datasettek és kerültek létrehozásra a dataflow-jaink. Azure Active Directory tenant-on keresztül kaptunk hozzáférést, amelyet konzulensünk bocsájtott rendelkezésünkre.
 
-## Balázs
+### [GitHub](https://github.com/)
 
-## Ádám
+A GitHub egy hosting platform verziókövetéshez és kollaborációhoz. Mindent, ami a kutatással kapcsolatban szükséges volt (adatok, dokumentáció, reportok, weboldal), az ide került feltöltésre. Ennek elérésére egy repository-ra volt szükségünk, amit az egyetem biztosította számunkra.
+
+### [Microsoft Teams](https://www.microsoft.com/hu-hu/microsoft-teams/log-in)
+
+A Teams a folyamatos kapcsolattartás miatt került be listánkba, mivel a heti meetingjeink konzulensünkkel itt zajlottak, továbbá itt is tartottunk külön meetingeket és hoztunk létre külön csoportot, ahol szintén a témával kapcsolatos információkat osztottunk meg egymással.
+
+### [Discord](https://discord.com/)
+
+A Discord egy ingyenes VoIP alkalmazás, amelynek segítségével szintén képesek voltunk az online térben találkozni és ott is meetingelni. Az egyik nagy előny az volt, hogy egyszerre többen is oszthattunk meg képernyőt.
+
+### [Gmail](https://www.google.com/intl/hu/gmail/about/)
+
+A Gmail a Google levelező szolgáltatása, amit mi többnyire meetingjeink ütemezésére használtunk, továbbá konzulensünkkel való kapcsolattartásra.
+
+## Kutatómunka elvégzéséhez használt technológiák
+
+### [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/)
+
+Szoftver verziószáma: 2.100.1401.0 (64 bit)
+
+## AutoML követelmények
+
+## R követelmények
+
+## Python követelmények
 
 # Munkamenet és -felosztás
 
-A munkamenet általánosan heti meetingeken került egyeztetésre külső konzulensünk, Edelényi Márton jelenlétében. Ezen felül a csoporttagok között tartottunk még meetingeket, általában legalább heti egyet, hogy egyeztessük ki hogyan áll és ki milyen problémákba futott bele, észrevételek egyeztetésére, továbbá hogy képesek legyünk olyan dolgokat is észrevenni, amelyeket egyedül nem tudnánk. Kutatásunk hétről hétre bővült, folyamatos egyeztetések és ellenőrzések útján. Az első feladatunk az információgyűjtés volt, ami eleinte a Power BI-ra fókuszált.
+A munkamenet általánosan heti meetingeken került egyeztetésre külső konzulensünk, Edelényi Márton jelenlétében. Ezen felül a csoporttagok között tartottunk még meetingeket, általában legalább heti egyet, hogy egyeztessük ki hogyan áll és ki milyen problémákba futott bele, észrevételek egyeztetésére, továbbá hogy képesek legyünk olyan dolgokat is észre venni, amelyeket egyedül nem tudnánk. Kutatásunk hétről hétre bővült, folyamatos egyeztetések és ellenőrzések útján. Az első feladatunk az információgyűjtés volt, ami eleinte a Power BI-ra fókuszált.
 
 Azért, hogy kiismerjük magunkat a Power BI nyújtotta lehetőségek között, szükségünk volt az alábbiak ismeretére:
 
@@ -30,6 +51,7 @@ Ezt követően elkezdtünk a Machine Learning, azaz gépi tanulás területével
 - Forecast (előrejelzés) fogalma és ismerete
 - Classification (osztályozás) fogalma és ismerete
 
+Ahhoz, hogy ki tudjunk próbálni mindent, amit elsajátítottunk, konzulensünk rendelkezésünkre bocsájtott hozzáféréseket egy Azure Active Directory tenant (bérlő) keretein belül, így képesek voltunk a kapott fiókok segítségével a Power BI-hoz Servicen is kollaborálni és megosztani, továbbá Desktopon készített reportjainkat is közzé tenni a felhőben.
 A kezdeti, információgyűjtő fázis után közösen meghoztuk a döntést arról, hogy a kutatás milyen irányokba mozduljon el, milyen lehetőségeket vizsgáljunk meg és milyen mélységben.
 
 ## Irány kijelölése, munka felosztása
@@ -100,7 +122,7 @@ Szintén figyelni kell arra, hogy a kiválasztott tulajdonság besorolása négy
 - True negative (az a kimenetel, ahol a modell jól becsüli meg a negatív osztályt)
 - False negative (az a kimenetel, ahol a modell rosszul becsüli meg a negatív osztályt)
 
-A dataseteket olyan szempontok szerint válogattuk ki, mint például, hogy, mennyi adat állt rendelkezésre, észlelhető valamilyen mintázat, periodikusság az adatsorban, megfelelő számú attribútum áll-e rendelkezésre és az attribútumok között észlelhetőek-e kapcsolatok. Így esett a választásunk a [kerékpár eladások](https://github.com/BlueGranite/AI-in-a-Day/tree/master/AutoML)at tároló adatforrásra.
+A dataseteket olyan szempontok szerint válogattuk ki, mint például, hogy mennyi adat állt rendelkezésre, észlelhető valamilyen mintázat, periodikusság az adatsorban, megfelelő számú attribútum áll-e rendelkezésre és az attribútumok között észlelhetőek-e kapcsolatok. Így esett a választásunk a [kerékpár eladások](https://github.com/BlueGranite/AI-in-a-Day/tree/master/AutoML)at tároló adatforrásra.
 
 ### Előrejelzési feladat
 
@@ -110,7 +132,7 @@ Fontos szempont, hogy minél nagyobb időtávot figyelünk annál nagyobb a tév
 
 Az előrejelzési feladathoz felhasznált forrásunk [repülési adatok](https://www.kaggle.com/rakannimer/air-passengers)ból tevődött össze.
 
-## Integrációs lehetőségek
+## Integrációs lehetőségek és a modell vizsgálata
 
 Szintén egy nagyon fontos rész az integrációs lehetőségek és a modellek vizsgálata, mivel megoldásaink nem feltétlenül garantálják annak a Power BI teljes rendszerével (Desktop és Service) való teljes integrálhatóságát és hozzáférhetőségét, így ezeket ki kellett vizsgálnunk.
 
@@ -122,7 +144,7 @@ Az AutoML használatához mindenképpen Power BI Serviceben kell létrehoznunk m
 
 ### Frissíthetőség
 
-Az ütemezett frissítés lehetősége korlátozottan érhető el scriptek esetében: kizárólag personal data gateway segítségével tudunk ütemezetten frissíteni az adatainkon, amelyek Python vagy R scriptet használnak, mindezt úgy, hogy mind adatainknak, mind a Pythonnak / R-nek "nyilvános" beállításon kell lenniük a hitelesítés során, továbbá állandónak kell lennie a kapcsolatnak az ütemezett frissítésekhez. Ehhez értelem szerűen a personal gateway-jel rendelkező számítógépnek folyamatosan üzemelnie kell és állandó internetkapcsolat is szükséges. Természetesen a manuális megoldás, miszerint letöltjük a reportot és lokálisan módosítunk, majd frissítünk elérhető továbbra is.
+Az ütemezett frissítés lehetősége korlátozottan érhető el scriptek esetében: kizárólag personal data gateway segítségével tudunk ütemezetten frissíteni az adatainkon, amelyek Python vagy R scriptet használnak, mindezt úgy, hogy mind adatainknak, mind a Pythonnak / R-nek "nyilvános" beállításon kell lenniük a hitelesítés során, továbbá állandónak kell lennie a kapcsolatnak az ütemezett frissítésekhez. Ehhez értelemszerűen a personal gateway-jel rendelkező számítógépnek folyamatosan üzemelnie kell és állandó internetkapcsolat is szükséges. Természetesen a manuális megoldás, miszerint letöltjük a reportot és lokálisan módosítunk, majd frissítünk elérhető továbbra is.
 
 Sajnos nem teljesen egyértelmű ebben az esetben az AutoML működése, mivel a feltrainelt modell nem frissül, ha annak input táblája frissül, ugyanakkor, ha a modell adatfolyamát Power Query Editorral nyitjuk meg és módosítjuk, akkor pedig igen. Szintén fontos megemlíteni, hogy a predikcióink a beépített lehetőség esetén automatikusan nem frissülnek, ha azok adatai igen.
 
@@ -138,8 +160,12 @@ A scriptelés oldaláról az alábbi megkötések érvényesek ránk:
 - [Python](https://docs.microsoft.com/en-us/power-bi/connect-data/service-python-packages-support)
 - [R](https://docs.microsoft.com/en-us/power-bi/connect-data/service-r-packages-support)
 
-Ugyanakkor fontos megjegyezni, hogy az adatok beolvasása történhet egy előzetesen módosított script feldolgozással is, tehát több munkával, de kiterjeszthető az integráció.
+Ugyanakkor fontos megjegyezni, hogy az adatok beolvasása történhet egy előzetesen módosított script feldolgozással is, tehát több munkával, de kiterjeszthető az integráció más script könyvtárakra is.
 
 Megjegyzés: a scriptekhez tartozó linkek vizualizációval kapcsolatosak, egyértelmű kijelentést nem találtunk többszörös keresés után sem arról, hogy a Power BI Query Editorjában található Python és R scriptelési lehetőség, amit mi is első helyen használtunk munkánk során, rendelkezik-e hasonló limitációkkal.
 
 ## Demo
+
+A kutatás végét szerettük volna egy olyan bemutatóval zárni, ami betekintést enged a különböző alkalmazott technológiák eredményeibe kicsit interaktívabb formában. Ezért a Power BI Serviceben készítettünk egy közös Dashboardot, amin megtekinthetőek az egyes megoldások, továbbá egy beépített forecast lehetőség bemutatása is.
+
+![Built-in forecast](../website/src/images/demo/Demo_built-in_forecast.jpg "Beépített forecast lehetőség a Power BI-ban")
