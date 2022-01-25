@@ -2,7 +2,7 @@ const Bevezetes = () => {
     return (
         <div>
             <div>
-                <h1 id="bevezetés" align="center">Dokumentáció</h1>
+                <h1 id="bevezetés" align="center">Bevezetés</h1>
                 <br />
                 <br />
                 <p>A vállalati adatvizualizáció és -elemzés területének egyik kimagasló megoldása a <a href="https://powerbi.microsoft.com/hu-hu">Microsoft Power BI</a>, ami a 2021-es évben is nagy népszerűségnek örvendett.</p>
