@@ -4,7 +4,7 @@ Kutatásunk elvégzéséhez első körben szükségünk volt egy felületre, aho
 
 ### [Power BI Service](https://powerbi.microsoft.com/hu-hu/)
 
-Ez a platform volt az egyik jelentős adattárolási szerepet betöltő eszközünk, mivel nem csak interaktív report szerkesztési és bővítési lehetőségek álltak rendelkezésünkre, hanem ide kerültek közzé tételre az egyes reportok, datasettek és kerültek létrehozásra a dataflow-jaink. Azure Active Directory tenant-on keresztül kaptunk hozzáférést, amelyet konzulensünk bocsájtott rendelkezésünkre.
+Ez a platform volt az egyik jelentős adattárolási szerepet betöltő eszközünk, mivel nem csak interaktív report szerkesztési és bővítési lehetőségek álltak rendelkezésünkre, hanem ide kerültek közzé tételre az egyes reportok, datasettek és kerültek létrehozásra a dataflow-jaink. Azure Active Directory tenant-on keresztül kaptunk hozzáférést, amelyet konzulensünk bocsájtott rendelkezésünkre. Az AutoML feature csak és kizárólag itt elérhető el, továbbá az alternatív megoldások szempontjából is fontos, hiszen a Desktopban feltrainelt reportok közzétételük után itt hozzáférhetőek.
 
 ### [GitHub](https://github.com/)
 
@@ -28,38 +28,38 @@ A Gmail a Google levelező szolgáltatása, amit mi többnyire meetingjeink üte
 
 Verziószám: 2.100.1401.0 (64 bit)
 
+Míg a Service-t inkább az AutoML esetén használtuk a machine learning szempontjából, addig az főként a kollaboráció és megosztás eszköze. A Desktop alkalmazás ezzel szemben az alternatív, scriptes megoldásainknak esetében volt jelentős. Itt tudtunk beilleszteni, futtatni és tesztelni scriptjeink hatását, továbbá itt volt elérhető számunkra az eredmények kiértékelése is különböző vizualizációs lehetőségek formájában.
+
 ## AutoML követelmények
 
 ## R követelmények
 
 ## Python követelmények
 
-### Python
-
 Veriószám: 3.9.7
 
 Ahhoz, hogy el tudjunk kezdeni dolgozni szükségünk lesz egy Python interpreterre is, ehhez célszerű egy aktívan támogatott verziót letöltenünk. Alapvetően több lehetőség áll rendelkezésünkre, hiszen mind a Microsoft [Store](https://www.microsoft.com/hu-hu/store/new/games/pc)-jából elérhető számunkra, de természetesen a [hivatalos oldal](https://www.python.org/downloads/)ról is letölthetjük.
 
-Ugyanakkor léteznek még más alternatívák is, például az [Anaconda Navigator](https://anaconda.org/), amely egy Python és R nyelvhez készült disztribúció kifejezetten tudományos számításokhoz, mint például a Machine Learning. Beépített csomagkezelője segítségével megkönnyíti függőségeink kezelését, továbbá a különböző környezetek létrehozásakor különböző Python verziókkal tudunk dolgozni, ráadásul ingyenes. Ehhez a projekthez mi az Anaconda Navigator-t választottuk, amiben a base(root) környezet 3.9.7 veriójú Python interpreterét használtuk.
+Ugyanakkor léteznek még más alternatívák is, például az [Anaconda Navigator](https://anaconda.org/), amely egy Python és R nyelvhez készült disztribúció kifejezetten tudományos számításokhoz, mint például a machine learning. Beépített csomagkezelője segítségével megkönnyíti függőségeink kezelését, továbbá a különböző környezetek létrehozásakor különböző Python verziókkal tudunk dolgozni, ráadásul ingyenes. Ehhez a projekthez mi az Anaconda Navigator-t választottuk, amiben a base(root) környezet 3.9.7 veriójú Python interpreterét használtuk.
 
 ### Python könyvtárak
 
-A Scikit-Learn and a Statsmodels könyvtárak azért kerültek kiválasztásra, mivel a Power BI-ban használható könyvtárak száma [korlátos](https://docs.microsoft.com/en-us/power-bi/connect-data/service-python-packages-support), ML könytárak tekintetében nincs más ezen a két könyvtáron kívül. Éppen ezért a két feladathoz mindkét könyvtárból válaszottunk egy-egy, az adott feladathoz illeszkedő modellt.
+A Scikit-Learn and a Statsmodels könyvtárak azért kerültek kiválasztásra, mivel a Power BI-ban használható könyvtárak száma [korlátos](https://docs.microsoft.com/en-us/power-bi/connect-data/service-python-packages-support), ML könyvtárak tekintetében nincs más ezen a két könyvtáron kívül. Éppen ezért a két feladathoz mindkét könyvtárból válaszottunk egy-egy, az adott feladathoz illeszkedő modellt.
 
-#### Pandas
+#### [Pandas](https://pandas.pydata.org/)
 
 Verziószám: 1.3.4
 
 A Pandas vagy másnéven a Python adatelemző könyvtár adatok kezelésére, tisztítására, ETL folyamatok elvégzésére, továbbá idősor-specifikus igények ellátását biztosító gyűjtemény.
 Gyors és rugalmas adatstruktúrákat bocsát rendelkezésre, adatelemzésekhez elengethetetlen. A pandas kötelező ahhoz, hogy a Power BI-ban bármilyen jellegű Python scriptet tudjunk használni, hiszen a Power BI-tól az adatokat mindig DataFrame-ek formájában kapjuk meg, ami a könyvtár egyik adatstruktúrája.
 
-#### Scikit-Learn
+#### [Scikit-Learn](https://scikit-learn.org/stable/)
 
 Verziószám: 0.24.2
 
 Egy ingyenes és algoritmusokban gazdag Python könyvtár, amely gépi tanuláshoz készült. Kutatásunk során a könyvtárból a logisztikus regressziós algoritmussal dolgoztunk, mivel ez a megoldás alkalmas leginkább egy adott létező osztály valószínűségének modellezésére. A modell a linear_model modul része.
 
-#### Statsmodels
+#### [Statsmodels](https://www.statsmodels.org/stable/index.html)
 
 Verziószám: 0.12.2
 
@@ -67,9 +67,9 @@ Speciális felhasználású statisztikai és regressziós függvények gyűjtem�
 
 ### Editor
 
-Név: [VS Code](https://code.visualstudio.com/)
-Verziószám: 1.63.2 (64 bit)
-Python extension verziószáma: v2021.12.1559732655
+- Név: [VS Code](https://code.visualstudio.com/)
+- Verziószám: 1.63.2 (64 bit)
+- Python extension verziószáma: v2021.12.1559732655
 
 Noha a Power BI Desktop rendelkezik script editorral, ugyanakkor ez nem nyújt több lehetőséget számunkra, mint egy egyszerű Notepad. Éppen emiatt szükségünk volt egy editorra, amit használhatunk Python scriptjeink szerkesztéséhez. Mivel a VS Code lightweight, testreszabható, ingyenes és több munka során használtuk már, így ezt választottuk a scriptek szerekesztéséhez.
 
@@ -80,8 +80,10 @@ Ahhoz, hogy szerkesztőnk képes legyen a Python-nal hatékonyan dolgozni és me
 - Debug lehetőség
 - Kód navigáció és formázás
 - Refactorálás
-- Variable explorer (Változók állapotának és értékeinek nyomonkövetésére)
+- Variable explorer (Változók állapotának és értékeinek nyomon követesére)
 - Test explorer (Unit testek futtatásához)
+
+Munkánk jelentős részét az editorban végeztük.
 
 # Munkamenet és -felosztás
 
@@ -94,7 +96,7 @@ Azért, hogy kiismerjük magunkat a Power BI nyújtotta lehetőségek között, 
 - Licensz típusok és azok ismérvei
 - Munkafolyamatok
 
-Ezt követően elkezdtünk a Machine Learning, azaz gépi tanulás területével foglalkozni, ehhez az alábbi koncepciókat tanulmányoztuk:
+Ezt követően elkezdtünk a machine learning, azaz gépi tanulás területével foglalkozni, ehhez az alábbi koncepciókat tanulmányoztuk:
 
 - Adatelőkészítési ismeretek
 - Forecast (előrejelzés) fogalma és ismerete
@@ -108,7 +110,7 @@ A kezdeti, információgyűjtő fázis után közösen meghoztuk a döntést arr
 Figyelembe véve, hogy a munka egy egyetemi félév hosszára korlátozódik, a csoport három főből áll, alapvető statisztikai ismeretekkel rendelkezünk és a kutatás területe önmagában rendkívül tág mind horizontálisan mind vertikálisan, így az a döntés született, hogy inkább a horizontális feltérképzésre koncentrálunk:
 
 - Igyekszünk minél több lehetséges AI megoldást keresni a Power BI-jal való ötvözésre
-- Alapvető Machine Learning megoldásokat alkalmazunk, amelyek célja a megvalósíthatóság vizsgálata a Power BI-on belül
+- Alapvető machine learning megoldásokat alkalmazunk, amelyek célja a megvalósíthatóság vizsgálata a Power BI-on belül
 - Összehasonlítjuk a különböző lehetőségeket
 - Összefoglaljuk kutatásunk egy demo keretein belül
 - Dokumentáljuk eredményeinket
@@ -146,17 +148,17 @@ Alapvetően a következő volt az idő felbontása vázlatosan:
 
 ### A munka felosztása
 
-A munkák felosztását úgy oldottuk meg, hogy Machine Learning megoldásonként bontottuk fel csoportunkat, így voltak közös munkáink és önállóak is egyaránt. Az egyéni munkák során felmerülő komplikációkat és észrevételeket megosztottuk egymással a jobb hatékonyság érdekében, továbbá a külön csoport meetingjeinek aktívan segítettünk egymásnak egy-egy adott feladattal kapcsolatos probléma megoldásában.
+A munkák felosztását úgy oldottuk meg, hogy machine learning megoldásonként bontottuk fel csoportunkat, így voltak közös munkáink és önállóak is egyaránt. Az egyéni munkák során felmerülő komplikációkat és észrevételeket megosztottuk egymással a jobb hatékonyság érdekében, továbbá a külön csoport meetingjeinek aktívan segítettünk egymásnak egy-egy adott feladattal kapcsolatos probléma megoldásában.
 
-Az első szakaszban kimondottan közös munkáról beszélhetünk. Ekkor igyekeztünk csoport szinten utána járni mindennek, ami kapcsolódhat a Power BI-hoz és a Machine Learning alapjaihoz. Később az adathalmazokat is közösen kerestük, majd együtt kiválasztva a legjobbakat haladtunk tovább az egyéni feladatokra.
+Az első szakaszban kimondottan közös munkáról beszélhetünk. Ekkor igyekeztünk csoport szinten utána járni mindennek, ami kapcsolódhat a Power BI-hoz és a machine learning alapjaihoz. Később az adathalmazokat is közösen kerestük, majd együtt kiválasztva a legjobbakat haladtunk tovább az egyéni feladatokra.
 
-Békési Andor feladata volt a beépített Machine Learning lehetőség, az AutoML megismerése, alkalmazása és értékelése. Janoschek Balázs és Kakas Ádám pedig a két alternatív megoldásért feleltek, amelyek script alapúak: R és Python Machine Learning megvalósítása különböző külső könyvtárak alkalmazásának segítségével. Ezt követően mindenki kiértékelte előre egyeztetett szempontok alapján megoldásait, amit pedig végül egy közös táblázatban összegeztünk.
+Békési Andor feladata volt a beépített prémium funkció, az AutoML megismerése, alkalmazása és értékelése. Janoschek Balázs és Kakas Ádám pedig a két alternatív megoldásért feleltek, amelyek script alapúak: R és Python machine learning megvalósítása különböző külső könyvtárak alkalmazásának segítségével. Ezt követően mindenki kiértékelte előre egyeztetett szempontok alapján megoldásait, amit pedig végül egy közös táblázatban összegeztünk.
 
 A munka utolsó szakaszán a demo elkészítése során kiválasztottunk egy olyan adathalmazt, amelyen mindkét (osztályozási és előrejelzési) feladat elvégezhető egyaránt. Külön készítettük el megoldásainkat, majd közösen megbeszéltük és javítottuk azok esetleges problémáit és összesítettük őket a Power BI Serviceben.
 
 ## Mini projektek
 
-Mini projektjeink során egyénileg oldottuk meg a Machine Learning-gel kapcsolatos feladatokat a különböző technológiák segítségével. Miután létrehozásra került a dataflow, egy számunkra megfelelő adatsort kellett keresni, amelyen dolgozni lehet. Többféle adatsort tekintettünk meg, végül kiejtettük azokat, amik különböző okokból nem voltak alkalmasak a megfelelő predikciók elkészítéséhez.
+Mini projektjeink során egyénileg oldottuk meg a machine learning-gel kapcsolatos feladatokat a különböző technológiák segítségével. Miután létrehozásra került a dataflow, egy számunkra megfelelő adatsort kellett keresni, amelyen dolgozni lehet. Többféle adatsort tekintettünk meg, végül kiejtettük azokat, amik különböző okokból nem voltak alkalmasak a megfelelő predikciók elkészítéséhez.
 
 ### Osztályozási feladat
 
