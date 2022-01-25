@@ -26,13 +26,64 @@ A Gmail a Google levelező szolgáltatása, amit mi többnyire meetingjeink üte
 
 ### [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/)
 
-Szoftver verziószáma: 2.100.1401.0 (64 bit)
+Verziószám: 2.100.1401.0 (64 bit)
 
 ## AutoML követelmények
 
 ## R követelmények
 
 ## Python követelmények
+
+### Python
+
+Veriószám: 3.9.7
+
+Ahhoz, hogy el tudjunk kezdeni dolgozni szükségünk lesz egy Python interpreterre is, ehhez célszerű egy aktívan támogatott verziót letöltenünk. Alapvetően több lehetőség áll rendelkezésünkre, hiszen mind a Microsoft [Store](https://www.microsoft.com/hu-hu/store/new/games/pc)-jából elérhető számunkra, de természetesen a [hivatalos oldal](https://www.python.org/downloads/)ról is letölthetjük.
+
+Ugyanakkor léteznek még más alternatívák is, például az [Anaconda Navigator](https://anaconda.org/), amely egy Python és R nyelvhez készült disztribúció kifejezetten tudományos számításokhoz, mint például a Machine Learning. Beépített csomagkezelője segítségével megkönnyíti függőségeink kezelését, továbbá a különböző környezetek létrehozásakor különböző Python verziókkal tudunk dolgozni, ráadásul ingyenes. Ehhez a projekthez mi az Anaconda Navigator-t választottuk, amiben a base(root) környezet 3.9.7 veriójú Python interpreterét használtuk.
+
+### Python könyvtárak
+
+#### Pandas
+
+Verziószám: 1.3.4
+
+A Pandas vagy másnéven a Python adatelemző könyvtár adatok kezelésére, tisztítására, ETL folyamatok elvégzésére, továbbá idősor-specifikus igények ellátását biztosító gyűjtemény.
+Gyors és rugalmas adatstruktúrákat bocsát rendelkezésre, adatelemzésekhez elengethetetlen. A pandas kötelező ahhoz, hogy a Power BI-ban bármilyen jellegű Python scriptet tudjunk használni, hiszen a Power BI-tól az adatokat mindig DataFrame-ek formájában kapjuk meg, ami a könyvtár egyik adatstruktúrája.
+
+#### Scikit-Learn
+
+Verziószám: 0.24.2
+
+Egy ingyenes és algoritmusokban gazdag Python könyvtár, amely gépi tanuláshoz készült. Kutatásunk során ezt a könyvtárat a bináris osztályozáshoz használtuk fel, függvények és osztályok név szerint:
+
+- LabelEncoder (átalakítja nem szám típusú értékeinket számmá)
+- StandardScaler (standardizálás folyamatához szükséges)
+- LogisticRegression
+
+#### Statsmodels
+
+Verziószám: 0.12.2
+
+Fejlett / speciális felhasználású statisztikai és regressziós függvények átfogó gyűjteménye egyetlen Python könyvtárba tömörítve.
+
+### Editor
+
+Név: [VS Code](https://code.visualstudio.com/)
+Verziószám: 1.63.2 (64 bit)
+Python extension verziószáma: v2021.12.1559732655
+
+Noha a Power BI Desktop rendelkezik script editorral, ugyanakkor ez nem nyújt több lehetőséget számunkra, mint egy egyszerű Notepad. Éppen emiatt szükségünk volt egy editorra, amit használhatunk Python scriptjeink szerkesztéséhez. Mivel a VS Code lightweight, testreszabható, ingyenes és több munka során használtuk már, így ezt választottuk a scriptek szerekesztéséhez.
+
+Ahhoz, hogy szerkesztőnk képes legyen a Python-nal hatékonyan dolgozni és megkapjuk hozzá a szükséges támogatást, így telepítenünk kellett a Microsoft Python Extension-jét, ami lehetővé teszi az alábbiakat:
+
+- Intellisense (Pylance extension, ami a Python extension mellett kerül telepítésre)
+- Linting (statikus kódelemző eszköz programozási hibák megjelölésére)
+- Debug lehetőség
+- Kód navigáció és formázás
+- Refactorálás
+- Variable explorer (Változók állapotának és értékeinek nyomonkövetésére)
+- Test explorer (Unit testek futtatásához)
 
 # Munkamenet és -felosztás
 
@@ -78,11 +129,9 @@ Figyelembe véve, hogy a munka egy egyetemi félév hosszára korlátozódik, a 
 
 ### Az időbeosztás
 
-Kutatás teljes időtartama: 15 hét
-
-Kezdés dátuma: 2021. október 14.
-
-Befejezés dátuma: 2022. január 26.
+- Kutatás teljes időtartama: 15 hét
+- Kezdés dátuma: 2021. október 14.
+- Befejezés dátuma: 2022. január 26.
 
 Heti rendszerességű meetingjeink során mindig egy héttel előre határoztuk meg a feladatokat és hogy ki-mit csináljon, ugyanakkor nagy vonalakban rendelkeztünk egy vázlatos ütemtervvel, hogy körülbelül mikor-mit kell elvégezni és mire mennyi idő áll rendelkezésre.
 Alapvetően a következő volt az idő felbontása vázlatosan:
@@ -167,5 +216,3 @@ Megjegyzés: a scriptekhez tartozó linkek vizualizációval kapcsolatosak, egy�
 ## Demo
 
 A kutatás végét szerettük volna egy olyan bemutatóval zárni, ami betekintést enged a különböző alkalmazott technológiák eredményeibe kicsit interaktívabb formában. Ezért a Power BI Serviceben készítettünk egy közös Dashboardot, amin megtekinthetőek az egyes megoldások, továbbá egy beépített forecast lehetőség bemutatása is.
-
-![Built-in forecast](../website/src/images/demo/Demo_built-in_forecast.jpg "Beépített forecast lehetőség a Power BI-ban")
