@@ -40,7 +40,7 @@ Veriószám: 3.9.7
 
 Ahhoz, hogy el tudjunk kezdeni dolgozni szükségünk lesz egy Python interpreterre is, ehhez célszerű egy aktívan támogatott verziót letöltenünk. Alapvetően több lehetőség áll rendelkezésünkre, hiszen mind a Microsoft [Store](https://www.microsoft.com/hu-hu/store/new/games/pc)-jából elérhető számunkra, de természetesen a [hivatalos oldal](https://www.python.org/downloads/)ról is letölthetjük.
 
-Ugyanakkor léteznek még más alternatívák is, például az [Anaconda Navigator](https://anaconda.org/), amely egy Python és R nyelvhez készült disztribúció kifejezetten tudományos számításokhoz, mint például a machine learning. Beépített csomagkezelője segítségével megkönnyíti függőségeink kezelését, továbbá a különböző környezetek létrehozásakor különböző Python verziókkal tudunk dolgozni, ráadásul ingyenes. Ehhez a projekthez mi az Anaconda Navigator-t választottuk, amiben a base(root) környezet 3.9.7 veriójú Python interpreterét használtuk.
+Ugyanakkor léteznek még más alternatívák is, például az [Anaconda Navigator](https://anaconda.org/), amely egy Python és R nyelvhez készült disztribúció kifejezetten tudományos számításokhoz, mint például a machine learning. Beépített csomagkezelője segítségével megkönnyíti függőségeink kezelését, továbbá a különböző környezetek létrehozásakor különböző Python verziókkal tudunk dolgozni, ráadásul ingyenes. Ehhez a projekthez mi az Anaconda Navigator-t választottuk, amiben a base(root) környezet 3.9.7 verziójú Python interpreterét használtuk.
 
 ### Python könyvtárak
 
@@ -71,7 +71,7 @@ Speciális felhasználású statisztikai és regressziós függvények gyűjtem�
 - Verziószám: 1.63.2 (64 bit)
 - Python extension verziószáma: v2021.12.1559732655
 
-Noha a Power BI Desktop rendelkezik script editorral, ugyanakkor ez nem nyújt több lehetőséget számunkra, mint egy egyszerű Notepad. Éppen emiatt szükségünk volt egy editorra, amit használhatunk Python scriptjeink szerkesztéséhez. Mivel a VS Code lightweight, testreszabható, ingyenes és több munka során használtuk már, így ezt választottuk a scriptek szerekesztéséhez.
+Noha a Power BI Desktop rendelkezik script editorral, ugyanakkor ez nem nyújt több lehetőséget számunkra, mint egy egyszerű Notepad. Éppen emiatt szükségünk volt egy editorra, amit használhatunk Python scriptjeink szerkesztéséhez. Mivel a VS Code lightweight, testreszabható, ingyenes és több munka során használtuk már, így ezt választottuk a scriptek szerkesztéséhez.
 
 Ahhoz, hogy szerkesztőnk képes legyen a Python-nal hatékonyan dolgozni és megkapjuk hozzá a szükséges támogatást, így telepítenünk kellett a Microsoft Python Extension-jét, ami lehetővé teszi az alábbiakat:
 
