@@ -1,7 +1,7 @@
 const R = () => {
     return (
         <div>
-            <h1 id="r">R</h1>
+            <h1 id="r">R dokumentáció</h1>
         </div>
     )
 }

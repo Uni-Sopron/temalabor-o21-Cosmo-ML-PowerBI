@@ -53,11 +53,11 @@ const Docs = () => {
             <StyledRef ref={props.rRef} />
             <R />
 
-            <StyledRef ref={props.osszesitoTablazatRef} />
-            <OsszesitoTablazat />
-
             <StyledRef ref={props.demoRef} />
             <Demo />
+
+            <StyledRef ref={props.osszesitoTablazatRef} />
+            <OsszesitoTablazat />
 
             <StyledRef ref={props.befejezesRef} />
             <Befejezes />
