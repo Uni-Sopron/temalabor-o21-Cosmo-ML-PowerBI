@@ -1,4 +1,17 @@
+import React, { useState } from 'react';
+
 const Demo = () => {
+    const [isJavaCodeButtonSelected, setIsJavaCodeButtonSelected] = useState(false)
+
+    const handleJavaCodeButton = () => {
+        if (isJavaCodeButtonSelected === true) {
+            setIsJavaCodeButtonSelected(false)
+        }
+        else {
+            setIsJavaCodeButtonSelected(true)
+        }
+    }
+
     return (
         <div>
             <h1 id="demo">Demo</h1>
@@ -53,7 +66,14 @@ const Demo = () => {
             </div>
 
             <p>Szintén a Classification modell alkalmazásához egy olyan példa Dataset létrehozása mellett döntöttünk, amely különböző attribútumokat kombinálva jellemző rendelés típusokat tartalmaz. Ezt a Datasetet manuálisan állítottuk elő Java kóddal a demonstráció kedvéért.</p>
-            <xmp>BALÁZS KÓD CLASSIFICATION TEST LEGYÁRTÁSÁHOZ</xmp>
+            <button onClick={() => handleJavaCodeButton()}>Java kód</button>
+            {isJavaCodeButtonSelected ? (
+                <div>
+                    <iframe src={require("./JavaCode.txt")} width="70%" height="700px" title="Classification Java Code">
+                    </iframe>
+                </div>
+            ) : (<div></div>)
+            }
             <p>A Forecasting modell alkalmazása során semmilyen további Datasetre nem volt szükség, hiszen a dátumokat tároló idősoros adatokat tartalmazó táblához könnyedén és kézenfekvő módon hozzá tudtuk adni az előrejelzés értékeit is.</p>
 
             <h4>Munkamenet</h4>
@@ -106,7 +126,7 @@ const Demo = () => {
             <li><a href="https://medium.com/ibm-data-ai/unlocking-your-datas-potential-with-ibm-watson-studio-s-autoai-feature-engineering-on-relational-71a5dcac7b0d">Watson + Go sales</a></li>
             <li><a href="https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-publish-to-web">Publish to web</a></li>
 
-        </div>
+        </div >
     )
 }
 
