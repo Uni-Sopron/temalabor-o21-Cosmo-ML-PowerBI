@@ -30,11 +30,20 @@ Verziószám: 2.100.1401.0 (64 bit)
 
 Míg a Service-t inkább az AutoML esetén használtuk a machine learning szempontjából, addig az főként a kollaboráció és megosztás eszköze. A Desktop alkalmazás ezzel szemben az alternatív, scriptes megoldásainknak esetében volt jelentős. Itt tudtunk beilleszteni, futtatni és tesztelni scriptjeink hatását, továbbá itt volt elérhető számunkra az eredmények kiértékelése is különböző vizualizációs lehetőségek formájában.
 
-## AutoML követelmények
+## [AutoML](https://docs.microsoft.com/hu-hu/azure/machine-learning/concept-automated-ml) követelmények
 
-## R követelmények
+Az AutoML-lel való modellezés a Power BI Service egy szolgáltatása, így értelemszerűen csak böngészőből hajtható végre. Ezen szolgáltatás használatához szükséges Prémium licensszel rendelkeznünk, továbbá internetkapcsolattal a Service eléréséhez. A munkakörnyezet kialakítása során Premium Workspacet kell létrehozni a felhőben, ahol csak adatfolyamon belül érhető el az AutoML. Az előre jelzett adatokból való jelentések készítése érdekében Power BI Desktopra van szükség, mivel a Service nem támogatja.
 
-## Python követelmények
+## [R](https://www.r-project.org/) követelmények
+
+A scriptelési feladat alapvető követelményei közé tartozik a megfelelő IDE és platform kiválasztása. A Power BI Desktop ugyan rendelkezik egy alapvető, beépített script szerkesztőfelülettel, ez azonban semmiféle automatikus formázási lehetőséggel vagy programozást segítő dinamikus megoldással nem rendelkezik. Számos integrált fejlesztőkörnyezet támogatja az R programozási nyelvet, azonban a feladat komplexitásához mérten a legkézenfekvőbb megoldást a Visual Studio Code 1.63.2-es verziója jelentette. Ez a szoftver lehetővé tette, hogy gyorsan és egyszerűen elkezdjünk scriptelni, valamit nagyfokú testreszabhatóságot biztosít számos beépíthető plug-injével.
+
+Ezek közül a kódírás megkönnyítésére az ['R Extension for Visual Studio Code'](https://github.com/REditorSupport/vscode-R) 2.3.6-os verzióját használtuk, mely számos hasznos funkciót magába foglal, többek között szervizalapú kódanalízist, szintaxis kiemelést, package managementet, terminál-kezelést valamint vizuális adatelemzést is. Ennek jó alternatívája lehetett volna az RStudio nevű IDE, amely inkluzívan tartalmaz lehetőségeket R scriptek futtatására, buildelésére, valamint programírásra. Az egyszerűség kedvéért mi a Visual Studio Code-ot alkalmaztuk. A script interpretálásához és futtatáshoz az R standard, hivatalos 4.1.2-es verzióját használtuk.
+
+Az R beépített függvénykönyvtára számos out-of-box lehetőséget tartalmaz mind adatelőkészítési és -transzformációs feladatokhoz, mind ML algoritmusok készítéséhez. Binary classificationhöz mi a beépített [glm függvény](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/glm)t használtuk, amely generalizált lineáris modellek alkotására alkalmas. Ez a függvény nagymértékben paraméterezhető, rugalmas, valamint beépített jellege miatt kevésbé okoz kitettséget külső dependenciák felé.
+Forecastingra a 'forecast' nevű R könyvtár 8.15-ös verziója jó megoldásnak bizonyult az egyszerű kezelhetősége miatt. Ennek a könyvtárnak elsősorban a HoltWinters módszer alapú függvényeit és objektumait használtuk ki.
+
+## [Python](https://www.python.org) követelmények
 
 Veriószám: 3.9.7
 
