@@ -9,7 +9,7 @@ const NavStyle = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	background-color: rgb(247, 188, 49);
+	background-color: rgb(249, 229, 50);
     position: sticky;
     top: 0;
 `;
@@ -26,7 +26,7 @@ const Button = styled.div`
     text-decoration: none;
     text-shadow: black;
     color: black;
-    text-shadow: black 1px 0 10px;
+    text-shadow: black 1px 0 1px;
     cursor: pointer;
 
     :hover {

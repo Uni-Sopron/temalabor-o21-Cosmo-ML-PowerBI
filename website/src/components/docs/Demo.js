@@ -3,7 +3,7 @@ const Demo = () => {
         <div>
             <h1 id="demo">Demo</h1>
             <h3>Bemutatás</h3>
-            <p>Csapatunk különböző kutatásainak “összeillesztése” érdekében egy demo projektet hoztunk létre, amely különböző módszereket, technológiákat vegyít és mutatja meg a Power BI integrációját a Machine Learning-gel. A COSMO CONSULT által nyújtott tenanthoz kaptunk különböző e-mail címeket, így mindenki tudott külön-külön dolgozni, nem befolyásolva egymás munkáját.</p>
+            <p>Csapatunk különböző kutatásainak “összeillesztése” érdekében egy demo projektet hoztunk létre, amely különböző módszereket, technológiákat vegyít és mutatja meg a Power BI integrációját a Machine Learninggel. A COSMO CONSULT által nyújtott tenanthoz kaptunk különböző e-mail címeket, így mindenki tudott külön-külön dolgozni, nem befolyásolva egymás munkáját.</p>
             <p>Milyen témák kerülnek majd elő:</p>
             <ul>
                 <li>Felhasznált technológiák
@@ -40,13 +40,13 @@ const Demo = () => {
                 <li>Betanulási adatsor előkészítése</li>
                 <li>Teszt adatsor előkészítése</li>
             </ul>
-            <p>Ahhoz, hogy a kutatásunk menetének eredményét meg is tudjuk mutatni, egy megfelelő Dataset-re volt szükség, amivel a modellt be tudtuk tanítani és különféle kimutatásokat interaktívan megjeleníteni. Ezt a Dataset-et azért választottuk, mivel teljesít minden olyan feltételt, amely szükséges a Machine Learning algoritmusok bemutatásához.</p>
+            <p>Ahhoz, hogy a kutatásunk menetének eredményét meg is tudjuk mutatni, egy megfelelő Datasetre volt szükség, amivel a modellt be tudtuk tanítani és különféle kimutatásokat interaktívan megjeleníteni. Ezt a Datasetet azért választottuk, mivel teljesít minden olyan feltételt, amely szükséges a Machine Learning algoritmusok bemutatásához.</p>
 
             <div align="center">
                 <img src={require("../../images/demo/connections.png")} width="60%" alt="" />
             </div>
             <p>A Dataset része egy IBM Watson-hoz írt példa adatsornak, amely tartalmaz pluszban egy go_1k táblát, viszont nekünk erre nem volt szükségünk, ezért ezt kivettük és a kapcsolatokat újrarendeztük.</p>
-            <p>A Classification modell betanításához szükséges Dataset-en még további változtatások voltak szükségesek. Egy Custom oszlop beszúrása lehetővé tette a Prediction Outcome kiválasztását, amely a modell kimenetét határozta meg. Továbbá azokra a táblákra, amelyeknél valamilyen értéket módosítani kellett a modellezéshez, Reference táblákkal hivatkoztunk, ezáltal pedig az eredeti tábla továbbra is felhasználható maradt.</p>
+            <p>A Classification modell betanításához szükséges Dataseten még további változtatások voltak szükségesek. Egy Custom oszlop beszúrása lehetővé tette a Prediction Outcome kiválasztását, amely a modell kimenetét határozta meg. Továbbá azokra a táblákra, amelyeknél valamilyen értéket módosítani kellett a modellezéshez, Reference táblákkal hivatkoztunk, ezáltal pedig az eredeti tábla továbbra is felhasználható maradt.</p>
 
             <div align="center">
                 <img src={require("../../images/demo/custom_column.png")} width="60%" alt="" />
@@ -54,7 +54,7 @@ const Demo = () => {
 
             <p>Szintén a Classification modell alkalmazásához egy olyan példa Dataset létrehozása mellett döntöttünk, amely különböző attribútumokat kombinálva jellemző rendelés típusokat tartalmaz. Ezt a Datasetet manuálisan állítottuk elő Java kóddal a demonstráció kedvéért.</p>
             <xmp>BALÁZS KÓD CLASSIFICATION TEST LEGYÁRTÁSÁHOZ</xmp>
-            <p>A Forecasting modell alkalmazása során semmilyen további Dataset-re nem volt szükség, hiszen a dátumokat tároló idősoros adatokat tartalmazó táblához könnyedén és kézenfekvő módon hozzá tudtuk adni az előrejelzés értékeit is.</p>
+            <p>A Forecasting modell alkalmazása során semmilyen további Datasetre nem volt szükség, hiszen a dátumokat tároló idősoros adatokat tartalmazó táblához könnyedén és kézenfekvő módon hozzá tudtuk adni az előrejelzés értékeit is.</p>
 
             <h4>Munkamenet</h4>
             <ul>
@@ -62,7 +62,7 @@ const Demo = () => {
                 <li>Az osztályozási modell alkalmazása</li>
                 <li>Az idősoros előrejelzési modell alkalmazása</li>
             </ul>
-            <p>Mindenképpen különböző problémák megoldására szerettük volna alkalmazni a különböző technológiákat. Ezen okból AutoML-lel készült a Classification modell, Python+R scripttel, valamint a desktopon beépített lehetőségekkel pedig különböző forecastokat készítettünk ugyanis Python+R-nél a Forecasting jobban paraméterezhető, míg AutoML-nél egy Regressziós modellt tudunk létrehozni, amelyből kissé nehézkesen (AutoML dokumentációban a táblák összekapcsolása) lehet dinamikus Forecastot képezni. Ezzel szemben pedig az AutoML Classification modellje jobb teljesítményt nyújtott a jelentések alapján (az AutoML dokumentációban bemutatva), mint a Python+R scriptek, amiket készítettünk.</p>
+            <p>Mindenképpen különböző problémák megoldására szerettük volna alkalmazni a különböző technológiákat. Ezen okból AutoMLlel készült a Classification modell, Python+R scripttel, valamint a desktopon beépített lehetőségekkel pedig különböző Forecastokat készítettünk ugyanis Python+R-nél a Forecasting jobban paraméterezhető, míg AutoML-nél egy Regressziós modellt tudunk létrehozni, amelyből kissé nehézkesen (AutoML dokumentációban a táblák összekapcsolása) lehet dinamikus Forecastot képezni. Ezzel szemben pedig az AutoML Classification modellje jobb teljesítményt nyújtott a jelentések alapján (az AutoML dokumentációban bemutatva), mint a Python+R scriptek, amiket készítettünk.</p>
 
             <p>A Classification esetében azt a helyzetet/problémát vizsgáltuk, hogy a kedvenc kiskereskedők közül, adott jellemző rendelés típusoknál, melyeknél várhatóak olyan eladások, ahol az eladott mennyiség mértékei meghaladják az hisztorikus átlag értékét. A potenciális eladások közül meg kellett figyelni a termékjellemzőket, a rendelési módot, valamint az eladási árat, hogy melyik, milyen mértékben befolyásolta a Prediction kimenetelét.</p>
 
@@ -77,7 +77,7 @@ const Demo = () => {
             </div>
 
             <h4>Megosztás</h4>
-            <p>Miután sikeresen elkészültünk külön-külön a feladatokkal, a megosztással kapcsolatos kérdésekre kerestük a válaszokat. A létrejött Reportok-nál, akár külön is lehetőség van exportálni az egész jelentést úgy, hogy megtartsák az interaktív képességüket. Ez tűnt számunkra a legvalószínűbbnek, hiszen IFRAME segítségével be lehet ágyazni html kódba, emellett bárki megtekintheti azt. Míg más lehetőségeket vizsgálva, azok azért nem lettek volna megfelelőek, hiszen mindenképpen rendelkeznie kell egy fiókkal annak, aki meg szeretné a jelentést tekinteni. Hogy a megosztás maga megvalósuljon, elsősorban a tenant admin felhasználóval kellett engedélyezni a beágyazott kód létrehozását, továbbá a jelentésben létrehozott térkép vizuális megjelenítését.</p>
+            <p>Miután sikeresen elkészültünk külön-külön a feladatokkal, a megosztással kapcsolatos kérdésekre kerestük a válaszokat. A létrejött Reportoknál, akár külön is lehetőség van exportálni az egész jelentést úgy, hogy megtartsák az interaktív képességüket. Ez tűnt számunkra a legvalószínűbbnek, hiszen IFRAME segítségével be lehet ágyazni html kódba, emellett bárki megtekintheti azt. Míg más lehetőségeket vizsgálva, azok azért nem lettek volna megfelelőek, hiszen mindenképpen rendelkeznie kell egy fiókkal annak, aki meg szeretné a jelentést tekinteni. Hogy a megosztás maga megvalósuljon, elsősorban a tenant admin felhasználóval kellett engedélyezni a beágyazott kód létrehozását, továbbá a jelentésben létrehozott térkép vizuális megjelenítését.</p>
 
             <div align="center">
                 <img src={require("../../images/demo/export_report.png")} width="70%" alt="" />
