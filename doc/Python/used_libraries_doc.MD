@@ -109,7 +109,3 @@ A SciPy stats moduljának kiegészítésére szolgál.
 #### Matplotlib
 
 ---
-
-#### Seaborn
-
----

@@ -1,4 +1,4 @@
-# Követelmények
+# Követelmények, Technológiák, Tech stack
 
 Kutatásunk elvégzéséhez első körben szükségünk volt egy felületre, ahol képesek voltunk kollaborálni és megosztani
 
@@ -13,28 +13,28 @@ Kutatásunk elvégzéséhez első körben szükségünk volt egy felületre, aho
 
 ## Ádám
 
-# Technológiák, Tech Stack
-
-Általános
-
-## Andor
-
-## Balázs
-
-## Ádám
-
 # Munkamenet és -felosztás
 
-A kutatást a Power BI platform megismerésével kezdtük. Az első feladataink közé tartozott, hogy utánanézzünk, pontosan milyen szolgáltatásokra is képes a szoftver, milyen licenszekkel lehet dolgozni. Ehhez megfelelő dokumentációt a Power BI-t fejlesztő cég, a Microsoft oldalán találtunk. Mivel dolgozatunk témája a Power BI integrációs lehetőségei a Machine Learning-gel, ezért természetesen a Machine Learning fogalmának, illetve az ahhoz kapcsolódó tudásanyagnak is utána kellett néznünk, amelyet az IBM weboldaláról elérhető dokumentumok segítségével tettünk meg, hiszen ott nagyszerű összegzést kapunk a témáról.
+A munkamenet általánosan heti meetingeken került egyeztetésre külső konzulensünk, Edelényi Márton jelenlétében. Ezen felül a csoporttagok között tartottunk még meetingeket, általában legalább heti egyet, hogy egyeztessük ki hogyan áll és ki milyen problémákba futott bele, észrevételek egyeztetésére, továbbá hogy képesek legyünk olyan dolgokat is észrevenni, amelyeket egyedül nem tudnánk. Kutatásunk hétről hétre bővült, folyamatos egyeztetések és ellenőrzések útján. Az első feladatunk az információgyűjtés volt, ami eleinte a Power BI-ra fókuszált.
+
+Azért, hogy kiismerjük magunkat a Power BI nyújtotta lehetőségek között, szükségünk volt az alábbiak ismeretére:
+
+- Power BI Desktop működése
+- Power BI Service működése
+- Licensz típusok és azok ismérvei
+- Munkafolyamatok
+
+Ezt követően elkezdtünk a Machine Learning, azaz gépi tanulás területével foglalkozni, ehhez az alábbi koncepciókat tanulmányoztuk:
+
+- Adatelőkészítési ismeretek
+- Forecast (előrejelzés) fogalma és ismerete
+- Classification (osztályozás) fogalma és ismerete
+
 A kezdeti, információgyűjtő fázis után közösen meghoztuk a döntést arról, hogy a kutatás milyen irányokba mozduljon el, milyen lehetőségeket vizsgáljunk meg és milyen mélységben.
 
 ## Irány kijelölése, munka felosztása
 
-A harmadik héten jelöltük ki a projekt irányát, a kutatás mérföldköveit, a hátralévő idő felosztását, az egymás közötti munkamegosztást.
-
-### A projekt iránya
-
-Figyelembe véve, hogy a munka egy egyetemi félév hosszára korzlátozódik, a csoport három főből áll, alapvető statisztikai ismeretekkel rendelkezünk és a kutatás területe önmagában rendkívül tág mind horizontálisan mind vertikálisan, így az a döntés született, hogy inkább a horizontális feltérképzésre koncentrálunk:
+Figyelembe véve, hogy a munka egy egyetemi félév hosszára korlátozódik, a csoport három főből áll, alapvető statisztikai ismeretekkel rendelkezünk és a kutatás területe önmagában rendkívül tág mind horizontálisan mind vertikálisan, így az a döntés született, hogy inkább a horizontális feltérképzésre koncentrálunk:
 
 - Igyekszünk minél több lehetséges AI megoldást keresni a Power BI-jal való ötvözésre
 - Alapvető Machine Learning megoldásokat alkalmazunk, amelyek célja a megvalósíthatóság vizsgálata a Power BI-on belül
@@ -87,13 +87,11 @@ A munka utolsó szakaszán a demo elkészítése során kiválasztottunk egy oly
 
 ## Mini projektek
 
-Mini projektjeink során egyénileg oldottuk meg a Machine Learning-gel kapcsolatos feladatokat a különböző tehchnológiák segítségével. Miután létrehozásra került a Dataflow, egy számunkra megfelelő adatsort kellett keresni, amelyen dolgozni lehet. A későbbiekben a használt adatsorra Dataset-ként hivatkozunk. Többféle Dataset-et tekintettünk meg, végül kiejtettük azokat, amik különböző okokból nem voltak alkalmasak a megfelelő predikciók elkészítéséhez.
-
-Tábla betöltése a forrásból történhet egyből, vagy valamilyen átalakítás után. Ezt nevezzük a Extract, Transfer, Load (ETL) folyamatnak. A transzformálás a Power Query nevű Tool-ban hajtható végre. Ez tűnt az egyik legnehezebb feladatnak, hiszen a tábla “kinyerése” után voltak oszlopok, amelyek teljesen más adattípusként voltak tárolva, mint amire szükségünk lett volna.
+Mini projektjeink során egyénileg oldottuk meg a Machine Learning-gel kapcsolatos feladatokat a különböző technológiák segítségével. Miután létrehozásra került a dataflow, egy számunkra megfelelő adatsort kellett keresni, amelyen dolgozni lehet. Többféle adatsort tekintettünk meg, végül kiejtettük azokat, amik különböző okokból nem voltak alkalmasak a megfelelő predikciók elkészítéséhez.
 
 ### Osztályozási feladat
 
-Bináris osztályozás estében egy adott tulajdonságot (függő változó) prediktáltunk a modell segítségével, más, előre kiválasztott tulajdonsághalmaz (független változók) alapján. Az algoritmus betanítása után képes egy, a modellhez használt tulajdonsághalmazzal rendelkező adatsorról predikciót készíteni, aminek eredménye egy pozitív és negatív osztályra bontott sorozat. A kimenetel annak függvényében változik, hogy a függő és független változók kapcsolata mennyire erős. Fontos szempont a független változók száma, mivel itt általában komplexebb összefüggéseket keresünk, ugyanakkor a túl sok szempont kiválasztása során a modell már nem fog összefüggéseket találni.
+Bináris osztályozás estében egy adott tulajdonságot (függő változó) prediktálunk a modell segítségével, más, előre kiválasztott tulajdonsághalmaz (független változók) alapján. Az algoritmus betanítása után képes egy, a modellhez használt tulajdonsághalmazzal rendelkező adatsorról predikciót készíteni, aminek eredménye egy pozitív és negatív osztályra bontott sorozat. A kimenetel annak függvényében változik, hogy a függő és független változók kapcsolata mennyire erős. Fontos szempont a független változók száma, mivel itt általában komplexebb összefüggéseket keresünk, ugyanakkor a túl sok szempont kiválasztása során a modell már nem fog összefüggéseket találni.
 
 Szintén figyelni kell arra, hogy a kiválasztott tulajdonság besorolása négy féleképpen végződhet:
 
@@ -102,16 +100,15 @@ Szintén figyelni kell arra, hogy a kiválasztott tulajdonság besorolása négy
 - True negative (az a kimenetel, ahol a modell jól becsüli meg a negatív osztályt)
 - False negative (az a kimenetel, ahol a modell rosszul becsüli meg a negatív osztályt)
 
-A Dataseteket olyan szempontok szerint válogattuk ki, mint például, hogy, mennyi adat állt rendelkezésre, észlelhető valamilyen mintázat, periodikusság az adatsorban, megfelelő számú attribútum áll-e rendelkezésre és az attribútumok között észlelhetőek-e kapcsolatok. Így esett a választásunk a [kerékpár eladások](https://github.com/BlueGranite/AI-in-a-Day/tree/master/AutoML)at tároló adatforrás mellett.
+A dataseteket olyan szempontok szerint válogattuk ki, mint például, hogy, mennyi adat állt rendelkezésre, észlelhető valamilyen mintázat, periodikusság az adatsorban, megfelelő számú attribútum áll-e rendelkezésre és az attribútumok között észlelhetőek-e kapcsolatok. Így esett a választásunk a [kerékpár eladások](https://github.com/BlueGranite/AI-in-a-Day/tree/master/AutoML)at tároló adatforrásra.
 
 ### Előrejelzési feladat
 
-Jövőbe mutató predikció készítése során historikus adatok felhasználásával egy adott tulajdonság jövőbeli alakulását becsültettük meg algoritmusunk segítségével, aminek eredménye egy sorozat. A folyamat úgy zajlik, hogy a kiválasztott tulajdonság alapján becslést készít a modell, amihez megvizsgálja az adatok szezonalitását, trendjét, és a fennmaradó (nem a másik kettő komponenshez tartozó) részt majd ezt követően adott időtávra készít becslést.
+Jövőbe mutató predikció készítése során historikus adatok felhasználásával egy adott tulajdonság jövőbeli alakulását becsültettük meg algoritmusaink segítségével, amelyek eredménye egy-egy sorozat. A folyamat úgy zajlik, hogy a kiválasztott tulajdonság alapján becslést készít a modell, amihez megvizsgálja az adatok szezonalitását, trendjét, és a fennmaradó maradék részt majd ezt követően adott időtávra készít becslést.
 
 Fontos szempont, hogy minél nagyobb időtávot figyelünk annál nagyobb a tévesztés és pontatlanság esélye, így túl nagy időtávokat nem érdemes figyelni. Továbbá adataink periodikusságának függvényében érdemes az időtávot kijelölni.
 
-Az előrejelzési feladathoz felhasznált forrásunk [repülési adatok](https://www.kaggle.com/rakannimer/air-passengers)at használt fel.
-A forrásfájlból manuálisan létrehoztunk egy Train és egy Test adatsort. A Train adatsornál pár hónapot kivettünk, ugyanis az ellenőrzéshez az utolsó pár hónapból szükség volt valós, illetve előrejelzett adatokra is. Így jól szemléltethető, mennyire is tér el a modell által kiértékelt Prediction a valós elvárásoktól.
+Az előrejelzési feladathoz felhasznált forrásunk [repülési adatok](https://www.kaggle.com/rakannimer/air-passengers)ból tevődött össze.
 
 ## Integrációs lehetőségek
 
@@ -119,16 +116,30 @@ Szintén egy nagyon fontos rész az integrációs lehetőségek és a modellek v
 
 Az alábbi szempontok szerint értékeltük a megoldásokat:
 
-### Elérhetőség
+### Létrehozás, elérhetőség és menthetőség
 
-Power BI Desktopon a Machine Learning modellek kezelése az alternatív script megoldásokkal hozzáférhető, a beépített AutoML megoldás algoritmusa kizárólag a Serviceben van, így azt a Desktopban nem tudjuk elérni. Ez fordított esetben is igaz: Serviceben nem hozzáférhetőek scriptjeink, mivel azokat a Power Query Editorban ágyazzuk be, a Service Query Editorjában pedig egyáltalán nem elérhető ez a script beágyazási lehetőség.
-
-### Menthetőség
-
-Scriptekkel létrehozott modelljeink mentésére nincs lehetőségünk, Applied Steps formájában kerül elmentésre az összes többi módosítással egyetemben, amit az adatokon végeztünk azok importálásakor (ETL folyamat). Az AutoML esetében a modell a felhőben kerül létrehozásra és ott is tárolódik, elérhető és alkalmazható más adathalmazokra is.
+Az AutoML használatához mindenképpen Power BI Serviceben kell létrehoznunk modellünket egy adott workspace-en belül, míg ezzel szemben az alternatív megoldásaink csak Desktopon beilleszthetőek. Scriptekkel létrehozott modelljeink mentésére nincs lehetőségünk, Applied Steps formájában kerülnek elmentésre az összes többi módosítással egyetemben, amit az adatokon végeztünk azok átalakításakor (ETL folyamat) a Power Query Editorban. Ennek következtében az adatok frissülésekor újra lefutnak a többi lépés mellett, így noha beszélhetünk egyfajta frissülésről és menthetőségről, ugyanakkor korlátokba ütközünk, hiszen ezt a megoldást nem tudjuk egy másik, külső adathalmazon lefuttatni, amit mondjuk szintén a Service adott workspace-ében tárolunk. Az AutoML esetében a modell a felhőben érhető el és menthető oda továbbra is, továbbá alkalmazható nem csak a forrásfájlon.
 
 ### Frissíthetőség
 
-Az ütemezett frissítés lehetősége korlátozottan érhető el scriptek esetében: kizárólag personal data gateway segítségével tudunk ütemezetten frissíteni az adatainkon, amelyek Python vagy R scriptet használnak, mindezt úgy, hogy mind adatainknak, mind a Pythonnak / R-nek "nyilvános" beállításon kell lenniük, továbbá állandónak kell lennie a kapcsolatnak az ütemezett frissítésekhez. Ehhez értelem szerűen a personal gateway-jel rendelkező számítógépnek folyamatosan üzemelnie kell és állandó internetkapcsolat is szükséges. Természetesen a manuális megoldás, miszerint letöltjük a reportot és lokálisan módosítunk, elérhető továbbra is.
+Az ütemezett frissítés lehetősége korlátozottan érhető el scriptek esetében: kizárólag personal data gateway segítségével tudunk ütemezetten frissíteni az adatainkon, amelyek Python vagy R scriptet használnak, mindezt úgy, hogy mind adatainknak, mind a Pythonnak / R-nek "nyilvános" beállításon kell lenniük a hitelesítés során, továbbá állandónak kell lennie a kapcsolatnak az ütemezett frissítésekhez. Ehhez értelem szerűen a personal gateway-jel rendelkező számítógépnek folyamatosan üzemelnie kell és állandó internetkapcsolat is szükséges. Természetesen a manuális megoldás, miszerint letöltjük a reportot és lokálisan módosítunk, majd frissítünk elérhető továbbra is.
 
-Az AutoML esetében a frissítés nem teljesen egyértelmű, mivel a feltrainelt modell nem frissül, ha annak input táblája frissül, ugyanakkor, ha a modell adatfolyamát Power Query Editorral nyitjuk meg és módosítunk, akkor pedig igen. Szintén fontos megemlíteni, hogy a predikcióink a beépített lehetőség esetén automatikusan nem frissülnek, ha azok adatai igen.
+Sajnos nem teljesen egyértelmű ebben az esetben az AutoML működése, mivel a feltrainelt modell nem frissül, ha annak input táblája frissül, ugyanakkor, ha a modell adatfolyamát Power Query Editorral nyitjuk meg és módosítjuk, akkor pedig igen. Szintén fontos megemlíteni, hogy a predikcióink a beépített lehetőség esetén automatikusan nem frissülnek, ha azok adatai igen.
+
+### Külső integrációs lehetőségek
+
+A beépített megoldás rendelkezik kettő Microsoftos integrációval:
+
+- [Cognitive Services](https://azure.microsoft.com/hu-hu/services/cognitive-services/)
+- [Azure Machine Learning Integration](https://docs.microsoft.com/en-us/azure/machine-learning/)
+
+A scriptelés oldaláról az alábbi megkötések érvényesek ránk:
+
+- [Python](https://docs.microsoft.com/en-us/power-bi/connect-data/service-python-packages-support)
+- [R](https://docs.microsoft.com/en-us/power-bi/connect-data/service-r-packages-support)
+
+Ugyanakkor fontos megjegyezni, hogy az adatok beolvasása történhet egy előzetesen módosított script feldolgozással is, tehát több munkával, de kiterjeszthető az integráció.
+
+Megjegyzés: a scriptekhez tartozó linkek vizualizációval kapcsolatosak, egyértelmű kijelentést nem találtunk többszörös keresés után sem arról, hogy a Power BI Query Editorjában található Python és R scriptelési lehetőség, amit mi is első helyen használtunk munkánk során, rendelkezik-e hasonló limitációkkal.
+
+## Demo
