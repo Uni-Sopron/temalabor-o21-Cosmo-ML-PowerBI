@@ -1,17 +1,18 @@
 const Bevezetes = () => {
   return (
     <div>
-      <h1 id="bevezet-s">Bevezetés</h1>
+      <h1 id="bevezet-s" align="center">Bevezetés</h1>
       <p>
         A vállalati adatvizualizáció és -elemzés területének egyik kimagasló
         megoldása a{" "}
         <a href="https://powerbi.microsoft.com/hu-hu">Microsoft Power BI</a>,
         ami a 2021-es évben is nagy népszerűségnek örvendett.
       </p>
-      <p>
+      <p align="center">
         <img
-          src="../../Temalabor_temp/images/Power_BI_2021.PNG"
+          src={require("../../images/bevezetes/Power_BI_2021.png")}
           alt="Power BI in 2021"
+          width="60%"
           title="Power Bi 2021-ben az adatvizualizációs szoftverek körében"
         />
       </p>

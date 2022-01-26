@@ -7,11 +7,12 @@ const NavStyle = styled.div`
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly
+  justify-content: space-evenly;
   width: 100%;
-  background-color: rgb(249, 229, 50);
+  background-color: rgb(255, 186, 19);
   position: sticky;
   top: 0;
+  box-shadow: 0 3px 10px #000000
 `;
 
 const Nav = styled.div`
@@ -19,7 +20,6 @@ const Nav = styled.div`
   justify-content: space-around;
   font-size: 120%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  width: 50%;
 `;
 
 const Button = styled.div`
@@ -52,6 +52,8 @@ const Navbar = () => {
   return (
     <NavStyle>
       {NavBarButton("Bevezetés", props.bevezetesRef)}
+      {NavBarButton("Követelmények  ", props.kovetelmenyekRef)}
+      {NavBarButton("Munkamenet", props.munkamenetRef)}
       {NavBarButton("AutoML", props.automlRef)}
       {NavBarButton("Python", props.pythonRef)}
       {NavBarButton("R", props.rRef)}

@@ -1,7 +1,7 @@
 const Bevezetes = () => {
   return (
     <div>
-      <h1 id="k-vetelm-nyek-technol-gi-k-tech-stack">
+      <h1 id="k-vetelm-nyek-technol-gi-k-tech-stack" align="center">
         Követelmények, Technológiák, Tech stack
       </h1>
       <p>

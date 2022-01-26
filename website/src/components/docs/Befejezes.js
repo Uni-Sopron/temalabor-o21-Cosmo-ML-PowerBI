@@ -1,7 +1,7 @@
 const Befejezes = () => {
   return (
     <div>
-      <h1 id="-sszegz-s-ki-rt-kel-s">Összegzés, kiértékelés</h1>
+      <h1 id="-sszegz-s-ki-rt-kel-s" align="center">Összegzés, kiértékelés</h1>
       <p>
         A kutatás során felgyülemlett eredmények rendszerezése és kiértékelése
         komoly feladatnak bizonyult. Az egyik kihívás, amivel szembesültünk a

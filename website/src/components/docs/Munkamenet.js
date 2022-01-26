@@ -1,7 +1,7 @@
 function Munkamenet() {
   return (
     <div>
-      <h1 id="munkamenet-s-feloszt-s">Munkamenet és -felosztás</h1>
+      <h1 id="munkamenet-s-feloszt-s" align="center">Munkamenet és -felosztás</h1>
       <p>
         A munkamenet általánosan heti meetingeken került egyeztetésre külső
         konzulensünk, Edelényi Márton jelenlétében. Ezen felül a csoporttagok
