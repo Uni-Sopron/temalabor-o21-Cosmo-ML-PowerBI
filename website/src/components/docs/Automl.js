@@ -3,7 +3,7 @@
 const Automl = () => {
     return (
         <div>
-            <h1 id="automl-dokumentáció">AutoML dokumentáció</h1>
+            <h1 id="automl-dokumentáció" align="center">AutoML dokumentáció</h1>
             A kutatást a Power BI platform megismerésével kezdtem. Az első feladataim közé tartozott, hogy utánanézzek, pontosan milyen szolgáltatásokra is képes a szoftver, milyen licenszekkel lehet dolgozni. Ehhez megfelelő dokumentációt a Power BI-t fejlesztő cég, a Microsoft oldalán találtam. Mivel dolgozatunk témája a Power BI integrációs lehetőségei a Machine Learninggel, ezért természetesen a Machine Learning fogalmának, illetve az ahhoz kapcsolódó tudásanyagnak is utána kellett néznem, amelyet az IBM weboldaláról elérhető dokumentumok segítségével tettem meg, hiszen ott nagyszerű összegzést kapunk a témáról.
             <br />
             A kezdeti, információgyűjtő fázis után közösen meghoztuk a döntést arról, hogy a kutatás milyen irányokba mozduljon el, milyen lehetőségeket vizsgáljunk meg és milyen mélységben. Többféle Machine Learning technológiát is lehet alkalmazni a Power BI-ban, viszont az én feladatom a Power BI Service AutoML szolgáltatásának kutatása volt. A számomra szükséges szolgáltatásokhoz premium licenszet kellett igényelnem, amit a COSMO CONSULT egy ideiglenes tesztfelhasználóval a rendelkezésemre bocsátott. A cégtől kapott tenanton alapból a pro licensz elérhető, de lehetőség van 60 napra Prémium próbaverziót is használni.
@@ -76,13 +76,13 @@ const Automl = () => {
             <p>A számunkra legfontosabb szolgáltatása, az AutoML, csak az applikáció felhőszolgáltatásának felületén érhető el, a Power BI Serviceben. Ott létre kell hozni egy úgynevezett Workspacet, ahol a csapattagok kollaboráltan tudnak dolgozni, valamint különböző jelentéseket képesek megosztani egymással.</p>
 
             <div align="center">
-                <img src={require("../../images/automl_doc/workspace.png")} width="70%" alt="" />
+                <img src={require("../../images/automl_doc/workspace.png")} title="workspace" width="70%" alt="" />
             </div>
             <p>A Workspace létrehozásakor meg kell adni, hogy Premium Per User licensz módot használjon, mivel az AutoML Prémium szolgáltatásnak minősül.</p>
 
 
             <div align="center">
-                <img src={require("../../images/automl_doc/premium_workspace.png")} width="80%" alt="" />
+                <img src={require("../../images/automl_doc/premium_workspace.png")} title="premium workspace" width="80%" alt="" />
             </div>
 
             <h4>Adatok előkészítése</h4>
@@ -103,18 +103,18 @@ const Automl = () => {
 
 
             <div align="center">
-                <img src={require("../../images/automl_doc/data_sourceok_service.png")} width="75%" alt="" />
+                <img src={require("../../images/automl_doc/data_sourceok_service.png")} title="service data sources" width="75%" alt="" />
             </div>
 
 
             <div align="center">
-                <img src={require("../../images/automl_doc/fajl_feltoltes.png")} width="70%" alt="" />
+                <img src={require("../../images/automl_doc/fajl_feltoltes.png")} title="upload file" width="70%" alt="" />
             </div>
             <p> Tábla betöltése a forrásból történhet egyből, vagy valamilyen átalakítás után. Ezt nevezzük a Extract, Transfer, Load  (ETL) folyamatnak. A transzformálás a Power Query nevű Toolban hajtható végre. Ez tűnt az egyik legnehezebb feladatnak, hiszen a tábla “kinyerése” után voltak oszlopok, amelyek teljesen más adattípusként voltak tárolva, mint amire nekem szükségem lett volna. Emellett számomra kissé frusztráló volt az is, hogy a Service a Desktophoz képest jóval lassabbnak bizonyult úgy is, hogy Prémium felhasználóknak nagyobb teljesítmény van kiosztva.</p>
 
 
             <div align="center">
-                <img src={require("../../images/automl_doc/adatelokeszites.png")} width="80%" alt="" />
+                <img src={require("../../images/automl_doc/adatelokeszites.png")} title="data preparation" width="80%" alt="" />
             </div>
             <p>Probléma adódott annál az esetnél, amikor több Data Sourceból kerültek be táblák. Erre a Power BI fórumán találtam megoldást, ahol egy másik illető is ugyanebbe a hibába ütközött. Ilyenkor a Power Queryben a Project Settingnél egy beállítást kellett kikapcsolni, amely meggátolta, hogy káros tartalom kerüljön a Dataflowba.</p>
 
@@ -139,7 +139,7 @@ const Automl = () => {
             </ol>
 
             <div align="center">
-                <img src={require("../../images/automl_doc/modell_kimenet.png")} width="50%" alt="" />
+                <img src={require("../../images/automl_doc/modell_kimenet.png")} title="model outcome column" width="50%" alt="" />
             </div>
 
             <ol start="2" type="1">
@@ -147,11 +147,11 @@ const Automl = () => {
             </ol>
 
             <div align="center">
-                <img src={require("../../images/automl_doc/modellek.png")} width="50%" alt="" />
+                <img src={require("../../images/automl_doc/modellek.png")} title="available models" width="50%" alt="" />
             </div>
 
             <div align="center">
-                <img src={require("../../images/automl_doc/classification_tanulas.png")} width="65%" alt="" />
+                <img src={require("../../images/automl_doc/classification_tanulas.png")} title="classification model" width="65%" alt="" />
             </div>
 
             <ol start="3" type="1">
@@ -159,7 +159,7 @@ const Automl = () => {
             </ol>
 
             <div align="center">
-                <img src={require("../../images/automl_doc/modell_tanulas.png")} width="75%" alt="" />
+                <img src={require("../../images/automl_doc/modell_tanulas.png")} title="model training columns" width="75%" alt="" />
             </div>
 
             <ol start="4" type="1">
@@ -167,30 +167,30 @@ const Automl = () => {
             </ol>
 
             <div align="center">
-                <img src={require("../../images/automl_doc/training_ido.png")} width="75%" alt="" />
+                <img src={require("../../images/automl_doc/training_ido.png")} title="training time" width="75%" alt="" />
             </div>
 
             <p>Miután a modell Trainelése végigment, lehetőség van megtekinteni a tanulásról szóló jelentést a Dataflowban, a Machine Learning models fülön. Alábbi képen látható, hogy a Trainelt modellnek a pontossága 84%-os. Ezután lehetőség van módosítani, vagy pedig alkalmazni a modellt egy másik Dataseten. Ilyenkor megadhatjuk, hogy mi legyen annak az oszlopnak a neve, ahol a Prediction értékek kiértékelődnek, valamint mi legyen az a határ, amely fölött ez megtörténjen.</p>
 
 
             <div align="center">
-                <img src={require("../../images/automl_doc/befejezodott_modell.png")} width="70%" alt="" />
+                <img src={require("../../images/automl_doc/befejezodott_modell.png")} title="trained model" width="70%" alt="" />
             </div>
 
 
             <div align="center">
-                <img src={require("../../images/automl_doc/modell_teljesitmeny.png")} width="70%" alt="" />
+                <img src={require("../../images/automl_doc/modell_teljesitmeny.png")} title="model preformance" width="70%" alt="" />
             </div>
 
 
             <div align="center">
-                <img src={require("../../images/automl_doc/modell_alkalmazas.png")} width="50%" alt="" />
+                <img src={require("../../images/automl_doc/modell_alkalmazas.png")} title="apply apply" width="50%" alt="" />
             </div>
 
             <p>Végezetül az alábbi képen látható módon néz ki a Dataflow. Modell traineléséhez tartozik a “bike_buyer Training Data”, és a “bike_buyer Testing Data”. A táblára alkalmazott modell az “enriched” nevezetű táblákban található, amely már a Prediction értékeket tartalmazza.</p>
 
             <div align="center">
-                <img src={require("../../images/automl_doc/dataflow.png")} width="70%" alt="" />
+                <img src={require("../../images/automl_doc/dataflow.png")} title="dataflow with prediction outcome" width="70%" alt="" />
             </div>
 
             <h4>Vizualizáció</h4>
@@ -207,20 +207,20 @@ const Automl = () => {
 
 
             <div align="center">
-                <img src={require("../../images/automl_doc/modell_import.png")} width="60%" alt="" />
+                <img src={require("../../images/automl_doc/modell_import.png")} title="import model" width="60%" alt="" />
             </div>
 
             <p>Ismét a Servicehez hasonlóan a transzformáció Power Queryben történik, ahol akár ugyanazokat a lépéseket is végrehajthatjuk. A Prediction Explanation oszlopban láthatóak az értékek, amelyek minden attribútumhoz hozzárendelésre kerültek és amelyek a Prediction kimenetelét meghatározták. Ezeket az értékeket összeszámolva született meg a Prediction Score oszlop, és a modell alkalmazása során meghatározott küszöbindex szerint, az Outcome oszlopban kiértékelésre kerültek. Tehát az Outcome oszlop lesz az, amire szükség van, amely a végleges kimenetet tartalmazza.</p>
 
             < div align="center" >
-                <img src={require("../../images/automl_doc/kiertekeles.png")} width="80%" alt="" />
+                <img src={require("../../images/automl_doc/kiertekeles.png")} title="evaluation of outcome" width="80%" alt="" />
             </div >
 
             <p>Láthatóság szempontjából a vizualizációknál egy kördiagramot választottam, amihez a jobb oldalon található táblákból választottam értéket. A vizualizációknál lehet az értékeket aggregáltan kezelni, tehát mindenféle összesített kimutatás végezni velük. Ennél az esetnél a Count függvényre van szükség, hogy pontosan mennyi volt a modell kimeneteleinek a darabszáma.</p>
 
 
             < div align="center" >
-                <img src={require("../../images/automl_doc/eredmeny.png")} width="80%" alt="" />
+                <img src={require("../../images/automl_doc/eredmeny.png")} title="classification outcome" width="80%" alt="" />
             </div >
 
             <h3>REGRESSION, FORECASTING</h3>
@@ -247,12 +247,12 @@ const Automl = () => {
             <p>A modell létrehozásakor a Classificationnel ellentétben (ahol az osztályok elnevezése volt) itt nem kell egyéb dolgot beállítani a Regressionnel kapcsolatban, csak annyit, hogy mi legyen az oszlop, amire a Prediction elkészül, valamint mely oszlopokat vizsgálja. A modell taníttatása az általam készített Train adatsoron, míg a betanult modell alkalmazása a Test adatsoron történt.</p>
 
             < div align="center" >
-                <img src={require("../../images/automl_doc/forecast_modellek.png")} width="80%" alt="" />
+                <img src={require("../../images/automl_doc/forecast_modellek.png")} title="forecast model" width="80%" alt="" />
             </div >
 
 
             <div align="center">
-                <img src={require("../../images/automl_doc/forecast_tanulas.png")} width="80%" alt="" />
+                <img src={require("../../images/automl_doc/forecast_tanulas.png")} title="forecast training columns" width="80%" alt="" />
             </div>
 
             <h4>Vizualizáció</h4>
@@ -266,28 +266,28 @@ const Automl = () => {
             <p>A korábban említett Test és Source (eredeti, amiből törölve lett a Train adatsorhoz) adatforrásokat Appendelni (kombinálni) lehet, így lehetséges a valós és az előrejelzett adatokat egyszerre megjeleníteni egy vizualizáción.</p>
 
             < div align="center" >
-                <img src={require("../../images/automl_doc/tabla_kapcsolas.png")} width="60%" alt="" />
+                <img src={require("../../images/automl_doc/tabla_kapcsolas.png")} title="connected tables" width="60%" alt="" />
             </div >
 
 
             <div align="center">
-                <img src={require("../../images/automl_doc/forecast_tablak_osszekapcsolva.png")} width="70%" alt="" />
+                <img src={require("../../images/automl_doc/forecast_tablak_osszekapcsolva.png")} title="appended real and prediction tables" width="70%" alt="" />
             </div>
 
             <p>Mivel a Service Power Queryben transzformált Dataset más régió alapján jeleníti meg az adatot, mint a Desktop, így szükséges az oszlop típusát megváltoztatni Locale szerint. Jelen esetben a Serviceben az adatot English (United Kingdom), Desktopon Hungarian alapján tárolja, jeleníti meg.</p>
 
             < div align="center" >
-                <img src={require("../../images/automl_doc/local_tipus.png")} width="60%" alt="" />
+                <img src={require("../../images/automl_doc/local_tipus.png")} title="change locale type" width="60%" alt="" />
             </div >
             <p>Az adatok megfelelő megjelenítéséhez szükséges a különböző táblák kapcsolatának a kialakítása, amely a valós és előrejelzett összekapcsolásáért is felel.</p>
 
             <div align="center">
-                <img src={require("../../images/automl_doc/kapcsolatok.png")} width="70%" alt="" />
+                <img src={require("../../images/automl_doc/kapcsolatok.png")} title="connected tables" width="70%" alt="" />
             </div>
 
 
             <div align="center">
-                <img src={require("../../images/automl_doc/forecast_eredmeny.png")} width="70%" alt="" />
+                <img src={require("../../images/automl_doc/forecast_eredmeny.png")} title="forecast outcome" width="70%" alt="" />
             </div>
 
             <p> Miután sikeresen létrehoztam a Predictiont tartalmazó Reportot, megvizsgáltam annak lehetőségét is, hogy a Dataset változása esetén újból lefuttatható-e a modellezés automatikusan és létrejön-e egy újrakalkulált Prediction. Több lépésben közelítettem meg ezt a problémát. Elsősorban megnéztem, hogy amennyiben a Dataflow Power Queryben változtattam az adatsoron, úgy sikeresen lefutott-e ismét az AutoML magától, és a Report Refreshelése után az új Prediction látható volt-e. Majd megpróbáltam azt a lehetőséget is, melynél ha OneDrive-on frissítem a fájlt, hogy a Dataflow frissüljön le, vele együtt pedig AutoML is lefusson ismét. Többszöri próbálkozás után, manuális Refreshsel, valamint Scheduled Refreshsel (beállítani egy időpontot, hogy mikor frissüljön) sem sikerült az AutoMLt magától lefuttatni, csak a Dataflow frissült. A Reportban látható volt az eredeti értékeknél a változás, viszont a Predictionnél nem.</p>

@@ -7,7 +7,7 @@ const Bevezetes = () => {
                 <br />
                 <p>A vállalati adatvizualizáció és -elemzés területének egyik kimagasló megoldása a <a href="https://powerbi.microsoft.com/hu-hu">Microsoft Power BI</a>, ami a 2021-es évben is nagy népszerűségnek örvendett.</p>
                 <figure align="center">
-                    <img src={require("../../images/bevezetes/Power_BI_2021.png")} title="Power Bi 2021-ben az adatvizualizációs szoftverek körében" width="80%" alt="" />
+                    <img src={require("../../images/bevezetes/Power_BI_2021.png")} title="Power Bi 2021-ben az adatvizualizációs szoftverek körében" width="60%" alt="" />
                 </figure>
                 <p align="center">Ábra: 2021 adatvizualizációs szoftverei - Forrás: <a href="https://www.capterra.com/data-visualization-software/#shortlist">Capterra</a></p>
                 <p>Szintén jelentős, hogy a mesterséges intelligencia <a href="https://techvidvan.com/tutorials/artificial-intelligence-applications/">egyre több területen</a> jelenik meg és kerül alkalmazásra, ami alól az üzleti alkalmazás sem kivétel. Az <a href="https://filecache.mediaroom.com/mr5mr_ibmnewsroom/191468/IBM%27s%20Global%20AI%20Adoption%20Index%202021_Executive-Summary.pdf">IBM Global AI Adoption Index 2021</a>-e szerint a cégek háromnegyede használja a mestersége intelligencia által nyújtott megoldásokat (31%) vagy éppen azok használatának megismerésével foglalkozik (43%).</p>

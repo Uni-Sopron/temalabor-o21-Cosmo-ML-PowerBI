@@ -3,7 +3,7 @@ import OsszesitoTablazat from "./OsszesitoTablazat";
 const Befejezes = () => {
   return (
     <div>
-      <h1 id="összegzés-kiértékelés">Összegzés, kiértékelés</h1>
+      <h1 id="összegzés-kiértékelés" align="center">Összegzés, kiértékelés</h1>
       <p>
         A kutatás során felgyülemlett eredmények rendszerezése és kiértékelése
         komoly feladatnak bizonyult. Az egyik kihívás, amivel szembesültünk a
@@ -342,7 +342,6 @@ const Befejezes = () => {
         dolgozatunknak, azonban a későbbiekben további kutatásoknak adhatnak
         teret.
       </p>
-      Ł
     </div>
   );
 };

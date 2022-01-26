@@ -14,7 +14,7 @@ const Demo = () => {
 
     return (
         <div>
-            <h1 id="demo">Demo</h1>
+            <h1 id="demo" align="center">Demo</h1>
             <h3>Bemutatás</h3>
             <p>Csapatunk különböző kutatásainak “összeillesztése” érdekében egy demo projektet hoztunk létre, amely különböző módszereket, technológiákat vegyít és mutatja meg a Power BI integrációját a Machine Learninggel. A COSMO CONSULT által nyújtott tenanthoz kaptunk különböző e-mail címeket, így mindenki tudott külön-külön dolgozni, nem befolyásolva egymás munkáját.</p>
             <p>Milyen témák kerülnek majd elő:</p>
