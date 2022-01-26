@@ -57,7 +57,6 @@ const Navbar = () => {
       {NavBarButton("R", props.rRef)}
       {NavBarButton("Demo", props.demoRef)}
       {NavBarButton("Összegzés", props.befejezesRef)}
-      {NavBarButton("Összesítő táblázat", props.osszesitoTablazatRef)}
     </NavStyle>
   );
 };

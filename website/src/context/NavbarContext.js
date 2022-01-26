@@ -7,7 +7,6 @@ export const NavbarProvider = (props) => {
     const automlRef = useRef(null)
     const pythonRef = useRef(null)
     const rRef = useRef(null)
-    const osszesitoTablazatRef = useRef(null)
     const demoRef = useRef(null)
     const befejezesRef = useRef(null)
 
@@ -18,7 +17,6 @@ export const NavbarProvider = (props) => {
                 automlRef,
                 pythonRef,
                 rRef,
-                osszesitoTablazatRef,
                 demoRef,
                 befejezesRef
             }}

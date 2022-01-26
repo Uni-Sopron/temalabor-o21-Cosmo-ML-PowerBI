@@ -24,7 +24,7 @@ A Gmail a Google levelező szolgáltatása, amit mi többnyire meetingjeink üte
 
 ## Kutatómunka elvégzéséhez használt technológiák
 
-### [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/)
+### [Power BI Desktop](https://powerbi.microsoft.com/hu-hu/desktop/)
 
 Verziószám: 2.100.1401.0 (64 bit)
 
@@ -40,20 +40,20 @@ A scriptelési feladat alapvető követelményei közé tartozik a megfelelő ID
 
 Ezek közül a kódírás megkönnyítésére az ['R Extension for Visual Studio Code'](https://github.com/REditorSupport/vscode-R) 2.3.6-os verzióját használtuk, mely számos hasznos funkciót magába foglal, többek között szervizalapú kódanalízist, szintaxis kiemelést, package managementet, terminál-kezelést valamint vizuális adatelemzést is. Ennek jó alternatívája lehetett volna az RStudio nevű IDE, amely inkluzívan tartalmaz lehetőségeket R scriptek futtatására, buildelésére, valamint programírásra. Az egyszerűség kedvéért mi a Visual Studio Code-ot alkalmaztuk. A script interpretálásához és futtatáshoz az R standard, hivatalos 4.1.2-es verzióját használtuk.
 
-Az R beépített függvénykönyvtára számos out-of-box lehetőséget tartalmaz mind adatelőkészítési és -transzformációs feladatokhoz, mind ML algoritmusok készítéséhez. Binary classificationhöz mi a beépített [glm függvény](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/glm)t használtuk, amely generalizált lineáris modellek alkotására alkalmas. Ez a függvény nagymértékben paraméterezhető, rugalmas, valamint beépített jellege miatt kevésbé okoz kitettséget külső dependenciák felé.
+Az R beépített függvénykönyvtára számos out-of-box lehetőséget tartalmaz mind adatelőkészítési és -transzformációs feladatokhoz, mind ML algoritmusok készítéséhez. Binary classificationhöz mi a beépített [glm függvényt](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/glm) használtuk, amely generalizált lineáris modellek alkotására alkalmas. Ez a függvény nagymértékben paraméterezhető, rugalmas, valamint beépített jellege miatt kevésbé okoz kitettséget külső dependenciák felé.
 Forecastingra a 'forecast' nevű R könyvtár 8.15-ös verziója jó megoldásnak bizonyult az egyszerű kezelhetősége miatt. Ennek a könyvtárnak elsősorban a HoltWinters módszer alapú függvényeit és objektumait használtuk ki.
 
 ## [Python](https://www.python.org) követelmények
 
 Veriószám: 3.9.7
 
-Ahhoz, hogy el tudjunk kezdeni dolgozni szükségünk lesz egy Python interpreterre is, ehhez célszerű egy aktívan támogatott verziót letöltenünk. Alapvetően több lehetőség áll rendelkezésünkre, hiszen mind a Microsoft [Store](https://www.microsoft.com/hu-hu/store/new/games/pc)-jából elérhető számunkra, de természetesen a [hivatalos oldal](https://www.python.org/downloads/)ról is letölthetjük.
+Ahhoz, hogy el tudjunk kezdeni dolgozni szükségünk lesz egy Python interpreterre is, ehhez célszerű egy aktívan támogatott verziót letöltenünk. Alapvetően több lehetőség áll rendelkezésünkre, hiszen mind a Microsoft [Store](https://www.microsoft.com/hu-hu/store/new/games/pc)-jából elérhető számunkra, de természetesen a [hivatalos oldalról](https://www.python.org/downloads/) is letölthetjük.
 
 Ugyanakkor léteznek még más alternatívák is, például az [Anaconda Navigator](https://anaconda.org/), amely egy Python és R nyelvhez készült disztribúció kifejezetten tudományos számításokhoz, mint például a machine learning. Beépített csomagkezelője segítségével megkönnyíti függőségeink kezelését, továbbá a különböző környezetek létrehozásakor különböző Python verziókkal tudunk dolgozni, ráadásul ingyenes. Ehhez a projekthez mi az Anaconda Navigator-t választottuk, amiben a base(root) környezet 3.9.7 verziójú Python interpreterét használtuk.
 
 ### Python könyvtárak
 
-A Scikit-Learn and a Statsmodels könyvtárak azért kerültek kiválasztásra, mivel a Power BI-ban használható könyvtárak száma [korlátos](https://docs.microsoft.com/en-us/power-bi/connect-data/service-python-packages-support), ML könyvtárak tekintetében nincs más ezen a két könyvtáron kívül. Éppen ezért a két feladathoz mindkét könyvtárból válaszottunk egy-egy, az adott feladathoz illeszkedő modellt.
+A Scikit-Learn and a Statsmodels könyvtárak azért kerültek kiválasztásra, mivel a Power BI-ban használható könyvtárak száma [korlátos](https://docs.microsoft.com/hu-hu/power-bi/connect-data/service-python-packages-support), ML könyvtárak tekintetében nincs más ezen a két könyvtáron kívül. Éppen ezért a két feladathoz mindkét könyvtárból válaszottunk egy-egy, az adott feladathoz illeszkedő modellt.
 
 #### [Pandas](https://pandas.pydata.org/)
 
@@ -73,6 +73,12 @@ Egy ingyenes és algoritmusokban gazdag Python könyvtár, amely gépi tanulásh
 Verziószám: 0.12.2
 
 Speciális felhasználású statisztikai és regressziós függvények gyűjteménye egyetlen Python könyvtárban. Az előrejelzési feladat során használtuk a könyvtár exponenciális simítás modelljét, mivel idősoros adataink voltak szezonálisan és csak egy változóval dolgoztunk. A modell a Holtwinters modul része.
+
+#### [Matplotlib](https://matplotlib.org/)
+
+Verziószám: 3.4.3
+
+Python nyelvhez készített ábrázoló könyvtár, amely segítségével képesek vagyunk Power BI-ban más, a könyvtárban elérhető megoldásokkal adatvizualizációk létrehozására és használatára 1-1 reporton belül. A munka során kifejezetten nem használtuk, ugyanakkor a tanulási időszakban teszteltük annak lehetőségét, hogy a Machine Learning scriptek futtathatóak-e vizualizácós script-ben is. Amennyiben szeretnénk ilyen vizualizációt is létrehozni, akkor telepítenünk kell ezt a csomagot is a Pandas mellett.
 
 ### Editor
 
@@ -180,7 +186,7 @@ Szintén figyelni kell arra, hogy a kiválasztott tulajdonság besorolása négy
 - True negative (az a kimenetel, ahol a modell jól becsüli meg a negatív osztályt)
 - False negative (az a kimenetel, ahol a modell rosszul becsüli meg a negatív osztályt)
 
-A dataseteket olyan szempontok szerint válogattuk ki, mint például, hogy mennyi adat állt rendelkezésre, észlelhető valamilyen mintázat, periodikusság az adatsorban, megfelelő számú attribútum áll-e rendelkezésre és az attribútumok között észlelhetőek-e kapcsolatok. Így esett a választásunk a [kerékpár eladások](https://github.com/BlueGranite/AI-in-a-Day/tree/master/AutoML)at tároló adatforrásra.
+A dataseteket olyan szempontok szerint válogattuk ki, mint például, hogy mennyi adat állt rendelkezésre, észlelhető valamilyen mintázat, periodikusság az adatsorban, megfelelő számú attribútum áll-e rendelkezésre és az attribútumok között észlelhetőek-e kapcsolatok. Így esett a választásunk a [kerékpár eladásokat](https://github.com/BlueGranite/AI-in-a-Day/tree/master/AutoML) tároló adatforrásra.
 
 ### Előrejelzési feladat
 
@@ -188,7 +194,7 @@ Jövőbe mutató predikció készítése során historikus adatok felhasználás
 
 Fontos szempont, hogy minél nagyobb időtávot figyelünk annál nagyobb a tévesztés és pontatlanság esélye, így túl nagy időtávokat nem érdemes figyelni. Továbbá adataink periodikusságának függvényében érdemes az időtávot kijelölni.
 
-Az előrejelzési feladathoz felhasznált forrásunk [repülési adatok](https://www.kaggle.com/rakannimer/air-passengers)ból tevődött össze.
+Az előrejelzési feladathoz felhasznált forrásunk [repülési adatokból](https://www.kaggle.com/rakannimer/air-passengers) tevődött össze.
 
 ## Integrációs lehetőségek és a modell vizsgálata
 
@@ -211,12 +217,12 @@ Sajnos nem teljesen egyértelmű ebben az esetben az AutoML működése, mivel a
 A beépített megoldás rendelkezik kettő Microsoftos integrációval:
 
 - [Cognitive Services](https://azure.microsoft.com/hu-hu/services/cognitive-services/)
-- [Azure Machine Learning Integration](https://docs.microsoft.com/en-us/azure/machine-learning/)
+- [Azure Machine Learning Integration](https://docs.microsoft.com/hu-hu/azure/machine-learning/overview-what-is-azure-machine-learning)
 
 A scriptelés oldaláról az alábbi megkötések érvényesek ránk:
 
-- [Python](https://docs.microsoft.com/en-us/power-bi/connect-data/service-python-packages-support)
-- [R](https://docs.microsoft.com/en-us/power-bi/connect-data/service-r-packages-support)
+- [Python](https://docs.microsoft.com/hu-hu/power-bi/connect-data/service-python-packages-support)
+- [R](https://docs.microsoft.com/hu-hu/power-bi/connect-data/service-r-packages-support)
 
 Ugyanakkor fontos megjegyezni, hogy az adatok beolvasása történhet egy előzetesen módosított script feldolgozással is, tehát több munkával, de kiterjeszthető az integráció más script könyvtárakra is.
 

@@ -6,7 +6,6 @@ import Bevezetes from "./docs/Bevezetes";
 import Automl from "./docs/Automl";
 import Python from "./docs/Python";
 import R from "./docs/R";
-import OsszesitoTablazat from "./docs/OsszesitoTablazat";
 import Demo from "./docs/Demo";
 import Befejezes from "./docs/Befejezes";
 
@@ -39,9 +38,6 @@ const Docs = () => {
 
       <StyledRef ref={props.befejezesRef} />
       <Befejezes />
-
-      <StyledRef ref={props.osszesitoTablazatRef} />
-      <OsszesitoTablazat />
     </div>
   );
 };
