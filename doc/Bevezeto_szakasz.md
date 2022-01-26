@@ -30,7 +30,7 @@ Verziószám: 2.100.1401.0 (64 bit)
 
 Míg a Service-t inkább az AutoML esetén használtuk a machine learning szempontjából, addig az főként a kollaboráció és megosztás eszköze. A Desktop alkalmazás ezzel szemben az alternatív, scriptes megoldásainknak esetében volt jelentős. Itt tudtunk beilleszteni, futtatni és tesztelni scriptjeink hatását, továbbá itt volt elérhető számunkra az eredmények kiértékelése is különböző vizualizációs lehetőségek formájában.
 
-## [AutoML](https://docs.microsoft.com/hu-hu/azure/machine-learning/concept-automated-ml) követelmények
+## [AutoML](https://docs.microsoft.com/en-us/azure/machine-learning/concept-automated-ml) követelmények
 
 Az AutoML-lel való modellezés a Power BI Service egy szolgáltatása, így értelemszerűen csak böngészőből hajtható végre. Ezen szolgáltatás használatához szükséges Prémium licensszel rendelkeznünk, továbbá internetkapcsolattal a Service eléréséhez. A munkakörnyezet kialakítása során Premium Workspacet kell létrehozni a felhőben, ahol csak adatfolyamon belül érhető el az AutoML. Az előre jelzett adatokból való jelentések készítése érdekében Power BI Desktopra van szükség, mivel a Service nem támogatja.
 
@@ -47,13 +47,13 @@ Forecastingra a 'forecast' nevű R könyvtár 8.15-ös verziója jó megoldásna
 
 Veriószám: 3.9.7
 
-Ahhoz, hogy el tudjunk kezdeni dolgozni szükségünk lesz egy Python interpreterre is, ehhez célszerű egy aktívan támogatott verziót letöltenünk. Alapvetően több lehetőség áll rendelkezésünkre, hiszen mind a Microsoft [Store](https://www.microsoft.com/hu-hu/store/new/games/pc)-jából elérhető számunkra, de természetesen a [hivatalos oldalról](https://www.python.org/downloads/) is letölthetjük.
+Ahhoz, hogy el tudjunk kezdeni dolgozni szükségünk lesz egy Python interpreterre is, ehhez célszerű egy aktívan támogatott verziót letöltenünk. Alapvetően több lehetőség áll rendelkezésünkre, hiszen mind a Microsoft [Store](https://www.microsoft.com/en-us/store/new/games/pc)-jából elérhető számunkra, de természetesen a [hivatalos oldalról](https://www.python.org/downloads/) is letölthetjük.
 
 Ugyanakkor léteznek még más alternatívák is, például az [Anaconda Navigator](https://anaconda.org/), amely egy Python és R nyelvhez készült disztribúció kifejezetten tudományos számításokhoz, mint például a machine learning. Beépített csomagkezelője segítségével megkönnyíti függőségeink kezelését, továbbá a különböző környezetek létrehozásakor különböző Python verziókkal tudunk dolgozni, ráadásul ingyenes. Ehhez a projekthez mi az Anaconda Navigator-t választottuk, amiben a base(root) környezet 3.9.7 verziójú Python interpreterét használtuk.
 
 ### Python könyvtárak
 
-A Scikit-Learn and a Statsmodels könyvtárak azért kerültek kiválasztásra, mivel a Power BI-ban használható könyvtárak száma [korlátos](https://docs.microsoft.com/hu-hu/power-bi/connect-data/service-python-packages-support), ML könyvtárak tekintetében nincs más ezen a két könyvtáron kívül. Éppen ezért a két feladathoz mindkét könyvtárból válaszottunk egy-egy, az adott feladathoz illeszkedő modellt.
+A Scikit-Learn and a Statsmodels könyvtárak azért kerültek kiválasztásra, mivel a Power BI-ban használható könyvtárak száma [korlátos](https://docs.microsoft.com/en-us/power-bi/connect-data/service-python-packages-support), ML könyvtárak tekintetében nincs más ezen a két könyvtáron kívül. Éppen ezért a két feladathoz mindkét könyvtárból válaszottunk egy-egy, az adott feladathoz illeszkedő modellt.
 
 #### [Pandas](https://pandas.pydata.org/)
 
@@ -216,12 +216,12 @@ Az AutoML esetében ez egyszerűbben történik, mivel a forrás adatsor frissü
 A beépített megoldás rendelkezik kettő Microsoftos integrációval:
 
 - [Cognitive Services](https://azure.microsoft.com/hu-hu/services/cognitive-services/)
-- [Azure Machine Learning Integration](https://docs.microsoft.com/hu-hu/azure/machine-learning/overview-what-is-azure-machine-learning)
+- [Azure Machine Learning Integration](https://docs.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning)
 
 A scriptelés oldaláról az alábbi megkötések érvényesek ránk:
 
-- [Python](https://docs.microsoft.com/hu-hu/power-bi/connect-data/service-python-packages-support)
-- [R](https://docs.microsoft.com/hu-hu/power-bi/connect-data/service-r-packages-support)
+- [Python](https://docs.microsoft.com/en-us/power-bi/connect-data/service-python-packages-support)
+- [R](https://docs.microsoft.com/en-us/power-bi/connect-data/service-r-packages-support)
 
 Ugyanakkor fontos megjegyezni, hogy az adatok beolvasása történhet egy előzetesen módosított script feldolgozással is, tehát több munkával, de kiterjeszthető az integráció más script könyvtárakra is.
 
