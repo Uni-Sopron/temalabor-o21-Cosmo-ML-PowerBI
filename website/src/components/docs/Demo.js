@@ -84,7 +84,7 @@ const Demo = () => {
             </ul>
             <p>Mindenképpen különböző problémák megoldására szerettük volna alkalmazni a különböző technológiákat. Ezen okból AutoMLlel készült a Classification modell, Python+R scripttel, valamint a desktopon beépített lehetőségekkel pedig különböző Forecastokat készítettünk ugyanis Python+R-nél a Forecasting jobban paraméterezhető, míg AutoML-nél egy Regressziós modellt tudunk létrehozni, amelyből kissé nehézkesen (AutoML dokumentációban a táblák összekapcsolása) lehet dinamikus Forecastot képezni. Ezzel szemben pedig az AutoML Classification modellje jobb teljesítményt nyújtott a jelentések alapján (az AutoML dokumentációban bemutatva), mint a Python+R scriptek, amiket készítettünk.</p>
 
-            <p>A Classification esetében azt a helyzetet/problémát vizsgáltuk, hogy a kedvenc kiskereskedők közül, adott jellemző rendelés típusoknál, melyeknél várhatóak olyan eladások, ahol az eladott mennyiség mértékei meghaladják az hisztorikus átlag értékét. A potenciális eladások közül meg kellett figyelni a termékjellemzőket, a rendelési módot, valamint az eladási árat, hogy melyik, milyen mértékben befolyásolta a Prediction kimenetelét.</p>
+            <p>A Binary Classification esetében azt a helyzetet/problémát vizsgáltuk, hogy adott jellemző rendelés típusoknál, melyeknél várhatóak olyan eladások, ahol az eladott mennyiség mértékei meghaladják az hisztorikus átlag értékét. A potenciális eladások közül meg kellett figyelni a termékjellemzőket, a rendelési módot, valamint az eladási árat, hogy melyik attribútum milyen mértékben befolyásolta a Prediction kimenetelét.</p>
 
             <div align="center">
                 <img src={require("../../images/demo/model_training.png")} width="65%" alt="" />

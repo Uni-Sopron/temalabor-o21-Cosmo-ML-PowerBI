@@ -3,6 +3,8 @@ import React from "react";
 import useNavbar from "../hooks/useNavbar";
 
 import Bevezetes from "./docs/Bevezetes";
+import Kovetelmenyek from "./docs/Kovetelemenyek"
+import Munkamenet from "./docs/Munkamenet"
 import Automl from "./docs/Automl";
 import Python from "./docs/Python";
 import R from "./docs/R";
@@ -23,6 +25,12 @@ const Docs = () => {
     <div className="container">
       <StyledRef ref={props.bevezetesRef} />
       <Bevezetes />
+
+      <StyledRef ref={props.kovetelmenyekRef} />
+      <Kovetelmenyek />
+
+      <StyledRef ref={props.munkamenetRef} />
+      <Munkamenet />
 
       <StyledRef ref={props.automlRef} />
       <Automl />

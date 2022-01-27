@@ -30,7 +30,7 @@ Verziószám: 2.100.1401.0 (64 bit)
 
 Míg a Service-t inkább az AutoML esetén használtuk a machine learning szempontjából, addig az főként a kollaboráció és megosztás eszköze. A Desktop alkalmazás ezzel szemben az alternatív, scriptes megoldásainknak esetében volt jelentős. Itt tudtunk beilleszteni, futtatni és tesztelni scriptjeink hatását, továbbá itt volt elérhető számunkra az eredmények kiértékelése is különböző vizualizációs lehetőségek formájában.
 
-## [AutoML](https://docs.microsoft.com/hu-hu/azure/machine-learning/concept-automated-ml) követelmények
+## [AutoML](https://docs.microsoft.com/en-us/azure/machine-learning/concept-automated-ml) követelmények
 
 Az AutoML-lel való modellezés a Power BI Service egy szolgáltatása, így értelemszerűen csak böngészőből hajtható végre. Ezen szolgáltatás használatához szükséges Prémium licensszel rendelkeznünk, továbbá internetkapcsolattal a Service eléréséhez. A munkakörnyezet kialakítása során Premium Workspacet kell létrehozni a felhőben, ahol csak adatfolyamon belül érhető el az AutoML. Az előre jelzett adatokból való jelentések készítése érdekében Power BI Desktopra van szükség, mivel a Service nem támogatja.
 
@@ -47,13 +47,13 @@ Forecastingra a 'forecast' nevű R könyvtár 8.15-ös verziója jó megoldásna
 
 Veriószám: 3.9.7
 
-Ahhoz, hogy el tudjunk kezdeni dolgozni szükségünk lesz egy Python interpreterre is, ehhez célszerű egy aktívan támogatott verziót letöltenünk. Alapvetően több lehetőség áll rendelkezésünkre, hiszen mind a Microsoft [Store](https://www.microsoft.com/hu-hu/store/new/games/pc)-jából elérhető számunkra, de természetesen a [hivatalos oldalról](https://www.python.org/downloads/) is letölthetjük.
+Ahhoz, hogy el tudjunk kezdeni dolgozni szükségünk lesz egy Python interpreterre is, ehhez célszerű egy aktívan támogatott verziót letöltenünk. Alapvetően több lehetőség áll rendelkezésünkre, hiszen mind a Microsoft [Store](https://www.microsoft.com/en-us/store/new/games/pc)-jából elérhető számunkra, de természetesen a [hivatalos oldalról](https://www.python.org/downloads/) is letölthetjük.
 
 Ugyanakkor léteznek még más alternatívák is, például az [Anaconda Navigator](https://anaconda.org/), amely egy Python és R nyelvhez készült disztribúció kifejezetten tudományos számításokhoz, mint például a machine learning. Beépített csomagkezelője segítségével megkönnyíti függőségeink kezelését, továbbá a különböző környezetek létrehozásakor különböző Python verziókkal tudunk dolgozni, ráadásul ingyenes. Ehhez a projekthez mi az Anaconda Navigator-t választottuk, amiben a base(root) környezet 3.9.7 verziójú Python interpreterét használtuk.
 
 ### Python könyvtárak
 
-A Scikit-Learn and a Statsmodels könyvtárak azért kerültek kiválasztásra, mivel a Power BI-ban használható könyvtárak száma [korlátos](https://docs.microsoft.com/hu-hu/power-bi/connect-data/service-python-packages-support), ML könyvtárak tekintetében nincs más ezen a két könyvtáron kívül. Éppen ezért a két feladathoz mindkét könyvtárból válaszottunk egy-egy, az adott feladathoz illeszkedő modellt.
+A Scikit-Learn and a Statsmodels könyvtárak azért kerültek kiválasztásra, mivel a Power BI-ban használható könyvtárak száma [korlátos](https://docs.microsoft.com/en-us/power-bi/connect-data/service-python-packages-support), ML könyvtárak tekintetében nincs más ezen a két könyvtáron kívül. Éppen ezért a két feladathoz mindkét könyvtárból válaszottunk egy-egy, az adott feladathoz illeszkedő modellt.
 
 #### [Pandas](https://pandas.pydata.org/)
 
@@ -138,7 +138,6 @@ Figyelembe véve, hogy a munka egy egyetemi félév hosszára korlátozódik, a 
 - Osztályozási probléma megoldása
 - Előrejelzési probléma megoldása
 - Egyéni összesítés készítése személyenként előre meghatározott szempontok szerint
-- Összesítő táblázat készítése a rendelkezésre álló információkból
 - Demo készítése az összes kutatott technológia segítségével
 - Dokumentáció készítése
 
@@ -153,11 +152,11 @@ Alapvetően a következő volt az idő felbontása vázlatosan:
 
 - Technológiák megismerése, tanulási szakasz - 2021. október
   - Októberben tartottuk első meetingünket és már az első meeting előtt közölt, szükséges Power BI ismeretek tanulmányozása, majd teszt reportok készítése, ML alap koncepcióinak elsajátítása volt a feladat, így erre hónapra nem terveztünk előre. A hónap végén határoztuk meg a haladás irányát és a projekt célját.
-- Mini projektek és összehasonlító táblázat - 2021. november
+- Mini projektek és összesítés - 2021. november
   - november első hete: dataset kiválasztása a problémákhoz, összehasonlítási szempontok lefektetése
   - november második hete: előrejelzési és osztályozási feladat megvalósítása
   - november harmadik hete: egyéni kiértékelés
-  - november negyedik hete: csoportos, összesítő táblázat elkészítése
+  - november negyedik hete: csoportos kiértékelés, összesítés
 - Demo és dokumentáció - 2021. december - 2022. január
   - A demo készítésre, a projekt lezárására és dokumentálásra jelöltük ki a hátralévő időkeretet.
 
@@ -167,7 +166,7 @@ A munkák felosztását úgy oldottuk meg, hogy machine learning megoldásonkén
 
 Az első szakaszban kimondottan közös munkáról beszélhetünk. Ekkor igyekeztünk csoport szinten utána járni mindennek, ami kapcsolódhat a Power BI-hoz és a machine learning alapjaihoz. Később az adathalmazokat is közösen kerestük, majd együtt kiválasztva a legjobbakat haladtunk tovább az egyéni feladatokra.
 
-Békési Andor feladata volt a beépített prémium funkció, az AutoML megismerése, alkalmazása és értékelése. Janoschek Balázs és Kakas Ádám pedig a két alternatív megoldásért feleltek, amelyek script alapúak: R és Python machine learning megvalósítása különböző külső könyvtárak alkalmazásának segítségével. Ezt követően mindenki kiértékelte előre egyeztetett szempontok alapján megoldásait, amit pedig végül egy közös táblázatban összegeztünk.
+Békési Andor feladata volt a beépített prémium funkció, az AutoML megismerése, alkalmazása és értékelése. Janoschek Balázs és Kakas Ádám pedig a két alternatív megoldásért feleltek, amelyek script alapúak: R és Python machine learning megvalósítása különböző külső könyvtárak alkalmazásának segítségével. Ezt követően mindenki kiértékelte előre egyeztetett szempontok alapján megoldásait, amelyeket pedig végül összegeztünk.
 
 A munka utolsó szakaszán a demo elkészítése során kiválasztottunk egy olyan adathalmazt, amelyen mindkét (osztályozási és előrejelzési) feladat elvégezhető egyaránt. Külön készítettük el megoldásainkat, majd közösen megbeszéltük és javítottuk azok esetleges problémáit és összesítettük őket a Power BI Serviceben.
 
@@ -210,19 +209,19 @@ Az AutoML használatához mindenképpen Power BI Serviceben kell létrehoznunk m
 
 Az ütemezett frissítés lehetősége korlátozottan érhető el scriptek esetében: kizárólag personal data gateway segítségével tudunk ütemezetten frissíteni az adatainkon, amelyek Python vagy R scriptet használnak, mindezt úgy, hogy mind adatainknak, mind a Pythonnak / R-nek "nyilvános" beállításon kell lenniük a hitelesítés során, továbbá állandónak kell lennie a kapcsolatnak az ütemezett frissítésekhez. Ehhez értelemszerűen a personal gateway-jel rendelkező számítógépnek folyamatosan üzemelnie kell és állandó internetkapcsolat is szükséges. Természetesen a manuális megoldás, miszerint letöltjük a reportot és lokálisan módosítunk, majd frissítünk elérhető továbbra is.
 
-Sajnos nem teljesen egyértelmű ebben az esetben az AutoML működése, mivel a feltrainelt modell nem frissül, ha annak input táblája frissül, ugyanakkor, ha a modell adatfolyamát Power Query Editorral nyitjuk meg és módosítjuk, akkor pedig igen. Szintén fontos megemlíteni, hogy a predikcióink a beépített lehetőség esetén automatikusan nem frissülnek, ha azok adatai igen.
+Az AutoML esetében ez egyszerűbben történik, mivel a forrás adatsor frissülésekor automatikus a modell újratanítása és a predikciók frissítése is.
 
 ### Külső integrációs lehetőségek
 
 A beépített megoldás rendelkezik kettő Microsoftos integrációval:
 
 - [Cognitive Services](https://azure.microsoft.com/hu-hu/services/cognitive-services/)
-- [Azure Machine Learning Integration](https://docs.microsoft.com/hu-hu/azure/machine-learning/overview-what-is-azure-machine-learning)
+- [Azure Machine Learning Integration](https://docs.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning)
 
 A scriptelés oldaláról az alábbi megkötések érvényesek ránk:
 
-- [Python](https://docs.microsoft.com/hu-hu/power-bi/connect-data/service-python-packages-support)
-- [R](https://docs.microsoft.com/hu-hu/power-bi/connect-data/service-r-packages-support)
+- [Python](https://docs.microsoft.com/en-us/power-bi/connect-data/service-python-packages-support)
+- [R](https://docs.microsoft.com/en-us/power-bi/connect-data/service-r-packages-support)
 
 Ugyanakkor fontos megjegyezni, hogy az adatok beolvasása történhet egy előzetesen módosított script feldolgozással is, tehát több munkával, de kiterjeszthető az integráció más script könyvtárakra is.
 

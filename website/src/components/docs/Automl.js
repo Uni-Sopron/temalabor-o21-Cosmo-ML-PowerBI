@@ -290,7 +290,7 @@ const Automl = () => {
                 <img src={require("../../images/automl_doc/forecast_eredmeny.png")} title="forecast outcome" width="70%" alt="" />
             </div>
 
-            <p> Miután sikeresen létrehoztam a Predictiont tartalmazó Reportot, megvizsgáltam annak lehetőségét is, hogy a Dataset változása esetén újból lefuttatható-e a modellezés automatikusan és létrejön-e egy újrakalkulált Prediction. Több lépésben közelítettem meg ezt a problémát. Elsősorban megnéztem, hogy amennyiben a Dataflow Power Queryben változtattam az adatsoron, úgy sikeresen lefutott-e ismét az AutoML magától, és a Report Refreshelése után az új Prediction látható volt-e. Majd megpróbáltam azt a lehetőséget is, melynél ha OneDrive-on frissítem a fájlt, hogy a Dataflow frissüljön le, vele együtt pedig AutoML is lefusson ismét. Többszöri próbálkozás után, manuális Refreshsel, valamint Scheduled Refreshsel (beállítani egy időpontot, hogy mikor frissüljön) sem sikerült az AutoMLt magától lefuttatni, csak a Dataflow frissült. A Reportban látható volt az eredeti értékeknél a változás, viszont a Predictionnél nem.</p>
+            <p> A Predictiont tartalmazó Report létrehozása után, megvizsgáltam annak lehetőségét is, hogy az adatsor változása esetén újból lefuttatható-e a modellezés automatikusan és létrejön-e egy újrakalkulált Prediction. Azt követően, hogy a Dataflow lefrissült, a modell Trainelése ismét lefutott és predikciók újra kiértékelődtek. </p>
             < h3 > ÖSSZESÍTÉS</h3 >
             Kutatásom során vegyes eredmények születtek, hiszen a Power BI integrációja az AutoMLlel előnyöket, valamint hátrányokat is tartalmaz. Egy összehasonlítással szeretném szemléltetni ezeket.
             < h4 > Power BI + AutoML előnyök:</h4 >
@@ -298,8 +298,9 @@ const Automl = () => {
                 <li>Elegendő az alapvető Machine Learning és statisztikai tudás</li>
                 <li>Nem igényel kódolást</li>
                 <li>Modellezés cross-platform módon történhet</li>
-                <li>A Training-ről készült Report statisztikái jól szemléltetik a modell teljesítményét</li>
+                <li>A Trainingről készült Report statisztikái jól szemléltetik a modell teljesítményét</li>
                 <li>A Machine Learning model menthető, ezáltal alkalmazható más Dataset-eken is</li>
+                <li>Dataflow frissítésével a predikció is frissül</li>
             </ul>
 
             <h4>Power BI + AutoML hátrányok:</h4>
@@ -315,7 +316,6 @@ const Automl = () => {
                 <li>Premium licensz nélkülözhetetlen a használathoz</li>
                 <li>Adatkonverziós problémák léphetnek fel</li>
                 <li>Modellezés testreszabhatósága korlátozott</li>
-                <li>Nem frissül magától a modell az adatforrás frissítése után</li>
                 <li>Report készítése Desktopon történik (nem cross-platform, hiszen kell Windows)</li>
             </ul>
 
