@@ -93,7 +93,7 @@ Ezután áttérünk az átalakításokra, amihez a [LabelEncoder](https://scikit
 
 ![LabelEncoder és StandardScaler](../website/src/images/python/LabelEncoder_es_StandardScaler.jpg)
 
-A korábbi szétválogatás miatt viszont szükséges végigmennünk mindkettő DataFrame-en, ahhoz, hogy képesek legyünk független változóinkat tartalmazó oszlopainkon végigiterálni. Ezt követően már normalizálhatjuk is azokat. Figyeljük meg, hogy a függő változónkat tartalmazó oszlophoz nem nyúltunk, így azok értékei változatlanul maradnak azokon az értékeken, amiken alapvetően voltak.
+A korábbi szétválogatás miatt viszont szükséges végig mennünk mindkettő DataFrame-en, ahhoz, hogy képesek legyünk független változóinkat tartalmazó oszlopainkon végigiterálni. Ezt követően már normalizálhatjuk is azokat. Figyeljük meg, hogy a függő változónkat tartalmazó oszlophoz nem nyúltunk, így azok értékei változatlanul maradnak azokon az értékeken, amiken alapvetően voltak.
 
 A képen továbbá látszik az is, hogy inicializáltuk [LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) modellünket, amit előbb a train adatokkal betanítunk, majd pedig az átalakított test adatokon alkalmazzuk.
 
@@ -107,7 +107,7 @@ Eredményünk jobbra a becsléssel jött létre, míg balra pedig az eredeti ada
 
 Ehhez a feladathoz egy táblát használtunk, amely repülési adatokat tartalmaz 11 évről, havi bontásban. A feladat során azt próbáltuk megbecsülni, hogy hogyan alakul a repülések aránya az eredeti adatsort követő 6 hónapban. Összességében 18 hónapot vetítettünk előre, de korábbról indítottuk modellünket egy évvel, hogy annak eredménye a valósággal összehasonlítható legyen.
 
-Az adatsor táblája [itt](#placeholder) található meg.
+Az adatsor táblája [itt](https://www.kaggle.com/rakannimer/air-passengers) található meg.
 
 ### Power BI műveletek
 
@@ -129,11 +129,11 @@ Scriptjeinket ettől a ponttól futtattuk.
 
 ### Python műveletek
 
-A forecast feladat során a statsmodels könyvtár [Holtwinters' Exponential Smoothing](#placeholder) modellét alkalmaztuk.
+A forecast feladat során a statsmodels könyvtár [Holtwinters' Exponential Smoothing](https://www.statsmodels.org/dev/generated/statsmodels.tsa.holtwinters.ExponentialSmoothing.html) modellét alkalmaztuk.
 
 ![Könyvtár importok](../website/src/images/python/lib_imports_forecast.jpg)
 
-Itt definiáltunk egy függvény annak érdekében, hogy a [date_range](#placeholder) függvény eredményéül kapott DatetimeIndex-et abba a dátumformátumba hozzuk, amivel dolgozni szeretnénk a későbbiek folyamán. Ahhoz, hogy ugyanazokkal a dátumokkal dolgozzon modellünk, szükséges leszűrnünk eredeti datasetünket a kívánt dátumtartományra. Továbbra is érvényes az, hogy az itt beolvasott adatok csak a tesztelés lehetősége miatt vannak itt, a Power BI-ba való beillesztés pillanatában kivételre kerültek.
+Itt definiáltunk egy függvény annak érdekében, hogy a [date_range](https://pandas.pydata.org/docs/reference/api/pandas.date_range.html) függvény eredményéül kapott DatetimeIndex-et abba a dátumformátumba hozzuk, amivel dolgozni szeretnénk a későbbiek folyamán. Ahhoz, hogy ugyanazokkal a dátumokkal dolgozzon modellünk, szükséges leszűrnünk eredeti datasetünket a kívánt dátumtartományra. Továbbra is érvényes az, hogy az itt beolvasott adatok csak a tesztelés lehetősége miatt vannak itt, a Power BI-ba való beillesztés pillanatában kivételre kerültek.
 
 ![Adatok beolvasása teszteléshez, dátumsorozat generálása](../website/src/images/python/dataset_import_forecast.jpg)
 
