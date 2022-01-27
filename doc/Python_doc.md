@@ -37,7 +37,7 @@ Ez sajnos nem dokumentált lépés és nem is javított probléma, ugyanakkor az
 
 ## Bináris osztályozás
 
-### Power BI műveletek
+A feladat megvalósításához két tábla adatait használtuk fel, amelyek bicikli eladásokat vizsgálnak. Munkánk során arra próbálunk becslést tenni, hogy vajon hányan vásárolnak biciklit és milyen a vásárlók és nem vásárlók aránya.
 
 Az itt használt tábláink:
 
@@ -46,7 +46,9 @@ Az itt használt tábláink:
 
 [Link a fájlokhoz](https://github.com/BlueGranite/AI-in-a-Day/tree/master/AutoML)
 
-Mivel modellünket csak helyben tudtuk alkalmazni, így a train táblát és a test táblát is össze kellett vonnunk először. (A másik megoldás az lett volna, ha egy fájlból húzzuk be az összes adatunkat.)
+### Power BI műveletek
+
+Mivel modellünket csak helyben tudtuk alkalmazni, így a train táblát és a test táblát konkatenálnunk kellett. (A másik megoldás az lett volna, ha egy fájlból húzzuk be az összes adatunkat.)
 
 Az adatimport lépése során arra kell odafigyelnünk, hogy minden adat a megfelelő adattípusú legyen, ezért muszáj először ezt ellenőriznünk és javítanunk, ahol szükséges.
 
@@ -61,7 +63,7 @@ Módosított oszlopok listája a táblákban:
   - NumberCarsOwned
   - TotalChildren
 
-Az ide betöltőtt táblákhoz a típusok ellenőrzése után hozzáadtunk 1-1 új oszlopot 'Type' névvel, hogy meg tudjuk különböztetni a két táblát egymástól az összevonás után is. Míg modelltanításra szánt táblánk a 'Train' értéket kapta, úgy a teszteléshez szánt pedig a 'Test' értéket.
+Az ide betöltött táblákhoz a típusok ellenőrzése után hozzáadtunk 1-1 új oszlopot 'Type' névvel, hogy meg tudjuk különböztetni a két táblát egymástól az összevonás után is. Míg modelltanításra szánt táblánk a 'Train' értéket kapta, úgy a teszteléshez szánt pedig a 'Test' értéket.
 
 ![Train oszlop](../website/src/images/python/train_column_classification.jpg)
 
@@ -102,3 +104,64 @@ Eredményünk jobbra a becsléssel jött létre, míg balra pedig az eredeti ada
 ![Classification results](../website/src/images/python/prediction_in_PBI_classification.jpg)
 
 ## Előrejelzés
+
+Ehhez a feladathoz egy táblát használtunk, amely repülési adatokat tartalmaz 11 évről, havi bontásban. A feladat során azt próbáltuk megbecsülni, hogy hogyan alakul a repülések aránya az eredeti adatsort követő 6 hónapban. Összességében 18 hónapot vetítettünk előre, de korábbról indítottuk modellünket egy évvel, hogy annak eredménye a valósággal összehasonlítható legyen.
+
+Az adatsor táblája [itt](#placeholder) található meg.
+
+### Power BI műveletek
+
+Az adatok importálása után az adattranszformációs részen azt tapasztaltuk, hogy a Power BI jól meg tudta becsülni adataink típusát, így itt csupán annyit kell átállítanunk (bár ez inkább megszokás kérdése), hogy az adott hónap ne első, hanem utolsó napját vegyük minden esetben.
+
+![Adattranszformáció](../website/src/images/python/data_transform_forecast.jpg)
+
+Ekkor duplikáltuk táblánkat, mivel a valós adatokra még szükségünk lesz, majd ezt követően hozzáadtunk a táblánkhoz egy új oszlopot 'Type' névvel, aminek értékül 'Real'-t adtunk. (Itt alkalmazhattunk volna tábla referenciát is.)
+
+![Duplikáció](../website/src/images/python/table_duplication_forecast.jpg)
+
+![Real oszlop](../website/src/images/python/real_column_forecast.jpg)
+
+A duplikált táblában pedig a dátumra szűrést alkalmaztunk.
+
+![Dátum szűrés](../website/src/images/python/date_filter_forecast.jpg)
+
+Scriptjeinket ettől a ponttól futtattuk.
+
+### Python műveletek
+
+A forecast feladat során a statsmodels könyvtár [Holtwinters' Exponential Smoothing](#placeholder) modellét alkalmaztuk.
+
+![Könyvtár importok](../website/src/images/python/lib_imports_forecast.jpg)
+
+Itt definiáltunk egy függvény annak érdekében, hogy a [date_range](#placeholder) függvény eredményéül kapott DatetimeIndex-et abba a dátumformátumba hozzuk, amivel dolgozni szeretnénk a későbbiek folyamán. Ahhoz, hogy ugyanazokkal a dátumokkal dolgozzon modellünk, szükséges leszűrnünk eredeti datasetünket a kívánt dátumtartományra. Továbbra is érvényes az, hogy az itt beolvasott adatok csak a tesztelés lehetősége miatt vannak itt, a Power BI-ba való beillesztés pillanatában kivételre kerültek.
+
+![Adatok beolvasása teszteléshez, dátumsorozat generálása](../website/src/images/python/dataset_import_forecast.jpg)
+
+Ezt követően létrehoztuk modellünket, amely kiértékeléshez megkapta paraméterül:
+
+- Az adatsor azon részét, amelyre becslést kívántunk készíteni
+- Az inicializációs metódust, aminek alapértelmezetten a modell szerint becsült érték
+- A trendet, ami leírja adatsorunk két dimenziós térben felvett irányát
+- A szezonalitást, ami leírja adatsorunk időszakos ingadozásait
+- Periódusok számát, amely meghatározza az adatok periodikusságát
+- Boxcox transzformáció bekapcsolását, amely lehetővé teszi, hogy normalizáljuk adatsorunkat
+
+![Előrejelzési modell](../website/src/images/python/model_forecast.jpg)
+
+Ezek után modellünk segítségével előre becsüljük az adatsor utolsó évének kezdetétől számítva az elkövetkező 18 hónap értékeit, majd a visszakapott értékeket kerekítjük.
+
+Végül visszaadtuk egy DataFrame keretében a becslésünket és az ahhoz tartozó dátum intervallumot.
+
+## Power BI műveletek 2
+
+A visszakapott tábla oszlopait ellnőriztük, mivel előfordul, hogy nem megfelelő a típuskonverzió. Így is történt, így a kapott eredményoszlop értékeit egész számmá alakítottuk, majd beszúrtunk egy új oszlopot 'Type' névvel és 'Forecast' értékkel.
+
+![Forecast oszlop](../website/src/images/python/forecast_column_forecast.jpg)
+
+Végül pedig konkatenáltuk a két táblát, melynek eredményeképpen már képesek voltunk vizualizálni eredményünket és a meglévő adatokat egy grafikonon.
+
+![Konkatenált táblák](../website/src/images/python/concat_forecast.jpg)
+
+Az előrejelzés eredménye egy grafikonon:
+
+![Előrejelzés](../website/src/images/python/forecast.jpg)
