@@ -14,34 +14,31 @@ const R = () => {
       </p>
       <h2 id="inform-ci-gy-jt-si-szakasz">Információgyűjtési szakasz</h2>
       <p>
-        Az első feladat tehát az volt, hogy felfedezzük az R nyelvet és
-        megtekintsük, milyen alapfunkciókkal és beépített könyvtárakkal
-        rendelkezik, amelyek az ML fejlesztést támogatják. Az R alapvetően egy
-        statisztikai számításokat és ezen számítások grafikai megjelenítésére
-        létrehozott rendszer. Az R részét képezi maga az R programnyelv, az R
-        környezet, valamint az ahhoz tartozó beépített és ajánlott
-        függvénykönyvtárak. Az R nyelv egy speciális célú programnyelv, amely az
-        alapkönyvtárában tartalmaz különböző adatkezelési, statisztikai és
-        kirajzoló függvényeket. Az alapkönyvtár lehetővé teszi a számunkra, hogy
-        különböző összetett adattípusokkal dolgozzunk, amiket egymás között
-        konvertálni tudunk. Az R nyelv rendelkezik az objektumorientált
-        programozás lehetőségével, ezáltal képesek vagyunk benne absztrakt módon
-        elrejteni olyan implementációs részleteket, amik a scriptünk
-        felhasználói szempontjából nem lényegesek. Az egyik legfontosabb
-        objektum ebből a szempontból a data frame, amibe különböző adatforrásból
-        származó adatokat egységesen be tudunk tölteni. A dolgozatnak nem célja
-        az R nyelv teljeskörű ismertetése, ahogyan a kutatásnak sem volt célja
-        minden funkciójának a kiaknázása. Néhány, jelen dolgozat szempontjából
-        fontos technikai részletet azonban megosztunk vele kapcsolatban a
-        későbbiekben is. (
+        Az első feladat tehát az volt, hogy felfedezzük az{" "}
         <a href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html">
-          https://cran.r-project.org/doc/manuals/r-release/R-lang.html
-        </a>
-        ) (
+          R nyelvet
+        </a>{" "}
+        és megtekintsük, milyen alapfunkciókkal és beépített könyvtárakkal
+        rendelkezik, amelyek az ML fejlesztést támogatják.{" "}
         <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html">
-          https://cran.r-project.org/doc/manuals/r-release/R-intro.html
-        </a>
-        )
+          Az R alapvetően egy statisztikai számításokat és ezen számítások
+          grafikai megjelenítésére létrehozott rendszer.
+        </a>{" "}
+        Az R részét képezi maga az R programnyelv, az R környezet, valamint az
+        ahhoz tartozó beépített és ajánlott függvénykönyvtárak. Az R nyelv egy
+        speciális célú programnyelv, amely az alapkönyvtárában tartalmaz
+        különböző adatkezelési, statisztikai és kirajzoló függvényeket. Az
+        alapkönyvtár lehetővé teszi a számunkra, hogy különböző összetett
+        adattípusokkal dolgozzunk, amiket egymás között konvertálni tudunk. Az R
+        nyelv rendelkezik az objektumorientált programozás lehetőségével,
+        ezáltal képesek vagyunk benne absztrakt módon elrejteni olyan
+        implementációs részleteket, amik a scriptünk felhasználói szempontjából
+        nem lényegesek. Az egyik legfontosabb objektum ebből a szempontból a
+        data frame, amibe különböző adatforrásból származó adatokat egységesen
+        be tudunk tölteni. A dolgozatnak nem célja az R nyelv teljeskörű
+        ismertetése, ahogyan a kutatásnak sem volt célja minden funkciójának a
+        kiaknázása. Néhány, jelen dolgozat szempontjából fontos technikai
+        részletet azonban megosztunk vele kapcsolatban a későbbiekben is.
       </p>
       <h3 id="scriptel-s-a-power-bi-desktop-editorj-ban">
         Scriptelés a Power BI Desktop editorjában
@@ -51,17 +48,16 @@ const R = () => {
         elméleti alapjaival, valamint a Power BI Desktoppal, elkezdtük
         vizsgálni, hogy miképpen tudjuk az R scriptet integrálni a Power BI-ba.
         Alapvető kérdés volt, hogy pontosan hova tudnánk, illetve hova lenne
-        célszerű ezeket a scripteket beilleszteni. Erre megoldást kínál a
-        Desktop Power Query editorja, valamint a reporting felület is, ahol
-        létre tudunk hozni vizualizációkat scriptből is. (
+        célszerű ezeket a scripteket beilleszteni.{" "}
         <a href="https://docs.microsoft.com/hu-hu/power-bi/connect-data/desktop-r-scripts">
-          https://docs.microsoft.com/hu-hu/power-bi/connect-data/desktop-r-scripts
-        </a>
-        ) (
+          Desktop Power Query editorja,
+        </a>{" "}
+        valamint a{" "}
         <a href="https://docs.microsoft.com/hu-hu/power-bi/create-reports/desktop-r-visuals">
-          https://docs.microsoft.com/hu-hu/power-bi/create-reports/desktop-r-visuals
-        </a>
-        ) Az a kutatás kezdeti szakaszán kiderült, hogy a vizualizációs script
+          reporting felület is, ahol létre tudunk hozni vizualizációkat
+          scriptből is.
+        </a>{" "}
+        Az a kutatás kezdeti szakaszán kiderült, hogy a vizualizációs script
         kevéssé alkalmas ML modellek betanítására. Ennek okai a következők:
       </p>
       <ul>
@@ -131,23 +127,23 @@ const R = () => {
         scriptek verziókezelése emiatt elkerülhetetlenül összeforrt maguknak a
         pbix fájloknak a verziókezelésével. Azt is érdemes megjegyezni, hogy
         abban az esetben, ha szeretnénk egy robosztusabb ML rendszert építeni,
-        ahhoz praktikus okokból szükségünk lesz egy R csomag létrehozására, ami
-        bizonyos esetekben nagyon körülményes folyamat. Amennyiben ezt nem
-        tesszük meg, kénytelenek leszünk az egész scriptet egyetlen szövegfájlba
-        összetömöríteni, ami a gyakorlatban nem könnyen karbantartható és
-        fenntartható megoldás. (
+        ahhoz praktikus okokból szükségünk lesz egy{" "}
         <a href="https://cran.r-project.org/doc/manuals/r-release/R-exts.html">
-          https://cran.r-project.org/doc/manuals/r-release/R-exts.html
-        </a>
-        ) Összességében megállapítottuk, hogy ez a megoldás csak egyszerű,
-        kisméretű scriptek írására alkalmas, az alapvető célja a transzformációs
-        scriptnek, hogy apró adatátalakításokat végezzünk el a Dataseten,
-        például abban az esetben, ha szeretnénk kihasználni az R nyelv
-        adottságait és nem szeretnénk a beépített M scriptelési nyelvre
-        hagyatkozni ehhez. Ennek ellenére az is kijelenthető, hogy kisebb
-        predikciók és modellek készítésére ez a módszer is alkalmas,
-        kiváltképpen mivel a Power BI Desktop egyszerű elérhetősége miatt ez egy
-        igen költséghatékony megoldásnak bizonyul az AutoML-lel szemben.
+          R csomag
+        </a>{" "}
+        létrehozására, ami bizonyos esetekben nagyon körülményes folyamat.
+        Amennyiben ezt nem tesszük meg, kénytelenek leszünk az egész scriptet
+        egyetlen szövegfájlba összetömöríteni, ami a gyakorlatban nem könnyen
+        karbantartható és fenntartható megoldás. Összességében megállapítottuk,
+        hogy ez a megoldás csak egyszerű, kisméretű scriptek írására alkalmas,
+        az alapvető célja a transzformációs scriptnek, hogy apró
+        adatátalakításokat végezzünk el a Dataseten, például abban az esetben,
+        ha szeretnénk kihasználni az R nyelv adottságait és nem szeretnénk a
+        beépített M scriptelési nyelvre hagyatkozni ehhez. Ennek ellenére az is
+        kijelenthető, hogy kisebb predikciók és modellek készítésére ez a
+        módszer is alkalmas, kiváltképpen mivel a Power BI Desktop egyszerű
+        elérhetősége miatt ez egy igen költséghatékony megoldásnak bizonyul az
+        AutoML-lel szemben.
       </p>
       <h2 id="ml-projektek">ML projektek</h2>
       <p>
@@ -172,16 +168,16 @@ const R = () => {
         A scriptek futtatása nem igényel semmilyen különleges erőforrást. Minden
         megvalósítási mód, amit a továbbiakban tárgyalunk, vagy elérhető eleve a
         Power BI Desktop ingyenes licenszén keresztül, vagy az R beépített ill.
-        open-source függvénykönyvtárak által kínált funkciókat használja fel,
+        open-source függvénykönyvtárai által kínált funkciókat használja fel,
         vagy pedig a Serviceből elérhető felhőalapú szolgáltatások igénybevétele
-        esetén Pro licenszt igényel. A rendszerkövetelmények nem haladják meg
-        magának a Power BI Desktopnak, illetve a Service esetében egy
-        böngészőszoftvernek az általános rendszerkövetelményeit. Az általános
-        követelmények nagy részére a bevezető szakaszban már kitértünk. (
+        esetén Pro licenszt igényel. A{" "}
         <a href="https://docs.microsoft.com/hu-hu/power-bi/fundamentals/desktop-get-the-desktop">
-          https://docs.microsoft.com/hu-hu/power-bi/fundamentals/desktop-get-the-desktop
-        </a>
-        )
+          rendszerkövetelmények
+        </a>{" "}
+        nem haladják meg magának a Power BI Desktopnak, illetve a Service
+        esetében egy böngészőszoftvernek az általános rendszerkövetelményeit. Az
+        általános követelmények nagy részére a bevezető szakaszban már
+        kitértünk.
       </p>
       <h3 id="forecasting-projekt">Forecasting projekt</h3>
       <p>
@@ -193,19 +189,19 @@ const R = () => {
       </p>
       <h4 id="adatel-k-sz-t-s">Adatelőkészítés</h4>
       <p>
-        Az ETL folyamat egyik megvalósítási módja a Serviceből elérhető
-        Dataflow-k Power Query Editorjának használata. (
+        Az ETL folyamat egyik megvalósítási módja a Serviceből elérhető{" "}
         <a href="https://docs.microsoft.com/en-us/power-bi/transform-model/dataflows/dataflows-create">
-          https://docs.microsoft.com/en-us/power-bi/transform-model/dataflows/dataflows-create
-        </a>
-        ) Ennél a megoldásnál azonban mindenképpen figyelembe kell venni a SaaS
-        szolgáltatás technikai limitációit, valamint azt, hogy a Dataflow-k
-        létrehozásához legalább Pro licenszre van szükség. Számunkra az ehhez
-        szükséges licenszt a COSMO Consult Kft. tette elérhetővé. A Dataflow-ba
-        egyszerűen tudunk importálni adatokat különböző adatforrásokból, az
-        átalakítások végeztével pedig fel tudjuk használni ezeket Datasetek
-        létrehozására, amikbe a scriptjeinket beágyazhatjuk. Ebben az esetben a
-        Dataflow-t adatforrásként kell felhasználnunk a Power BI Desktopban.
+          Dataflow-k
+        </a>{" "}
+        Power Query Editorjának használata. Ennél a megoldásnál azonban
+        mindenképpen figyelembe kell venni a SaaS szolgáltatás technikai
+        limitációit, valamint azt, hogy a Dataflow-k létrehozásához legalább Pro
+        licenszre van szükség. Számunkra az ehhez szükséges licenszt a COSMO
+        Consult Kft. tette elérhetővé. A Dataflow-ba egyszerűen tudunk
+        importálni adatokat különböző adatforrásokból, az átalakítások
+        végeztével pedig fel tudjuk használni ezeket Datasetek létrehozására,
+        amikbe a scriptjeinket beágyazhatjuk. Ebben az esetben a Dataflow-t
+        adatforrásként kell felhasználnunk a Power BI Desktopban.
       </p>
       <div align="center">
         <img
@@ -229,29 +225,27 @@ const R = () => {
       </p>
       <h4 id="modellezk-sz-t-s-ki-rt-kel-s">Modellezkészítés, kiértékelés</h4>
       <p>
-        A modellkészítéshez és prediktáláshoz az R script esetében a forecast
-        csomagból elérhető HoltWinters objektumot használtuk fel. Ez a megoldás
-        lehetővé tette számunkra, hogy néhány trend-, szezonalitás- és
-        frekvencia paraméter megadásával egyszerű regressziós modellt építsünk.
-        A vizsgálat végén megbizonyosodtunk egyrészt arról, hogy az általunk
-        használt könyvtár, valamint az ebből származó modell felhasználható
-        predikciók készítésére és ezeknek az átadására a Power BI felé. A
-        kísérlet sikeres volt, azonban meg kell jegyeznünk azt, hogy a scriptek
-        karbantartása hosszútávon körülményes lehet a külső dependenciák
-        kezelése miatt. Mindemellett belefutottunk néhány adatkompatibilitási
-        problémába is a Power BI Dataset és az R data frame között, amit azzal
-        orvosoltunk, hogy a dátum mezőket szöveggé alakítottuk, a lokalizációt
-        pedig nemzetközi formátumra állítottuk. A modellünk kiértékelésében az R
-        beépített summary függvénye segített, mely a modellel kapcsolatos
-        fontosabb statisztikai jellemzőket jeleníti meg. (
+        A modellkészítéshez és prediktáláshoz az R script esetében a{" "}
         <a href="https://www.rdocumentation.org/packages/forecast/versions/8.14/topics/forecast.HoltWinters">
-          https://www.rdocumentation.org/packages/forecast/versions/8.14/topics/forecast.HoltWinters
-        </a>
-        ) (
+          forecast csomagból elérhető HoltWinters objektumot
+        </a>{" "}
+        használtuk fel. Ez a megoldás lehetővé tette számunkra, hogy néhány
+        trend-, szezonalitás- és frekvencia paraméter megadásával egyszerű
+        regressziós modellt építsünk. A vizsgálat végén megbizonyosodtunk
+        egyrészt arról, hogy az általunk használt könyvtár, valamint az ebből
+        származó modell felhasználható predikciók készítésére és ezeknek az
+        átadására a Power BI felé. A kísérlet sikeres volt, azonban meg kell
+        jegyeznünk azt, hogy a scriptek karbantartása hosszútávon körülményes
+        lehet a külső dependenciák kezelése miatt. Mindemellett belefutottunk
+        néhány adatkompatibilitási problémába is a Power BI Dataset és az R data
+        frame között, amit azzal orvosoltunk, hogy a dátum mezőket szöveggé
+        alakítottuk, a lokalizációt pedig nemzetközi formátumra állítottuk. A
+        modellünk kiértékelésében az R beépített{" "}
         <a href="https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/summary">
-          https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/summary
-        </a>
-        )
+          summary
+        </a>{" "}
+        függvénye segített, mely a modellel kapcsolatos fontosabb statisztikai
+        jellemzőket jeleníti meg.
       </p>
       <div align="center">
         <img
@@ -274,14 +268,13 @@ const R = () => {
         Az így elkészült predikciónk egyszerűen megjeleníthetővé váltak a Power
         BI beépített reportálási lehetőségeinek a segítségével. A munka végén az
         így készült reportot megosztottuk a Serviceben, ahol ki tudtuk próbálni,
-        hogy a forrásadatok megváltoztatásával, valamint egy ütemezett frissítés
+        hogy a forrásadatok megváltoztatásával, valamint egy{" "}
+        <a href="https://docs.microsoft.com/hu-hu/power-bi/connect-data/refresh-scheduled-refresh">
+          ütemezett frissítés
+        </a>{" "}
         beállításával újraértékelődnek-e a modelljeink és frissülnek-e a
         predikciók. Úgy találtuk, hogy ezek a Serviceben megtörténnek, tehát
-        automatizálható a modellezés és a dinamikus predikció folyamata. (
-        <a href="https://docs.microsoft.com/hu-hu/power-bi/connect-data/refresh-scheduled-refresh">
-          https://docs.microsoft.com/hu-hu/power-bi/connect-data/refresh-scheduled-refresh
-        </a>
-        )
+        automatizálható a modellezés és a dinamikus predikció folyamata.
       </p>
       <div align="center">
         <img
@@ -317,12 +310,12 @@ const R = () => {
         leírja, hogy az adott sor éppen a training adatokat vagy a predikcióhoz
         használatos adatokat tartalmazza-e. Az R scriptben mindezek után
         könnyedén kettéválaszthattuk és kiszűrhettük a számunkra éppen szükséges
-        adatokat. A modellkészítéshez ebben az esetben rendelkezésünkre állt a
-        glm nevű standard beépített függvény. (
+        adatokat. A modellkészítéshez ebben az esetben rendelkezésünkre állt a{" "}
         <a href="https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/glm">
-          https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/glm
-        </a>
-        ) Ezt a függvényt két okból választottuk:
+          glm
+        </a>{" "}
+        nevű standard beépített függvény. Ezt a függvényt két okból
+        választottuk:
       </p>
       <ul>
         <li>
