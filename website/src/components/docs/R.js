@@ -21,7 +21,7 @@ const R = () => {
         és megtekintsük, milyen alapfunkciókkal és beépített könyvtárakkal
         rendelkezik, amelyek az ML fejlesztést támogatják.{" "}
         <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html">
-          Az R alapvetően egy statisztikai számításokat és ezen számítások
+          Az R alapvetően egy statisztikai számításokra és ezen számítások
           grafikai megjelenítésére létrehozott rendszer.
         </a>{" "}
         Az R részét képezi maga az R programnyelv, az R környezet, valamint az
@@ -48,7 +48,7 @@ const R = () => {
         elméleti alapjaival, valamint a Power BI Desktoppal, elkezdtük
         vizsgálni, hogy miképpen tudjuk az R scriptet integrálni a Power BI-ba.
         Alapvető kérdés volt, hogy pontosan hova tudnánk, illetve hova lenne
-        célszerű ezeket a scripteket beilleszteni.{" "}
+        célszerű ezeket a scripteket beilleszteni. Erre megoldást kínál{" "}
         <a href="https://docs.microsoft.com/hu-hu/power-bi/connect-data/desktop-r-scripts">
           Desktop Power Query editorja,
         </a>{" "}
